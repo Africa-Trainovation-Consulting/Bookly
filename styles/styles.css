@@ -34,6 +34,7 @@
 
 .first .p {
   font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 @media screen and (min-width: 410px) {
@@ -104,6 +105,7 @@
 
 .text1 {
   font-size: 42px;
+  font-font-family: "Nunito Sans", sans-serif !important;
 }
 
 @media screen and (min-width: 465px) {
@@ -177,6 +179,10 @@
   font-size: 20px;
 }
 
+.drolist .min-glass:hover {
+  color: #000000;
+}
+
 .lid {
   border-bottom: 3px solid #e5e5e5;
   border-radius: 6px;
@@ -195,6 +201,7 @@
   color: #000000;
   font-size: 20px;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .lid .ul .nav-item .nav-link:hover {
@@ -257,6 +264,7 @@
 
 .sec1 .bg .search .book {
   font-weight: 400 !important;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 @media screen and (max-width: 990px) {
@@ -276,6 +284,7 @@
   top: 0;
   height: 8vh;
   width: 70%;
+  font-size: 20px;
   border: 2px solid #e77d2c;
   background-color: #e77d2c;
   display: -webkit-box;
@@ -287,7 +296,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 2vw;
+}
+
+@media screen and (max-width: 990px) {
+  .sec1 .bg .last .btn {
+    margin-right: 2vw;
+  }
+}
+
+.sec1 .bg .last .btn:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 @media screen and (max-width: 589px) {
