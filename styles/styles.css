@@ -16,6 +16,38 @@
   border: 2px solid #e77d2c;
 }
 
+.first .text1 {
+  font-size: 42px;
+}
+
+@media screen and (min-width: 465px) {
+  .first .text1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .first .text1 {
+    font-size: 4.8rem;
+  }
+}
+
+.first .p {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 410px) {
+  .first .p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .first .p {
+    font-size: 24px;
+  }
+}
+
 .dropdown {
   border-radius: 16px 0px 0 15px;
   height: 8vh;
@@ -37,11 +69,107 @@
   z-index: -1;
 }
 
+@media screen and (max-width: 990px) {
+  .img-container .circle {
+    left: 6%;
+  }
+}
+
 .img-container .circles {
   position: absolute;
   bottom: -9%;
   right: 4%;
   z-index: -1;
+}
+
+@media screen and (max-width: 990px) {
+  .img-container .circles {
+    width: 20%;
+    right: 17%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .img-container {
+    margin-top: 8%;
+    margin-bottom: 4% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+.text1 {
+  font-size: 42px;
+}
+
+@media screen and (min-width: 465px) {
+  .text1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text1 {
+    font-size: 4.8rem;
+  }
+}
+
+.get .but {
+  background-color: #e77d2c;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 7vh;
+  margin-top: 4vh !important;
+  font-size: 17px;
+}
+
+.get .but:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #e77d2c;
+}
+
+@media screen and (min-width: 990px) {
+  .get .but {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .in {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .secondselect {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .search .buk {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 587px) {
+  .drolist {
+    width: 90%;
+  }
 }
 
 .lid {
@@ -107,30 +235,30 @@
   color: #000000;
 }
 
-@media screen and (max-width: 580px) {
-  .sec1 .first-text .wel {
-    font-size: 50px !important;
+@media screen and (max-width: 990px) {
+  .sec1 .first-text .btn {
+    display: none;
   }
 }
 
-.sec1 .first-text .bg {
+.sec1 .bg {
   background-color: #c4c4c44f;
   border-radius: 13px;
 }
 
-.sec1 .first-text .bg .search {
+.sec1 .bg .search {
   padding-left: 2vw !important;
 }
 
-.sec1 .first-text .bg .search .book {
+.sec1 .bg .search .book {
   font-weight: 400 !important;
 }
 
-.sec1 .first-text .bg .last {
+.sec1 .bg .last {
   position: relative;
 }
 
-.sec1 .first-text .bg .last .btn {
+.sec1 .bg .last .btn {
   color: #ffffff;
   position: absolute;
   right: -66%;

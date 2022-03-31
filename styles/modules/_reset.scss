@@ -14,6 +14,28 @@
             border: 2px solid $btncolor;
         }
     }
+    .text1 {
+        font: {
+            size: 42px;
+        }
+        @media screen and (min-width: 465px) {
+            font-size: 4rem;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 4.8rem;
+        }
+    }
+    .p {
+        font: {
+            size: 14px;
+        }
+        @media screen and (min-width: 410px) {
+            font-size: 18px;
+        }
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+        }
+    }
 }
 .dropdown {
     border-radius: 16px 0px 0 15px;
@@ -30,11 +52,82 @@
         top: -10%;
         left: 17%;
         z-index: -1;
+        @media screen and (max-width: 990px) {
+            left: 6%;
+        }
     }
     .circles {
         position: absolute;
         bottom: -9%;
         right: 4%;
         z-index: -1;
+        @media screen and (max-width: 990px) {
+            width: 20%;
+            right: 17%;
+        }
+    }
+    @media screen and (max-width: 990px) {
+        margin-top: 8%;
+        margin-bottom: 4% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+.text1 {
+    font: {
+        size: 42px;
+    }
+    @media screen and (min-width: 465px) {
+        font-size: 4rem;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 4.8rem;
+    }
+}
+.get {
+    .but {
+        background-color: $btncolor;
+        color: $hover;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        height: 7vh;
+        margin-top: 4vh !important;
+        font-size: 17px;
+        &:hover {
+            background-color: $hover;
+            color: $color;
+            border: 2px solid $btncolor;
+        }
+        @media screen and (min-width: 990px) {
+            display: none;
+        }
+    }
+}
+.in {
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+}
+.secondselect {
+    @media screen and (min-width: 577px) {
+        display: none;
+    }
+}
+.search{
+    @media screen and (max-width: 577px) {
+        display: none;
+    }
+    .buk {
+        @media screen and (max-width: 577px) {
+            display: none;
+        }
+    }
+    
+}
+.drolist{
+    @media screen and (max-width:587px) {
+        width: 90%;
     }
 }
