@@ -1,0 +1,40 @@
+.bar {
+    font-size: 30px;
+}
+.first {
+    .btn {
+        background-color: $btncolor;
+        color: $hover;
+        font-weight: 600;
+        width: 30%;
+        font-size: 17px;
+        &:hover {
+            background-color: $hover;
+            color: $color;
+            border: 2px solid $btncolor;
+        }
+    }
+}
+.dropdown {
+    border-radius: 16px 0px 0 15px;
+    height: 8vh;
+    background-color: $hover;
+}
+.drop {
+    height: 8vh;
+}
+.img-container {
+    position: relative;
+    .circle {
+        position: absolute;
+        top: -10%;
+        left: 17%;
+        z-index: -1;
+    }
+    .circles {
+        position: absolute;
+        bottom: -9%;
+        right: 4%;
+        z-index: -1;
+    }
+}

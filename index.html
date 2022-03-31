@@ -1,16 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookey Project</title>
     <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light-50 lid">
+            <div class="container">
+                <a href="#"><img class="img-fluid w-75 w-md-100" src="/styles/img/booklylogo.svg" alt="booklylogo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars bar m-0"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto ul d-flex justify-content-between">
+                        <li class="nav-item">
+                            <a href="#Home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Categories" class="nav-link">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Request a book" class="nav-link">Request a book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Cart" class="nav-link">Cart<span><img src="/styles/img/basket.svg"
+                                        alt="basket"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Login"
+                                class="nav-link text-white d-flex align-items-center justify-content-center w-160 btn">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-light-50 text-left p-5 sec1">
+        <div class="container">
+            <div class="row align-items-center justify-content-center my-4 first-text">
+                <div class="col-lg-6 first">
+                    <p class="online lead" style="font-weight: 400;">AN ONLINE BOOKSTORE</p>
+                    <h1 class="my-4 wel" style="font-size: 4.9rem;line-height: 1; font-weight: 700;">Welcome to
+                        Bookly</h1>
+                    <p class="lead">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem
+                        sequi nesciunt.</p>
+                    <button class="btn my-3">Get Started</button>
+                </div>
+                <div class="col-lg-6 d-flex align-items-end justify-content-end img-container mb-5">
+                    <img class="circle img-fluid w-25" src="/styles/img/circlyellow.svg" alt="circle">
+                    <img class="img-fluid w-75" src="/styles/img/booklibrary.svg" alt="library of books">
+                    <img src="/styles/img/black.svg" alt="black-circle" class="img-fluid circles">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 bg p-3 pl-4 search">
+                    <p class="book h5 mb-3">Search a Book</p>
+                    <div class="drolist d-flex">
+                        <div class="mb-3 col-md-3">
+                            <select class="form-select dropdown" required>
+                                <option>Lagos</option>
+                                <option>Kano</option>
+                                <option>Ibadan</option>
+                                <option>Port Harcourt</option>
+                                <option>Jos</option>
+                                <option>Abuja</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-md-2">
+                            <select class="form-select drop" required>
+                                <option>Lagos</option>
+                                <option>Kano</option>
+                                <option>Ibadan</option>
+                                <option>Port Harcourt</option>
+                                <option>Jos</option>
+                                <option>Abuja</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-md-2">
+                            <select class="form-select drop" required>
+                                <option>Lagos</option>
+                                <option>Kano</option>
+                                <option>Ibadan</option>
+                                <option>Port Harcourt</option>
+                                <option>Jos</option>
+                                <option>Abuja</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3 col-md-3 last">
+                            <select class="form-select drop" required>
+                                <option>Lagos</option>
+                                <option>Kano</option>
+                                <option>Ibadan</option>
+                                <option>Port Harcourt</option>
+                                <option>Jos</option>
+                                <option>Abuja</option>
+                            </select>
+                            <button type="submit" class="btn btn-dark">Search</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
     <script src="/styles/js/bootstrap.bundle.min.js"></script>
     <script src="/styles/js/main.js"></script>
 </body>
+
 </html>

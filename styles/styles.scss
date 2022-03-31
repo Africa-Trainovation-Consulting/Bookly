@@ -1,0 +1,82 @@
+@import "./modules/varibles";
+@import "./modules/reset";
+.lid {
+    border-bottom: 3px solid $border;
+    border-radius: 6px;
+    .ul {
+        padding-right: 3vw;
+        width: 86%;
+        .nav-item {
+            padding-left: 20px;
+            .nav-link {
+                color: $color;
+                font-size: 20px;
+                font-weight: 600;
+                &:hover {
+                    color: $btncolor;
+                }
+            }
+            &:last-child {
+                .nav-link {
+                    background-color: $btncolor;
+                    width: 170%;
+                    border-radius: 12px;
+                    &:hover {
+                        background-color: $hover;
+                        border: 1px solid $btncolor;
+                        color: $color !important;
+                    }
+
+                    @media screen and (max-width: 990px) {
+                        width: 127px;
+                        margin-top: 2vh;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 990px) {
+            margin-left: 0 !important;
+        }
+    }
+}
+.sec1{
+    .first-text{
+        .online {
+            color: $btncolor;
+            @media screen and (max-width:340px) {
+                font-size: 18px;
+            }
+        }
+        .wel {
+            color: $color;
+            @media screen and (max-width:580px) {
+                font-size: 50px!important;
+            }
+        }
+        .bg {
+            background-color: $bookbg;
+            border-radius: 13px;
+            .search {
+                padding-left: 2vw !important;
+                .book {
+                    font-weight: 400 !important;
+                }
+            }
+            .last {
+                position: relative;
+                .btn {
+                    color: $hover;
+                    position: absolute;
+                    right: -66%;
+                    top: 0;
+                    height: 8vh;
+                    width: 70%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:589px) {
+            padding-left: 2%!important;
+            padding-top: 2%!important;
+        }
+}
