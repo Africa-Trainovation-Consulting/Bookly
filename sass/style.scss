@@ -1,0 +1,299 @@
+@import "colors";
+@import "variables";
+@import "mixin";
+
+* {
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+// header {
+//   width: 100%;
+//   height: 30%;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   padding-top: 5px;
+//   padding-bottom: 5px;
+//   padding-left: $align;
+//   padding-right: $align;
+
+//  .header {
+//    display: contents;
+//       .icon {
+//           font-size: 30px;
+//     }
+//     @include flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     position: relative;
+//     // a {
+//         //     text-decoration: none;
+//     //     color: black;
+//     //     @include font;
+//     //     font-size: 18px;
+//     //     line-height: 2.5;
+//     //     button{
+//     //         padding-left: 30px;
+//     //         padding-right: 30px;
+//     //         padding-top: 5px;
+//     //         padding-bottom: 5px;
+//     //         background-color: $firstcolor;
+//     //         border-radius: 15px;
+//     .navbar {
+//       display: none;
+//     }
+
+//     .responsive {
+//       position: absolute;
+//       flex-direction: row;
+//       left: 0;
+//       right: 0;
+//       top: 65px;
+//       width: 100%;
+//       padding: 0px;
+//       margin: 0px;
+//       background-color: #e5e5e5;
+//       a {
+//         text-decoration: none;
+//         color: black;
+//         @include font;
+//         font-size: 18px;
+//         line-height: 2.5;
+//         button {
+//           padding-left: 30px;
+//           padding-right: 30px;
+//           padding-top: 5px;
+//           padding-bottom: 5px;
+//           background-color: $firstcolor;
+//           border-radius: 15px;
+//         }
+
+// }
+
+//     // text-align: left;
+//     // align-self:  center;
+
+// }
+
+// }}
+// @media screen and (min-width: 993px) {
+//   .navbar {
+//     ul {
+//       display: flex;
+//       justify-content: space-between;
+//       .btn {
+//         button {
+//           width: 123px;
+//           height: 50px;
+//           border-radius: 15px;
+//           background-color: $firstcolor;
+//           @include font;
+//           color: white;
+//         }
+//       }
+//       li {
+//         padding-left: 3.5vw;
+//         align-items: center;
+//         align-self: center;
+//         justify-content: center;
+//         @include font;
+
+//         color: black;
+//         a {
+//           text-decoration: none;
+//           color: black;
+//         }
+//       }
+//       //     }
+//       // }
+//     }
+//   }
+//   .icon {
+//     display: none;
+//   }
+//   .navbar {
+//     flex-direction: column;
+//   }
+// }
+// header{
+//     .header{
+//         width: 100%;
+//          height: 30%;
+//           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//     }
+// }
+body {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    // height: 30%;
+    height: 90px;
+    padding-top: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+    .icon {
+      font-size: 30px;
+      align-self: center;
+    }
+    .navbar {
+      display: none;
+    }
+    .responsiveness {
+      display: grid;
+      position: absolute;
+      flex-direction: row;
+      left: 0;
+      right: 0;
+      top: 93px;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      background-color: #e5e5e5;
+      a {
+        text-decoration: none;
+        color: black;
+        @include font;
+        font-size: 18px;
+        line-height: 2.5;
+        button {
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          background-color: $firstcolor;
+          border-radius: 15px;
+          color: #ffff;
+          margin-top: 1px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 993px) {
+      .navbar {
+        display: flex;
+        .link {
+          display: flex;
+          justify-content: space-between;
+          justify-content: space-between;
+          align-items: center;
+          align-self: center;
+          justify-content: center;
+          @include font;
+
+          color: black;
+          a {
+            padding-left: 3.5vw;
+            text-decoration: none;
+            color: black;
+          }
+          .btn {
+            button {
+              width: 150px;
+              height: 50px;
+              border-radius: 15px;
+              background-color: $firstcolor;
+              @include font;
+              color: white;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .icon {
+        display: none;
+      }
+    }
+  }
+  .section1 {
+    h5 {
+      font-family: $familyN;
+      color: $firstcolor;
+      padding-top: 20px;
+      line-height: 4;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      padding-top: 0;
+    }
+    p {
+      font-family: $familyN;
+      line-height: 25px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    .btn1 {
+      display: none;
+    }
+    .btn2 {
+      button {
+        // padding-left: 100px;
+        // padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+        background-color: $firstcolor;
+        font-family: $familyN;
+        font-size: 18px;
+        font-weight: 700;
+        color: $colourwhite;
+      }
+    }
+    .search {
+      background-color: $offwhitecolour;
+      height: 70px;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      .search2 {
+        display: flex;
+        justify-content: center;
+        // border: 2px solid black;
+        // position: absolute;
+        width: 95%;
+        height: 30px;
+        margin-left: 2vw;
+        border-radius: 20px;
+        // background-color: $colourwhite;
+
+        .form-select {
+          width: 50vw !important;
+          border: none !important;
+          font-size: 10px;
+          // margin-left: -3px;
+          // background-color: transparent;
+          // margin-right: -15px;
+          padding: 1vw !important;
+          border-radius: 0% ;
+          font-family: $familyN;
+          font-weight: 500;
+        }
+        .form1{
+          border-radius:  10px 0px 0px 10px;
+        }
+        .btn3{
+          background-color: $firstcolor;
+          border-radius: 0px 10px 10px 0px;
+          color: $colourwhite;
+          font-family: $familyN;
+          font-size: 12px;
+          padding: 0px 5px 0px 5px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+#select{
+  border-radius:  10px 0px 0px 10px;
+}

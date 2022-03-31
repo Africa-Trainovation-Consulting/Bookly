@@ -1,0 +1,210 @@
+* {
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+body .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+body .header .icon {
+  font-size: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .header .navbar {
+  display: none;
+}
+
+body .header .responsiveness {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  left: 0;
+  right: 0;
+  top: 93px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #e5e5e5;
+}
+
+body .header .responsiveness a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+body .header .responsiveness a button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #E77D2C;
+  border-radius: 15px;
+  color: #ffff;
+  margin-top: 1px;
+}
+
+@media screen and (min-width: 993px) {
+  body .header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .header .navbar .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  body .header .navbar .link a {
+    padding-left: 3.5vw;
+    text-decoration: none;
+    color: black;
+  }
+  body .header .navbar .link .btn button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #E77D2C;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-weight: 400;
+  }
+  body .header .icon {
+    display: none;
+  }
+}
+
+body .section1 h5 {
+  font-family: Nunito Sans;
+  color: #E77D2C;
+  padding-top: 20px;
+  line-height: 4;
+}
+
+body .section1 h1 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 0;
+}
+
+body .section1 p {
+  font-family: Nunito Sans;
+  line-height: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+body .section1 .btn1 {
+  display: none;
+}
+
+body .section1 .btn2 button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #E77D2C;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+body .section1 .search {
+  background-color: #EDEDED;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+body .section1 .search .search2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+  height: 30px;
+  margin-left: 2vw;
+  border-radius: 20px;
+}
+
+body .section1 .search .search2 .form-select {
+  width: 50vw !important;
+  border: none !important;
+  font-size: 10px;
+  padding: 1vw !important;
+  border-radius: 0%;
+  font-family: Nunito Sans;
+  font-weight: 500;
+}
+
+body .section1 .search .search2 .form1 {
+  border-radius: 10px 0px 0px 10px;
+}
+
+body .section1 .search .search2 .btn3 {
+  background-color: #E77D2C;
+  border-radius: 0px 10px 10px 0px;
+  color: #FFFFFF;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
+  font-weight: 600;
+}
+
+#select {
+  border-radius: 10px 0px 0px 10px;
+}
+/*# sourceMappingURL=style.css.map */
