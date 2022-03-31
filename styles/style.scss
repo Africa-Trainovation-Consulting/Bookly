@@ -1,2 +1,17 @@
 @import url(/assets/_colors.scss);
 @import url(/assets/_variables.scss);
+
+* {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-size: 14px;
+    margin: 0px;
+    padding: 20px 40px;
+  }
