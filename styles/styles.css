@@ -172,6 +172,11 @@
   }
 }
 
+.drolist .min-glass {
+  color: #ffffff;
+  font-size: 20px;
+}
+
 .lid {
   border-bottom: 3px solid #e5e5e5;
   border-radius: 6px;
@@ -254,6 +259,12 @@
   font-weight: 400 !important;
 }
 
+@media screen and (max-width: 990px) {
+  .sec1 .bg .sec {
+    margin-bottom: 0 !important;
+  }
+}
+
 .sec1 .bg .last {
   position: relative;
 }
@@ -265,6 +276,18 @@
   top: 0;
   height: 8vh;
   width: 70%;
+  border: 2px solid #e77d2c;
+  background-color: #e77d2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2vw;
 }
 
 @media screen and (max-width: 589px) {

@@ -67,6 +67,11 @@
             }
             
         }
+        .sec{
+            @media screen and (max-width:990px) {
+                margin-bottom: 0!important;
+            }
+        }
         .last {
             position: relative;
             .btn {
@@ -76,7 +81,12 @@
                 top: 0;
                 height: 8vh;
                 width: 70%;
-               
+                border: 2px solid $btncolor;
+                background-color: $btncolor;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                margin-right: 2vw;
             }
         }
     }
