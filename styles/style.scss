@@ -1,17 +1,178 @@
-@import url(/assets/_colors.scss);
-@import url(/assets/_variables.scss);
+@import "../assets/colors";
+@import "../assets/variables";
 
 * {
-    border: none;
-    outline: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  border: none;
+  outline: none;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-size: 14px;
+  margin-bottom: 40px;
+  font-family: $myNunito;
+  header {
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: $myWhite;
+    box-shadow: 0px 5px 10px $myGrey;
+    .fa-bars {
+      font-size: 30px;
+    }
 
-  body {
-    font-size: 14px;
-    margin: 0px;
-    padding: 20px 40px;
+    .elements {
+      display: flex;
+      gap: 30px;
+      min-width: 600px;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        color: $myBlack;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      button {
+        background-color: $myOrange;
+        padding: 10px 30px;
+        border-radius: 10px;
+        color: white;
+      }
+    }
   }
+  .firstSection {
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    .bgtext {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      p {
+        color: $myOrange;
+        font-size: 15px;
+      }
+      button {
+        background-color: $myOrange;
+        padding: 10px 30px;
+        width: 200px;
+        border-radius: 10px;
+        color: white;
+      }
+
+      h1 {
+        font-size: 5.7rem;
+        font-weight: 900;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 300;
+      }
+    }
+    .libraryImage img {
+      padding: 20px 0px;
+      display: flex;
+      justify-content: center;
+      width: 60vw;
+      margin: auto;
+    }
+  }
+  .selectDropdown {
+    width: 200px;
+    padding: 0px 0px;
+    button {
+      background-color: $myBlack;
+      height: 20px;
+      width: 50px;
+      border-radius: 10px;
+      color: $myWhite;
+    }
+  }
+  .dropDown {
+    display: flex;
+    flex-direction: row;
+    background-color: #c4c4c44d;
+    height: 50px;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 10px;
+  }
+  @media screen and (max-width: 992px) {
+    header {
+      .elements {
+        display: block;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 200%;
+        right: 300vh;
+        background-color: white;
+        text-align: left;
+        justify-content: center;
+        &.show {
+          overflow: hidden;
+          top: 97px;
+          padding: 0px 40px;
+          display: flex;
+          align-items: normal;
+          right: -300px;
+        }
+      }
+    }
+    .firstSection {
+      .row {
+        .bgtext {
+          h1 {
+            font-size: 2.6rem;
+          }
+          button {
+            display: none;
+          }
+        }
+      }
+    }
+    button {
+      background-color: $myOrange;
+      padding: 10px 30px;
+      width: 100%;
+      border-radius: 10px;
+      color: white;
+    }
+    .logo {
+      width: 150px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    .fa-bars {
+      display: none;
+    }
+  }
+  .firstSection {
+    .row {
+      .bgtext {
+        h1 {
+          color: $myBlack;
+          line-height: 1;
+        }
+      }
+      .libraryImage img {
+        padding: 20px 0px;
+        width: 45vw;
+        margin: auto;
+      }
+    }
+  }
+}
