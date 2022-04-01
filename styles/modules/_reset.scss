@@ -1,3 +1,8 @@
+body::before{
+display: block;
+content: "";
+height: 80px;
+}
 .bar {
     font-size: 30px;
 }
@@ -137,5 +142,25 @@
         &:hover{
             color: $color;
         }
+    }
+}
+.bnt {
+    background-color: $btncolor;
+    border: 1px solid $btncolor;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 6px;
+    &:hover {
+        background-color: $hover;
+        color: $color !important;
+    }
+}
+.sow{
+    height: 8vh;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: $font2;
+    @media screen and (max-width:500px) {
+        width: 45%!important;
     }
 }

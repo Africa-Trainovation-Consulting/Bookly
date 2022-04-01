@@ -1,8 +1,10 @@
 @import "./modules/varibles";
 @import "./modules/reset";
+@import "./modules/classes";
 .lid {
     border-bottom: 3px solid $border;
-    border-radius: 6px;
+    box-shadow: $shadow;
+    background-color: $hover;
     .ul {
         padding-right: 3vw;
         width: 86%;
@@ -100,5 +102,140 @@
     @media screen and (max-width: 589px) {
         padding-left: 2% !important;
         padding-top: 2% !important;
+    }
+}
+.sec2 {
+    min-height: 100vh;
+    .slidess {
+        gap: 5vw;
+        @media screen and (max-width: 990px) {
+            gap: 11vw;
+        }
+    }
+    .bookk {
+        font-size: 16px;
+        font-family: $font2;
+        font-weight: 700;
+    }
+    .side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .bun {
+            width: 47%;
+        }
+    }
+    .mygov {
+        min-width: fit-content;
+        @media screen and (max-width: 1000px) {
+            justify-content: left !important;
+        }
+    }
+}
+.texting {
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 2% !important;
+    }
+}
+.sec3 {
+    position: relative;
+    .side-circle {
+        position: absolute;
+        top: -69%;
+        width: 9%;
+        @media screen and (max-width: 279px) {
+            display: none !important;
+        }
+        @media screen and (min-width: 280px) {
+            top: -4%;
+            left: -13px;
+            z-index: -1;
+        }
+        @media screen and (min-width: 980px) {
+            top: -42%;
+            left: -33px;
+            z-index: 1;
+            width: 8%;
+        }
+        @media screen and (min-width: 1100px) {
+            width: 72px;
+            top: -24%;
+            left: -20px;
+        }
+        @media screen and (min-width: 1500px) {
+            top: -34%;
+            left: 0;
+        }
+    }
+    h3 {
+        font: {
+            size: 24.7px;
+            weight: 400;
+        }
+        @media screen and(min-width:375px) {
+            font-size: 29.6px;
+        }
+        @media screen and(min-width:449px) {
+            font-size: 36.5px;
+        }
+        @media screen and(min-width:537px) {
+            font-size: 40px;
+        }
+        @media screen and(min-width:768px) {
+            font-size: 52px;
+        }
+        @media screen and(min-width:991px) {
+            width: 66%;
+        }
+        @media screen and(min-width:1210px) {
+            width: 55%;
+        }
+        .trust {
+            color: $btncolor;
+        }
+    }
+    .card{
+        padding: 7px;
+        box-shadow: $shadow;
+        &:nth-child(1){
+            margin-bottom: 5vh;
+        }
+        .card-body {
+            min-height: 48%;
+            .card-text {
+                text-align: left;
+                font-size: 18.7px;
+                line-height: 1.6;
+                font-weight: 400;
+                @media screen and (min-width: 768px) {
+                    font-size: 16px;
+                }
+                @media screen and (min-width: 1200px) {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+.sec4{
+    background-color: $btncolor;
+    color: $hover;
+
+    .Sponsors-logo {
+        background-color: $hover;
+        border-radius: 13px;
+        padding: 1em;
+        @media screen and (max-width:787px) {
+            padding: 3px;
+            margin-top: 5px!important;
+        }
+    }
+    .row{
+        padding: 1em;
+        @media screen and (max-width:787px) {
+            padding-top: 3px!important;
+        }
     }
 }

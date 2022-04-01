@@ -25,7 +25,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light-50 lid">
+        <nav class="navbar navbar-expand-lg lid fixed-top">
             <div class="container">
                 <a href="#"><img class="img-fluid w-75 w-md-100" src="/styles/img/booklylogo.svg" alt="booklylogo"></a>
 
@@ -50,14 +50,14 @@
                         </li>
                         <li class="nav-item">
                             <a href="#Login"
-                                class="nav-link text-white d-flex align-items-center justify-content-center w-160 btn">Login</a>
+                                class="nav-link text-white d-flex align-items-center justify-content-center w-160 bnt">Login</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="bg-light-50 text-left p-5 sec1">
+    <section class="bg-light-50 text-left p-5 sec1" id="Home">
         <div class="container">
             <div class="row align-items-center justify-content-center mt-4 first-text">
                 <div class="col-lg-6 first">
@@ -68,14 +68,15 @@
                         quia
                         consequuntur magni dolores eos qui ratione voluptatem
                         sequi nesciunt.</p>
-                    <button class="btn my-3">Get Started</button>
+                    <button class="btn my-5">Get Started</button>
                 </div>
                 <div class="col-lg-6 d-flex align-items-end justify-content-end img-container mb-5">
                     <img class="circle img-fluid w-25" src="/styles/img/circlyellow.svg" alt="circle">
                     <img class="img-fluid w-75" src="/styles/img/booklibrary.svg" alt="library of books">
                     <img src="/styles/img/black.svg" alt="black-circle" class="img-fluid circles">
                 </div>
-                <div class="col-sm-12 get d-flex align-items-center justify-content-center"><button class="but my-3">Get
+                <div class="col-sm-12 get d-flex align-items-center justify-content-center my-2"><button
+                        class="but my-3">Get
                         Started</button></div>
             </div>
             <div class="row">
@@ -137,7 +138,7 @@
                     <div class="drolist d-flex align-items-center justify-content-center">
                         <div class="mb-3 sec col-sm-2">
                             <select class="form-select dropdown" required>
-                                <option>...</option>
+                                <option>..State</option>
                                 <option>States</option>
                                 <option>Kano</option>
                                 <option>Ibadan</option>
@@ -148,7 +149,7 @@
                         </div>
                         <div class="mb-3 sec col-sm-2">
                             <select class="form-select drop" required>
-                                <option>...</option>
+                                <option>..Sch</option>
                                 <option>Schools</option>
                                 <option>Primary school</option>
                                 <option>Junior Secondary</option>
@@ -157,7 +158,7 @@
                         </div>
                         <div class="mb-3 sec col-sm-2">
                             <select class="form-select drop" required>
-                                <option>...</option>
+                                <option>...Class</option>
                                 <option>Classes</option>
                                 <option>Primary 1</option>
                                 <option>Primary 2</option>
@@ -176,7 +177,7 @@
 
                         <div class="mb-3 sec col-sm-2 last">
                             <select class="form-select drop" required>
-                                <option>.....</option>
+                                <option>..Session</option>
                                 <option>Sessions</option>
                                 <option>Kano</option>
                                 <option>Ibadan</option>
@@ -190,6 +191,454 @@
                     </div>
                 </div>
             </div>
+    </section>
+    <section class="bg-dark sec2" id="Cart">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-light texting my-3 mb-5">Top Features</h1>
+                <div class="col-md-12 mb-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side">
+                                        <img src="/styles/img/Redmathtextbook.svg" class="d-block w-5"
+                                            alt="Redmathtextbook">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 1</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none  d-sm-block">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="Englishprimary">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Nigeria Pry
+                                            English</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none  d-sm-block">
+                                        <img src="/styles/img/Physicsbook.svg" class="d-block w-5 w-sm-100"
+                                            alt="physics">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Exam Focus
+                                            Physics</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bun bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none  d-md-block mygov">
+                                        <img src="/styles/img/government.svg" class="d-block w-5 img-fluid"
+                                            alt="government">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                            Government</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side d-none  d-sm-block">
+                                        <img src="/styles/img/History.svg" class="d-block w-5" alt="History">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Rasmed Basic
+                                            History</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none  d-sm-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                            alt="Mathstextbook">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/government.svg" class="d-block w-100" alt="government">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                            Government</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="english">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">English
+                                            Primary</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side">
+                                        <img src="/styles/img/Physicsbook.svg" class="d-block w-5" alt="physics">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Rasmed Basic
+                                            History</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt bun p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                            alt="Mathstextbook">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/government.svg" class="d-block w-100" alt="government">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                            Government</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="english">
+                                        <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">English
+                                            Primary</p>
+                                        <p class="text-light d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h1 class="text-light texting my-3 mb-5">New Arrivals</h1>
+                    <div class="col-md-12">
+                        <div id="carouselExampleControl2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex slidess justify-content-center">
+                                        <div class="side">
+                                            <img src="/styles/img/Redmathtextbook.svg" class="d-block w-5"
+                                                alt="Redmathtextbook">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">New
+                                                General
+                                                Maths 1</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex w-100 justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none  d-sm-block">
+                                            <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                                alt="Englishprimary">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Nigeria
+                                                Pry
+                                                English</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none  d-sm-block">
+                                            <img src="/styles/img/Physicsbook.svg" class="d-block w-5 w-sm-100"
+                                                alt="physics">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Exam
+                                                Focus Physics</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="text-light bun bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none  d-md-block mygov">
+                                            <img src="/styles/img/government.svg" class="d-block w-5 img-fluid"
+                                                alt="government">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                                Government</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex slidess justify-content-center">
+                                        <div class="side d-none  d-sm-block">
+                                            <img src="/styles/img/History.svg" class="d-block w-5" alt="History">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Rasmed
+                                                Basic History</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none  d-sm-block">
+                                            <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                                alt="Mathstextbook">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">New
+                                                General Maths 2</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none d-xl-block">
+                                            <img src="/styles/img/government.svg" class="d-block w-100"
+                                                alt="government">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                                Government</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side">
+                                            <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                                alt="english">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">English
+                                                Primary</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex w-100 justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex slidess justify-content-center">
+                                        <div class="side">
+                                            <img src="/styles/img/Physicsbook.svg" class="d-block w-5" alt="physics">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">Rasmed
+                                                Basic History</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="w-100 d-flex justify-content-center align-items-center">
+                                                <button class="text-light bnt bun p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none d-md-block">
+                                            <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                                alt="Mathstextbook">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">New
+                                                General Maths 2</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex w-100 justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none d-xl-block">
+                                            <img src="/styles/img/government.svg" class="d-block w-100"
+                                                alt="government">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                                Government</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex w-100 justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                        <div class="side d-none d-md-block">
+                                            <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                                alt="english">
+                                            <p class="text-light d-flex justify-content-center mt-4 mb-0 bookk">English
+                                                Primary</p>
+                                            <p class="text-light d-flex justify-content-center align-items-center">
+                                                &#8358
+                                                3000</p>
+                                            <div class="d-flex w-100 justify-content-center align-items-center">
+                                                <button class="text-light bnt p-2">ADD
+                                                    TO CART</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControl2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControl2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControl2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControl2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-4 w-100">
+                    <button class="bnt text-light mb-5 w-25 sow">Show more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="container">
+            <div class="mt-5 mb-3" style="margin-top: 12vh!important;">
+                <h3 class="mid-p">Don’t take our word for it.
+                    <span class="trust">Trust our Customers</span>
+                </h3>
+            </div>
+            <div class="row text-center m-c mt-5">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim
+                                veniam,
+                            </p>
+                            <p class="h6 tent" style="font-weight: 700;"><i>Mr Ogunjobi - Lagos Nigeria</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim
+                                veniam,
+                            </p>
+                            <p class="h6 tent" style="font-weight: 700;"><i>Mr Ogunjobi - Lagos Nigeria</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim
+                                veniam,
+                            </p>
+                            <p class="h6 tent" style="font-weight: 700;"><i>Mr Ogunjobi - Lagos Nigeria</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/styles/img/side circle.svg" alt="side-yellow circle" class="img-fluid side-circle">
+    </section>
+    <section class="sec4">
+        <div class="container">
+            <div class="row pt-3">
+                <h1 class="p-0">Partners</h1>
+                <div class="Sponsors-logo d-flex align-items-center justify-content-between mb-5 my-4 ">
+                    <div class="img"><img src="/styles/img/jumi.svg" alt="Jumiaimg" class="img-fluid"></div>
+                    <div class="img"><img src="/styles/img/jiji.ng.svg" alt="Jijiiimg" class="img-fluid"></div>
+                    <div class="img"><img src="/styles/img/amazonimg.svg" alt="amazonimg" class="img-fluid"></div>
+                    <div class="img"><img src="/styles/img/shop-sponsor.svg" alt="shop-sponsorimg" class="img-fluid"></div>
+                    <div class="img"><img src="/styles/img/shopritelogo.svg" alt="shopriteimg" class="img-fluid"></div>
+                    <div class="img"><img src="/styles/img/justrite.svg" alt="justriteimg" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="/styles/js/bootstrap.bundle.min.js"></script>
     <script src="/styles/js/main.js"></script>
