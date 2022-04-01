@@ -418,8 +418,28 @@ body {
       font-weight: 700;
       padding-top: $small * 1.5;
       padding-bottom: $small *0.5;
-      padding-left: $align;
+      padding-left: 5vw;
       padding-right:$align;
+      @media  (min-width:992px) {
+        font-size: 35px;
+        padding-top: $small * 4;
+        padding-bottom: $small * 2;
+      }
+    }
+    h6{
+      color: $colourwhite;
+      font-family: $familyN;
+      font-weight: 700;
+      padding-top: $small * 6;
+      padding-bottom: $small *0.5;
+      padding-left: $align;
+      padding-right:$align; 
+      font-size: 20px;
+      @media  (min-width:992px) {
+        font-size: 35px;
+        // padding-top: $small * 8;
+        padding-bottom: $small * 2;
+      }
     }
     .destopcaroul {
       
@@ -435,6 +455,25 @@ body {
             padding-left: 5vw;
             padding-right: 5vw;
           }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            // margin-bottom: 0px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
+          }
         }
         .secondLine{
           display: flex;
@@ -442,6 +481,25 @@ body {
             width: 100%;
             padding-left: 5vw;
             padding-right: 5vw;
+          }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
           }
         }
       }
@@ -455,6 +513,25 @@ body {
             padding-left: 5vw;
             padding-right: 5vw;
           }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
+          }
         }
         .fourthLine{
           display: flex;
@@ -462,6 +539,25 @@ body {
             width: 100%;
             padding-left: 5vw;
             padding-right: 5vw;
+          }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
           }
         }
       }
@@ -475,6 +571,25 @@ body {
             padding-left: 5vw;
             padding-right: 5vw;
           }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
+          }
         }
         .sixLine{
           display: flex;
@@ -482,6 +597,25 @@ body {
             width: 100%;
             padding-left: 5vw;
             padding-right: 5vw;
+          }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
           }
         }
       }
@@ -495,6 +629,25 @@ body {
             padding-left: 5vw;
             padding-right: 5vw;
           }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
+          }
         }
         .eightLine{
           display: flex;
@@ -502,6 +655,25 @@ body {
             width: 100%;
             padding-left: 5vw;
             padding-right:5vw;
+          }
+          p{
+            color: $colourwhite;
+            text-align: center;
+            font-family: $familyN;
+            font-size: 18px;
+            line-height: 25px;
+            padding-top: 25px;
+          }
+          button{
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 20px 10px 20px;
+            background-color: $firstcolor;
+            color: $colourwhite;
+            font-size: $familyN;
+            font-weight: 600;
+            font-size: 16px;
           }
         }
       }
