@@ -441,6 +441,35 @@ body {
         padding-bottom: $small * 2;
       }
     }
+    span{
+      padding-bottom: 50px;
+      .showd{
+         display: block;
+         margin: auto;
+         text-align: center;
+         padding-bottom: 50px;
+        // padding-left: px;
+        
+         button{
+         width: 250px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         background-color: $firstcolor;
+         font-family: $familyN;
+         font-size: 22px;
+         color: $colourwhite;
+         &:hover{
+           background-color: $colourwhite;
+           color: $colourblack;
+         }
+        // //   margin-top: 20px;
+        //      margin-bottom: 30px;
+        // //       padding-right: 40px;
+        // //   justify-content: center;
+        //   padding-bottom: 20px;
+           }
+      }
+    }
     .destopcaroul {
       
       .content {
@@ -473,6 +502,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+            &:hover{
+              background-color: $colourwhite;
+              color: $colourblack;
+            }
           }
         }
         .secondLine{
@@ -500,6 +533,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+             &:hover{
+           background-color: $colourwhite;
+           color: $colourblack;
+         }
           }
         }
       }
@@ -531,6 +568,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+            &:hover{
+              background-color: $colourwhite;
+              color: $colourblack;
+            }
           }
         }
         .fourthLine{
@@ -558,6 +599,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+            &:hover{
+              background-color: $colourwhite;
+              color: $colourblack;
+            }
           }
         }
       }
@@ -589,6 +634,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+            &:hover{
+              background-color: $colourwhite;
+              color: $colourblack;
+            }
           }
         }
         .sixLine{
@@ -616,6 +665,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+             &:hover{
+           background-color: $colourwhite;
+           color: $colourblack;
+         }
           }
         }
       }
@@ -647,6 +700,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+            &:hover{
+              background-color: $colourwhite;
+              color: $colourblack;
+            }
           }
         }
         .eightLine{
@@ -674,6 +731,10 @@ body {
             font-size: $familyN;
             font-weight: 600;
             font-size: 16px;
+            &:hover{
+              background-color: $colourwhite;
+              color: $colourblack;
+            }
           }
         }
       }

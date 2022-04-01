@@ -416,6 +416,32 @@ body .section2 h6 {
   }
 }
 
+body .section2 span {
+  padding-bottom: 50px;
+}
+
+body .section2 span .showd {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+body .section2 span .showd button {
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #E77D2C;
+  font-family: Nunito Sans;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+body .section2 span .showd button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
 body .section2 .destopcaroul .content {
   padding-left: 4vw;
   padding-right: 4vw;
@@ -455,6 +481,11 @@ body .section2 .destopcaroul .content .firstLine button {
   font-size: 16px;
 }
 
+body .section2 .destopcaroul .content .firstLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
 body .section2 .destopcaroul .content .secondLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,6 +519,11 @@ body .section2 .destopcaroul .content .secondLine button {
   font-size: Nunito Sans;
   font-weight: 600;
   font-size: 16px;
+}
+
+body .section2 .destopcaroul .content .secondLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
 }
 
 body .section2 .destopcaroul .content2 {
@@ -530,6 +566,11 @@ body .section2 .destopcaroul .content2 .thirdLine button {
   font-size: 16px;
 }
 
+body .section2 .destopcaroul .content2 .thirdLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
 body .section2 .destopcaroul .content2 .fourthLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +604,11 @@ body .section2 .destopcaroul .content2 .fourthLine button {
   font-size: Nunito Sans;
   font-weight: 600;
   font-size: 16px;
+}
+
+body .section2 .destopcaroul .content2 .fourthLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
 }
 
 body .section2 .destopcaroul .content3 {
@@ -605,6 +651,11 @@ body .section2 .destopcaroul .content3 .fifthLine button {
   font-size: 16px;
 }
 
+body .section2 .destopcaroul .content3 .fifthLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
 body .section2 .destopcaroul .content3 .sixLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,6 +689,11 @@ body .section2 .destopcaroul .content3 .sixLine button {
   font-size: Nunito Sans;
   font-weight: 600;
   font-size: 16px;
+}
+
+body .section2 .destopcaroul .content3 .sixLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
 }
 
 body .section2 .destopcaroul .content4 {
@@ -680,6 +736,11 @@ body .section2 .destopcaroul .content4 .sevenLine button {
   font-size: 16px;
 }
 
+body .section2 .destopcaroul .content4 .sevenLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
 body .section2 .destopcaroul .content4 .eightLine {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,6 +774,11 @@ body .section2 .destopcaroul .content4 .eightLine button {
   font-size: Nunito Sans;
   font-weight: 600;
   font-size: 16px;
+}
+
+body .section2 .destopcaroul .content4 .eightLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
 }
 
 body .section2 .none {
