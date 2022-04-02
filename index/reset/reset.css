@@ -1,0 +1,91 @@
+.bar {
+  font-size: 30px;
+}
+
+.body {
+  width: 100%;
+  height: 68px;
+}
+
+.lid {
+  border-bottom: 3px solid #e5e5e5;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+
+.lid .ul {
+  padding-right: 3vw;
+  width: 86%;
+}
+
+.lid .ul .nav-item {
+  padding-left: 20px;
+}
+
+.lid .ul .nav-item .nav-link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.lid .ul .nav-item .nav-link:hover {
+  color: #e77d2c;
+}
+
+.lid .ul .nav-item:last-child .nav-link {
+  background-color: #e77d2c;
+  width: 170%;
+  border-radius: 12px;
+}
+
+.lid .ul .nav-item:last-child .nav-link:hover {
+  background-color: #ffffff;
+  border: 1px solid #e77d2c;
+  color: #000000 !important;
+}
+
+@media screen and (max-width: 990px) {
+  .lid .ul .nav-item:last-child .nav-link {
+    width: 127px;
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .lid .ul {
+    margin-left: 0 !important;
+  }
+}
+
+.form-control .row .col-6 .icon .nav-link {
+  color: #000000;
+  padding: 0 !important;
+}
+
+.form-control .row .col-6 .icon span {
+  border: 3px solid #000000;
+  width: 42px;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.form-control .row .col-6 .icon span i {
+  font-size: 25px;
+}
+
+.form-control .row .col-6 .text .paddlock {
+  width: 8%;
+}
+
+.form-control .row .col-6 .text .paddlock img {
+  width: 50%;
+}
+
+.form-control .row .col-6 .text h1 {
+  font-size: 40px;
+  font-weight: 800 !important;
+  font-family: "Nunito Sans", sans-serif;
+}
+/*# sourceMappingURL=reset.css.map */

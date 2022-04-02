@@ -14,16 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,600&family=Poppins:wght@300;400&family=Roboto:wght@500&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,600&family=Poppins:wght@300;400&family=Roboto:wght@500&family=Sunflower:wght@300;500&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
@@ -35,7 +25,7 @@
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fas fa-bars bar m-0"></span>
+                    <span class="fas fa-bars bar m-0" onclick="changeicon(this)"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto ul d-flex justify-content-between">
@@ -61,6 +51,7 @@
             </div>
         </nav>
     </header>
+    <div class=".body" style="width: 100%; height: 69px;"></div>
     <section class="bg-light-50 text-left p-5 sec1" id="Home">
         <div class="container">
             <div class="row align-items-center justify-content-center mt-4 first-text">
@@ -96,6 +87,7 @@
                                 <option>Jos</option>
                                 <option>Abuja</option>
                             </select>
+                            <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
                         <div class="mb-3 in col-sm-2">
                             <select class="form-select drop" required>
@@ -104,6 +96,7 @@
                                 <option>Junior Secondary</option>
                                 <option>Senior Secondary School</option>
                             </select>
+                            <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
                         <div class="mb-3 in col-sm-2">
                             <select class="form-select drop" required>
@@ -121,6 +114,7 @@
                                 <option>S.S.S.2</option>
                                 <option>S.S.S.3</option>
                             </select>
+                            <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
 
                         <div class="mb-3 col-sm-3 in last">
@@ -132,6 +126,7 @@
                                 <option>Jos</option>
                                 <option>Abuja</option>
                             </select>
+                            <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
                             <button type="submit" class="btn btn-dark">Search</button>
                         </div>
                     </div>
@@ -150,6 +145,7 @@
                                 <option>Jos</option>
                                 <option>Abuja</option>
                             </select>
+                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
                         <div class="mb-3 sec col-sm-2">
                             <select class="form-select drop" required>
@@ -159,6 +155,7 @@
                                 <option>Junior Secondary</option>
                                 <option>Senior Secondary School</option>
                             </select>
+                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
                         <div class="mb-3 sec col-sm-2">
                             <select class="form-select drop" required>
@@ -177,6 +174,7 @@
                                 <option>S.S.S.2</option>
                                 <option>S.S.S.3</option>
                             </select>
+                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
 
                         <div class="mb-3 sec col-sm-2 last">
@@ -189,6 +187,7 @@
                                 <option>Jos</option>
                                 <option>Abuja</option>
                             </select>
+                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
                             <button type="submit" class="btn sec "><i
                                     class="fa-solid fa-magnifying-glass min-glass"></i></button>
                         </div>
