@@ -26,3 +26,8 @@
         margin-top: 3vh!important;
     }
 }
+.wid{
+    @media screen and (min-width:1200px) {
+        width: 60%;
+    }
+}

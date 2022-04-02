@@ -1,7 +1,7 @@
-body::before{
-display: block;
-content: "";
-height: 80px;
+body::before {
+    display: block;
+    content: "";
+    height: 80px;
 }
 .bar {
     font-size: 30px;
@@ -82,7 +82,7 @@ height: 80px;
 .text1 {
     font: {
         size: 42px;
-        font-family: $font2!important;
+        font-family: $font2 !important;
     }
     @media screen and (min-width: 465px) {
         font-size: 4rem;
@@ -139,7 +139,7 @@ height: 80px;
     .min-glass {
         color: $hover;
         font-size: 20px;
-        &:hover{
+        &:hover {
             color: $color;
         }
     }
@@ -155,12 +155,34 @@ height: 80px;
         color: $color !important;
     }
 }
-.sow{
+.sow {
     height: 8vh;
     font-size: 17px;
     font-weight: 700;
     font-family: $font2;
-    @media screen and (max-width:500px) {
-        width: 45%!important;
+    @media screen and (max-width: 500px) {
+        width: 45% !important;
     }
+}
+.footer {
+    p {
+        font-family: $footerfont;
+        font-weight: 300;
+    }
+}
+.line {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width:787px) {
+        font-size: 26px;
+    }
+}
+.input-group {
+    border: 1px solid $btncolor;
+    background-color: $btncolor;
+}
+.good {
+    border-radius: 15px;
 }
