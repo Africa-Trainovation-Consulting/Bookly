@@ -248,6 +248,16 @@ body::before {
   border-radius: 15px;
 }
 
+.second-row .hin h6 {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 767px) {
+  .second-row .hin h6 {
+    font-size: 15px;
+  }
+}
+
 .tent {
   text-align: left;
 }
