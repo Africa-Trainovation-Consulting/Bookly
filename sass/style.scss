@@ -778,15 +778,18 @@ body {
         font-family: $familyN;
         font-weight: 600;
         padding-left: $align *1.5;
+
         @media screen and (min-width:600px) {
           margin-left: -4vw;
-          
+
         }
+
         @media screen and (min-width:800px) {
           font-size: 30px;
           padding-top: $align;
           padding-left: 5vw;
         }
+
         @media screen and (min-width:1060px) {
           margin-left: -6vw;
           font-size: 45px;
@@ -804,16 +807,19 @@ body {
 
         padding-bottom: 20px;
         padding-left: $align *1.5;
+
         @media screen and (min-width:600px) {
           margin-left: -4vw;
-          
+
         }
+
         @media screen and (min-width:800px) {
           font-size: 30px;
           padding-left: 5vw;
-         
-          
+
+
         }
+
         @media screen and (min-width:1060px) {
           margin-left: -6vw;
           font-size: 45px;
@@ -908,41 +914,287 @@ body {
     }
 
   }
-  .section3{
+
+  .section3 {
     padding-left: $align *1.5;
     padding-right: $align *1.5;
     background-color: $section3colour;
     padding-bottom: 30px;
-    h3{
+
+    h3 {
       font-family: $familyN;
       color: $colourwhite;
       padding-top: 10px;
+
       @media screen and (min-width:992px) {
         font-size: 40px;
       }
     }
-    div{
+
+    div {
       background-color: $colourwhite;
       @include flex;
       justify-content: space-between;
       height: 12vh;
       border-radius: 15px;
-      img{
+
+      img {
         width: 20%;
         padding-top: 7px;
         padding-bottom: 7px;
+
         @media screen and (min-width:992px) {
           padding-top: 15px;
           padding-bottom: 15px;
         }
       }
-      img:last-child{
-        display: none; 
+
+      img:last-child {
+        display: none;
+
         @media screen and (min-width:992px) {
           display: flex;
         }
       }
-     }
+    }
+  }
+
+  footer {
+    background-color: $section2colour;
+    color: $colourwhite;
+    padding-left: $align *1.5;
+    padding-right: $align * 2;
+    font-family: $familyN;
+
+    a {
+      text-decoration: none;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      display: block;
+      color: $colourwhite;
+      padding-top: 20px;
+
+      p {
+        font-size: 12px;
+      }
+
+      @media screen and (min-width:766px) {
+        padding-top: 40px;
+
+        i {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+
+    }
+
+    .foot {
+      @media screen and (min-width:1037px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .divD {
+        @include flex;
+        justify-content: space-between;
+
+        span {
+          font-size: 20px;
+          font-weight: 700;
+
+        }
+
+        span+p {
+
+          padding-top: 10px;
+
+        }
+
+        p {
+          font-size: 15px;
+
+          @media screen and (min-width:600px) {
+            font-size: 18px;
+            width: 200px;
+          }
+        }
+
+        @media screen and (min-width:766px) {
+          padding-top: 40px;
+        }
+
+        div:first-child {
+          width: 170px;
+
+        }
+
+        div:nth-child(2) {
+          p {
+            line-height: 0.6;
+            color: $foot;
+
+          }
+
+          h5 {
+            font-weight: 700;
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+
+          @media screen and (min-width:766px) {
+            padding-top: 10px;
+            padding-left: 10vw;
+          }
+
+          @media screen and (min-width:1250px) {
+            padding-left: 17vw;
+          }
+        }
+      }
+
+      .div2 {
+        @include flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        font-family: $familyN;
+
+        @media screen and (min-width:766px) {
+          // padding-left: 5vw;
+          margin-top: -27px;
+
+        }
+
+        div:first-child {
+          h5 {
+            color: $colourwhite;
+            font-weight: 700;
+            font-size: 20px;
+            padding-bottom: 10px;
+
+          }
+
+          color: $foot;
+
+          p {
+            font-size: 15px;
+
+            @media screen and (min-width:600px) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        div:last-child {
+          h5 {
+            color: $colourwhite;
+            font-weight: 700;
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+
+          span {
+            input {
+              width: 90px;
+              padding: 5px;
+              font-size: 10px;
+              border-radius: 10px 0px 0px 10px;
+              background-color: $section3colour;
+              color: $colourwhite;
+              padding-left: 3px;
+              position: relative;
+
+              @media screen and (min-width:600px) {
+                width: 200px;
+                height: 40px;
+                font-size: 15px;
+                // padding-right: $align *5;
+                margin-right: $align;
+              }
+              // @media screen and (min-width:1037px) {
+              //   margin-right: $align *2;
+              // }
+              
+
+              
+            }
+
+            button {
+              background-color: $colourwhite;
+              padding: 0px 3px 4px 2px;
+              margin-left: -6px;
+
+              width: 40px;
+              border-radius: 10px;
+              position: absolute;
+
+              @media screen and (min-width:600px) {
+                right: $align *1.5;
+                width: 70px;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                text-align: center;
+              }
+              @media screen and (min-width:1037px) {
+                right: 1.5vw;
+              }
+              @media screen and (min-width:1095px) {
+                right: 3vw;
+              }
+              @media screen and (min-width:1114px) {
+                right: $align * 1.5;
+              }
+              @media screen and (min-width:1116px) {
+                right: 20px;
+              }
+              @media screen and (min-width:1128px) {
+                right: $align *2 ;
+              }
+              @media screen and (min-width:1136px) {
+                right: 2vw ;
+              }
+              
+              @media screen and (min-width:1259px) {
+                right: 1vw;
+              }
+              
+              @media screen and (min-width:1280px) {
+                right: $align;
+              }
+              @media screen and (min-width:1400px) {
+                right: 3.5vw;
+              }
+            }
+          }
+
+          @media screen and (min-width:766px) {
+            padding-left: 10vw;
+          }
+
+          @media screen and (min-width:1250px) {
+            padding-left: 17vw;
+           
+          }
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      padding-bottom: 20px;
+      color: $foot;
+      font-size: 15px;
+      padding-top: 40px;
+
+      @media screen and (min-width:766px) {
+        @include flex;
+        justify-content: space-between;
+      }
+    }
   }
 
 }
