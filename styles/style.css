@@ -143,6 +143,11 @@ body .firstSection .libraryImage img {
   margin: auto;
 }
 
+body .secondSection {
+  background-color: #212121;
+  min-height: 500px;
+}
+
 body .thirdSection .row .trust h2 {
   font-size: 45px;
   color: #000000;
@@ -523,6 +528,11 @@ body .dropDown .searchbutton {
           flex-direction: column;
   min-height: 500px;
   font-size: 20px;
+}
+
+.signUp .signupimg a {
+  text-decoration: none;
+  color: black;
 }
 
 .signUp .formtext {

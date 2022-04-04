@@ -96,6 +96,10 @@ body {
       margin: auto;
     }
   }
+  .secondSection{
+    background-color: #212121;
+    min-height: 500px;
+}
   .thirdSection {
     .row {
       .trust {
@@ -255,6 +259,7 @@ body {
         }
       }
     }
+    
     .thirdSection {
       .row {
         .trust {
@@ -418,9 +423,14 @@ body {
   padding: 40px 40px;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   min-height: 500px;
   font-size: 20px;
+  .signupimg{
+      a{
+          text-decoration: none;
+          color: black;
+      }
+  }
   .formtext {
     justify-content: center;
     display: flex;
