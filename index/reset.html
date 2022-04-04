@@ -52,32 +52,58 @@
             </div>
         </nav>
     </header>
-    <section class="form-control bg-light-50">
+    <section class="form-control reset-sec bg-light-50">
         <div class="container">
             <div class="row">
                 <div class="col-6 mt-4 p-0">
                     <div class="d-flex align-items-center icon">
-                        <a href="/index.html" class="nav-link"><span class="d-flex align-items-center justify-content-center"><i class="fas fa-arrow-left"></i></span></a>
+                        <a href="/index.html" class="nav-link" style="margin-top: 3px;"><span
+                                class="d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-arrow-left"></i></span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-6 mt-4">
                     <div class="d-flex justify-content-end align-items-center icon">
-                        <span class="d-flex align-items-center justify-content-center bg-light-50"><i class="fas fa-times"></i></span>
+                        <a href="#" class="nav-link">
+                            <span class="d-flex align-items-center justify-content-center bg-light-50"><i
+                                    class="fas fa-times"></i></span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-6 p-0">
-                    <div class="textreset">
-                        <div class="text d-flex align-items-center">
-                            <div class="d-flex justify-content-center paddlock"><img src="/index/reset/img/reload-lock.svg" alt="reload-lock" class="img-fluid"></div>
-                            <h1 class="mb-0">RESET PASSWORD</h1>
+            <div class="row secondrow mt-md-5">
+                <div class="col-md-6 p-0">
+                    <div class="textreset mb-5">
+                        <div class="text d-flex align-items-center mt-5 mb-2">
+                            <div class="d-flex justify-content-center paddlock"><img
+                                    src="/index/reset/img/reload-lock.svg" alt="reload-lock" class="img-fluid"></div>
+                            <h1 class="mb-0 d-flex">RESET PASSWORD</h1>
                         </div>
-                        <p></p>
+                        <p class="leads">We have just sent a verification code to your email. Please
+                            enter the email below.</p>
                     </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Enter New Password</label>
+                            <div class="inpot">
+                                <input type="password" class="form-control in" id="password">
+                                <span><i class="fas fa-eye-slash eyes" id="togglepassword"></i></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm New Password</label>
+                            <div class="inpot">
+                                <input type="password" class="form-control in" id="password">
+                                <span><i class="fas fa-eye-slash eyes" id="togglepassword"></i></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="but my-3">Save</button>
+                    </form>
+                    <p class="text-center return">Return to <a href="#">Login</a></p>
                 </div>
-                <div class="col-6 p-0">
-                   
+                <div class="col-md-6 d-flex booklibary align-items-center-md justify-content-end mb-5">
+                    <img src="/index/reset/img/booklibary2.svg" alt="booklibary2" class="img-fluid w-75 w-md-100">
                 </div>
             </div>
         </div>
