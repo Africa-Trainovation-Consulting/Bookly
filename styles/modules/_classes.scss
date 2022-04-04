@@ -31,3 +31,8 @@
         width: 60%;
     }
 }
+.get{
+    &:focus{
+        box-shadow: none!important;
+    }
+}

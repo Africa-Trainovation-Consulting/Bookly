@@ -43,7 +43,7 @@
 }
 .reset-sec {
     border: none;
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
     .row {
         .col-6 {
             .icon {
@@ -71,6 +71,10 @@
                     width: 8%;
                     img {
                         width: 50%;
+                        @media screen and (max-width:787px) {
+                            width: 100%;
+                            margin-right: 3vw;
+                        }
                     }
                 }
                 h1 {
@@ -108,11 +112,18 @@
                 font-size: 20px;
                 font-family: $firstfamily;
             }
+            .form-control{
+                &:focus{
+                    box-shadow: none !important;
+                }
+            }
             .in {
                 width: 83%;
                 height: 6.8vh;
                 border: 1px solid;
                 border-radius: 10px;
+                font-family: $font2;
+                letter-spacing: 0.2ch;
                 @media screen and (max-width: 787px) {
                     width: 95%;
                 }

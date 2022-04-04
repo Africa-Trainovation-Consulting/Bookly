@@ -9,9 +9,9 @@
 .inpot span {
   position: absolute;
   top: 0;
-  right: 20%;
-  -webkit-transform: translateY(11px);
-          transform: translateY(11px);
+  right: 22%;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 
 @media screen and (max-width: 787px) {
@@ -86,7 +86,7 @@
 
 .reset-sec {
   border: none;
-  padding-bottom: 15vh;
+  padding-bottom: 10vh;
 }
 
 .reset-sec .row .col-6 .icon .nav-link {
@@ -115,6 +115,13 @@
 
 .reset-sec .secondrow .textreset .text .paddlock img {
   width: 50%;
+}
+
+@media screen and (max-width: 787px) {
+  .reset-sec .secondrow .textreset .text .paddlock img {
+    width: 100%;
+    margin-right: 3vw;
+  }
 }
 
 .reset-sec .secondrow .textreset .text h1 {
@@ -175,11 +182,18 @@
   font-family: "Roboto", sans-serif;
 }
 
+.reset-sec .secondrow form .form-control:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .reset-sec .secondrow form .in {
   width: 83%;
   height: 6.8vh;
   border: 1px solid;
   border-radius: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.2ch;
 }
 
 @media screen and (max-width: 787px) {

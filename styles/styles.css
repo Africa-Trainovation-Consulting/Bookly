@@ -154,7 +154,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  right: 15px;
+  right: 14px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -361,6 +361,11 @@
   .wid {
     width: 60%;
   }
+}
+
+.get:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .lid {
