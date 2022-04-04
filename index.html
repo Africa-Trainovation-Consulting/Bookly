@@ -35,7 +35,7 @@
             <a href="#">Categories</a>
             <a href="#">Request a book</a>
             <a href="#">Cart <span> <img src="/images/cart.svg" alt=""></span></a>
-            <a href="#"> <button>Login</button></a>
+            <a href="/login.html"> <button class="loginbtn">Login</button></a>
         </div>
         <div class="fa fa-bars" id="hamBurger"></div>
     </header>
@@ -47,54 +47,209 @@
                 <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                     magni dolores eos qui ratione voluptatem
                     sequi nesciunt.</span> <br> <br>
-                <button>Get Started</button>
+                <a href="/signup.html"><button>Get Started</button></a>
             </div>
             <div class="col-lg-6 libraryImage">
                 <img src="/images/bgLib.svg" alt="Library">
             </div>
         </div>
-        <div class="col-lg-12">
-            <button>Get Started</button>
+        <div class="col-lg-12 secondbutton">
+            <a href="/signup.html"><button>Get Started</button></a>
         </div>
 
         <br><br><br><br>
         <div class="row dropDown">
-            <div class="selectDropdown">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>State</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="selectDropdown">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>School</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="selectDropdown">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Class</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="selectDropdown">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Session</option>
-                    <option value="1">1st Term</option>
-                    <option value="2">2nd Term</option>
-                    <option value="3">3rd Term</option>
-                </select>
+            <span>Search a book</span>
+            <div class="container">
+                <div class="selectDropdown">
+                    <select class="form-select" aria-label="Default select example">
+                        <option disabled selected>Select State</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross Rive">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="FCT">Federal Capital Territory</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+                    </select>
+                </div>
+                <div class="selectDropdown">
+                    <select class="form-select" aria-label="Default select example">
+                        <option disabled selected>School</option>
+                        <option value="Primary">Primary School</option>
+                        <option value="Junior">Junior Secondary School</option>
+                        <option value="Senior">Senior Secondary School</option>
+                    </select>
+                </div>
+                <div class="selectDropdown">
+                    <select class="form-select" aria-label="Default select example">
+                        <option disabled selected>Class</option>
+                        <option value="1">Primary 1</option>
+                        <option value="2">Primary 2</option>
+                        <option value="3">Primary 3</option>
+                        <option value="4">Primary 4</option>
+                        <option value="5">Primary 5</option>
+                        <option value="6">Primary 6</option>
+                        <option value="6">J.S.S.1</option>
+                        <option value="6">J.S.S.2</option>
+                        <option value="6">J.S.S.3</option>
+                        <option value="6">S.S.S.1</option>
+                        <option value="6">S.S.S.2</option>
+                        <option value="6">S.S.S.3</option>
+                    </select>
+                </div>
+                <div class="selectDropdown">
+                    <select class="form-select" aria-label="Default select example">
+                        <option disabled selected>Session</option>
+                        <option value="1">1st Term</option>
+                        <option value="2">2nd Term</option>
+                        <option value="3">3rd Term</option>
+                    </select>
+                </div>
+                <div>
+
+                    <button class="searchbutton fa-solid fa-magnifying-glass"></button>
+                </div>
             </div>
         </div>
 
 
     </section>
+    <section class="thirdSection">
+        <div class="row">
+            <div class="trust">
+                <h2>Don’t take our word for it.
+                </h2>
+                <span>Trust our Customers</span>
+            </div>
+            <div class="comments col-lg-4">
+                <div class="shadowbox">
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim
+                        veniam,
+                    </p>
+                    <b>Mr Ogunjobi - Lagos Nigeria</b>
+                </div>
+
+            </div>
+            <div class="comments_ col-lg-4">
+                <div class="shadowbox">
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim
+                        veniam, </p>
+                    <b>Mr Ogunjobi - Lagos Nigeria</b>
+                </div>
+            </div>
+            <div class="comments_ col-lg-4">
+                <div class="shadowbox">
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim
+                        veniam, </p>
+                    <b>Mr Ogunjobi - Lagos Nigeria</b>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="fourthSection">
+        <div>
+            <h3>Partners</h3>
+            <div class="section4bg">
+                <div>
+                    <img src="/images/jumia logo.svg" alt="">
+                    <img src="/images/jiji.svg" alt="">
+                    <img src="/images/amazon.svg" alt="">
+                    <img src="/images/justrite.svg" alt="">
+                    <img src="/images/shopify.svg" alt="">
+                    <img src="/images/shoprite.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="arrowtop">
+            <a href=""><img src="/images/arrowup.svg" alt=""></a>
+            <p>BACK TO TOP</p>
+        </div>
+        <div class="footerdetails">
+            <div class="logoncatalogue">
+                <div>
+                    <h3><img src="/images/booklyfooterlogo.svg" alt=""></h3>
+                    <p>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim
+                        veniam, </p>
+                </div>
+                <div class="catalogues">
+                    <h3>Catalogues</h3>
+                    <p>Senior School 1</p>
+                    <p>Senior School 2</p>
+                    <p>Senior School 3</p>
+                    <p>Senior School 1</p>
+                    <p>Senior School 3</p>
+                    <p>Senior School 2</p>
+                    <p>Senior School 1</p>
+                </div>
+            </div>
+            <div class="contactnsubscribe">
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>543, Duke Avenue,
+                        Chicago, USA.</p>
+                    <p>
+                        +919 406 1234
+                        dallaspizzaz@gmail.com</p>
+                </div>
+                <div>
+                    <h3>Subscribe Us</h3>
+                    <button>Enter your email <span><img src="/images/arrow.svg" alt=""></span></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 

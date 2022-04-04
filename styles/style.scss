@@ -48,6 +48,14 @@ body {
       }
     }
   }
+  section {
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+  }
   .firstSection {
     width: 100%;
     padding: 40px 40px;
@@ -61,7 +69,7 @@ body {
       flex-direction: column;
       p {
         color: $myOrange;
-        font-size: 15px;
+        font-size: 18px;
       }
       button {
         background-color: $myOrange;
@@ -72,7 +80,7 @@ body {
       }
 
       h1 {
-        font-size: 5.7rem;
+        font-size: 5.8rem;
         font-weight: 900;
       }
       span {
@@ -81,32 +89,128 @@ body {
       }
     }
     .libraryImage img {
-      padding: 20px 0px;
+      padding-bottom: 20px;
       display: flex;
       justify-content: center;
-      width: 60vw;
+      width: 76vw;
       margin: auto;
     }
   }
-  .selectDropdown {
-    width: 200px;
-    padding: 0px 0px;
-    button {
-      background-color: $myBlack;
-      height: 20px;
-      width: 50px;
-      border-radius: 10px;
-      color: $myWhite;
+  .thirdSection {
+    .row {
+      .trust {
+        h2 {
+          font-size: 45px;
+          color: $myBlack;
+          font-weight: 600;
+        }
+        span {
+          font-size: 30px;
+          color: $myOrange;
+        }
+      }
+      .comments,
+      .comments_ {
+        padding-top: 30px;
+
+        .shadowbox {
+          min-height: 200px;
+          border-radius: 5px;
+          padding-bottom: 30px;
+
+          box-shadow: 0px 5px 5px rgb(190, 190, 190);
+          p,
+          b {
+            padding: 20px;
+            font-size: large;
+          }
+        }
+      }
     }
   }
+  .fourthSection {
+    background-color: $myOrange;
+    min-height: 300px;
+    .section4bg {
+      background-color: $myWhite;
+      border-radius: 10px;
+      min-height: 50px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 11vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  footer {
+    background-color: $myBlack;
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+    .arrowtop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: $myWhite;
+      img {
+        width: 20px;
+      }
+    }
+    .footerdetails {
+      display: flex;
+      .logoncatalogue {
+        img {
+          width: 100px;
+        }
+        p {
+          font-size: 10px;
+          color: $myWhite;
+        }
+      }
+    }
+  }
+
   .dropDown {
     display: flex;
     flex-direction: row;
     background-color: #c4c4c44d;
-    height: 50px;
+    height: 100px;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 0px;
     border-radius: 10px;
+    span {
+      font-size: 18px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      width: fit-content;
+      .selectDropdown {
+        width: 200px;
+        padding: 0px 0px;
+        padding-bottom: 20px;
+        button {
+          background-color: $myBlack;
+          height: 20px;
+          width: 4vw;
+          border-radius: 10px;
+          color: $myWhite;
+        }
+      }
+    }
+    .searchbutton {
+      background-color: $myOrange;
+      padding: 11px 12px;
+      border-radius: 5px;
+      color: white;
+      border: 1px solid grey;
+    }
   }
   @media screen and (max-width: 992px) {
     header {
@@ -127,17 +231,144 @@ body {
           display: flex;
           align-items: normal;
           right: -300px;
+          padding: 30px 35px;
+        }
+        .loginbtn {
+          width: 200px;
         }
       }
     }
     .firstSection {
+      .dropDown {
+        span {
+          display: none;
+        }
+      }
       .row {
         .bgtext {
           h1 {
-            font-size: 2.6rem;
+            font-size: 3.3rem;
           }
           button {
             display: none;
+          }
+        }
+      }
+    }
+    .thirdSection {
+      .row {
+        .trust {
+          h2 {
+            font-size: 6.2vw;
+            color: $myBlack;
+          }
+          span {
+            font-size: 5.6vw;
+            color: $myOrange;
+          }
+        }
+        .comments {
+          .shadowbox {
+            min-height: 200px;
+            box-shadow: 0px 4px 5px grey;
+            padding-bottom: 20px;
+            p {
+              font-size: 4.6vw;
+              font-size: 18px;
+            }
+            b {
+              font-size: 4.4vw;
+              font-size: 15px;
+              font-weight: bold;
+            }
+          }
+        }
+        .comments_ {
+          display: none;
+        }
+      }
+    }
+    .fourthSection {
+      background-color: $myOrange;
+      min-height: 250px;
+      .section4bg {
+        background-color: $myWhite;
+        border-radius: 10px;
+        min-height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 11vw;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    footer {
+      background-color: #212121;
+      width: 100%;
+      padding: 40px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 500px;
+      .arrowtop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $myWhite;
+        img {
+          width: 20px;
+        }
+      }
+      .footerdetails {
+        display: grid;
+        h3 {
+          font-size: 15px;
+          color: $myWhite;
+        }
+        p {
+          color: $myWhite;
+        }
+        .logoncatalogue {
+          display: flex;
+          gap: 20px;
+          .catalogues {
+            p {
+              margin-bottom: 0px;
+            }
+          }
+          img {
+            width: 100px;
+          }
+          p {
+            font-size: 10px;
+            color: $myWhite;
+          }
+        }
+        .contactnsubscribe {
+          display: flex;
+          gap: 20px;
+
+          p {
+            font-size: 8px;
+            color: rgba(255, 255, 255, 0.7);
+          }
+          button {
+            padding-left: 0px;
+            height: 30px;
+            font-size: 8px;
+            span {
+              border: 1px solid white;
+              background-color: #ffffff;
+              min-height: 30px;
+              border-radius: 9px;
+              img {
+                width: 10px;
+              }
+            }
           }
         }
       }
@@ -174,5 +405,113 @@ body {
         margin: auto;
       }
     }
+    .secondbutton {
+      display: none;
+    }
+  }
+}
+
+// SignUp Page Styling
+
+.signUp {
+  width: 100%;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  min-height: 500px;
+  font-size: 20px;
+  .formtext {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    span a {
+      text-decoration: none;
+      color: $myOrange;
+    }
+  }
+  #togglePassword {
+    align-items: flex-start;
+    width: 26px;
+    display: inline;
+    vertical-align: middle;
+  }
+  .fa-eye-low-vision {
+    display: block;
+    float: right;
+    top: -29px;
+    position: relative;
+    left: -26px;
+  }
+  .olduser {
+    text-align: center;
+  }
+  .membership {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .user {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    .fa-user-plus {
+      font-size: 30px;
+    }
+    .fa-user {
+      font-size: 30px;
+    }
+  }
+  p {
+    span {
+      color: $myOrange;
+    }
+  }
+  button {
+    background-color: $myOrange;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    color: $myWhite;
+  }
+  .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    .brandLogo {
+      gap: 30px;
+      display: flex;
+      flex-direction: row;
+
+      .fa-brands {
+        border: 1px solid $myBlack;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .fa-circle-xmark {
+    display: none;
+  }
+  .signupimg img {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .signupimg {
+    .fa-circle-xmark {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 30px;
+    }
+  }
+  .signupimg img {
+    display: block;
+    padding: 0px 0px;
+    width: 40vw;
+    margin: auto;
+    border-radius: 20px;
   }
 }

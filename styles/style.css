@@ -63,6 +63,22 @@ body header .elements button {
   color: white;
 }
 
+body section {
+  width: 100%;
+  padding: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 500px;
+}
+
 body .firstSection {
   width: 100%;
   padding: 40px 40px;
@@ -94,7 +110,7 @@ body .firstSection .bgtext {
 
 body .firstSection .bgtext p {
   color: #E87E2E;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 body .firstSection .bgtext button {
@@ -106,7 +122,7 @@ body .firstSection .bgtext button {
 }
 
 body .firstSection .bgtext h1 {
-  font-size: 5.7rem;
+  font-size: 5.8rem;
   font-weight: 900;
 }
 
@@ -116,27 +132,123 @@ body .firstSection .bgtext span {
 }
 
 body .firstSection .libraryImage img {
-  padding: 20px 0px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60vw;
+  width: 76vw;
   margin: auto;
 }
 
-body .selectDropdown {
-  width: 200px;
-  padding: 0px 0px;
+body .thirdSection .row .trust h2 {
+  font-size: 45px;
+  color: #000000;
+  font-weight: 600;
 }
 
-body .selectDropdown button {
-  background-color: #000000;
-  height: 20px;
-  width: 50px;
+body .thirdSection .row .trust span {
+  font-size: 30px;
+  color: #E87E2E;
+}
+
+body .thirdSection .row .comments,
+body .thirdSection .row .comments_ {
+  padding-top: 30px;
+}
+
+body .thirdSection .row .comments .shadowbox,
+body .thirdSection .row .comments_ .shadowbox {
+  min-height: 200px;
+  border-radius: 5px;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0px 5px 5px #bebebe;
+          box-shadow: 0px 5px 5px #bebebe;
+}
+
+body .thirdSection .row .comments .shadowbox p,
+body .thirdSection .row .comments .shadowbox b,
+body .thirdSection .row .comments_ .shadowbox p,
+body .thirdSection .row .comments_ .shadowbox b {
+  padding: 20px;
+  font-size: large;
+}
+
+body .fourthSection {
+  background-color: #E87E2E;
+  min-height: 300px;
+}
+
+body .fourthSection .section4bg {
+  background-color: #FFFFFF;
   border-radius: 10px;
+  min-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .fourthSection .section4bg img {
+  width: 11vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body footer {
+  background-color: #000000;
+  width: 100%;
+  padding: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 500px;
+}
+
+body footer .arrowtop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+body footer .arrowtop img {
+  width: 20px;
+}
+
+body footer .footerdetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .footerdetails .logoncatalogue img {
+  width: 100px;
+}
+
+body footer .footerdetails .logoncatalogue p {
+  font-size: 10px;
   color: #FFFFFF;
 }
 
@@ -149,12 +261,48 @@ body .dropDown {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #c4c4c44d;
-  height: 50px;
+  height: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+  padding: 0px 0px;
   border-radius: 10px;
+}
+
+body .dropDown span {
+  font-size: 18px;
+  text-align: center;
+}
+
+body .dropDown .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .dropDown .container .selectDropdown {
+  width: 200px;
+  padding: 0px 0px;
+  padding-bottom: 20px;
+}
+
+body .dropDown .container .selectDropdown button {
+  background-color: #000000;
+  height: 20px;
+  width: 4vw;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+body .dropDown .searchbutton {
+  background-color: #E87E2E;
+  padding: 11px 12px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid grey;
 }
 
 @media screen and (max-width: 992px) {
@@ -187,12 +335,151 @@ body .dropDown {
         -ms-flex-align: normal;
             align-items: normal;
     right: -300px;
+    padding: 30px 35px;
+  }
+  body header .elements .loginbtn {
+    width: 200px;
+  }
+  body .firstSection .dropDown span {
+    display: none;
   }
   body .firstSection .row .bgtext h1 {
-    font-size: 2.6rem;
+    font-size: 3.3rem;
   }
   body .firstSection .row .bgtext button {
     display: none;
+  }
+  body .thirdSection .row .trust h2 {
+    font-size: 6.2vw;
+    color: #000000;
+  }
+  body .thirdSection .row .trust span {
+    font-size: 5.6vw;
+    color: #E87E2E;
+  }
+  body .thirdSection .row .comments .shadowbox {
+    min-height: 200px;
+    -webkit-box-shadow: 0px 4px 5px grey;
+            box-shadow: 0px 4px 5px grey;
+    padding-bottom: 20px;
+  }
+  body .thirdSection .row .comments .shadowbox p {
+    font-size: 4.6vw;
+    font-size: 18px;
+  }
+  body .thirdSection .row .comments .shadowbox b {
+    font-size: 4.4vw;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  body .thirdSection .row .comments_ {
+    display: none;
+  }
+  body .fourthSection {
+    background-color: #E87E2E;
+    min-height: 250px;
+  }
+  body .fourthSection .section4bg {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    min-height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .fourthSection .section4bg img {
+    width: 11vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  body footer {
+    background-color: #212121;
+    width: 100%;
+    padding: 40px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 500px;
+  }
+  body footer .arrowtop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+  }
+  body footer .arrowtop img {
+    width: 20px;
+  }
+  body footer .footerdetails {
+    display: -ms-grid;
+    display: grid;
+  }
+  body footer .footerdetails h3 {
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  body footer .footerdetails p {
+    color: #FFFFFF;
+  }
+  body footer .footerdetails .logoncatalogue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  body footer .footerdetails .logoncatalogue .catalogues p {
+    margin-bottom: 0px;
+  }
+  body footer .footerdetails .logoncatalogue img {
+    width: 100px;
+  }
+  body footer .footerdetails .logoncatalogue p {
+    font-size: 10px;
+    color: #FFFFFF;
+  }
+  body footer .footerdetails .contactnsubscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  body footer .footerdetails .contactnsubscribe p {
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  body footer .footerdetails .contactnsubscribe button {
+    padding-left: 0px;
+    height: 30px;
+    font-size: 8px;
+  }
+  body footer .footerdetails .contactnsubscribe button span {
+    border: 1px solid white;
+    background-color: #ffffff;
+    min-height: 30px;
+    border-radius: 9px;
+  }
+  body footer .footerdetails .contactnsubscribe button span img {
+    width: 10px;
   }
   body button {
     background-color: #E87E2E;
@@ -218,6 +505,156 @@ body .dropDown {
     padding: 20px 0px;
     width: 45vw;
     margin: auto;
+  }
+  .firstSection .secondbutton {
+    display: none;
+  }
+}
+
+.signUp {
+  width: 100%;
+  padding: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 500px;
+  font-size: 20px;
+}
+
+.signUp .formtext {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signUp .formtext span a {
+  text-decoration: none;
+  color: #E87E2E;
+}
+
+.signUp #togglePassword {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 26px;
+  display: inline;
+  vertical-align: middle;
+}
+
+.signUp .fa-eye-low-vision {
+  display: block;
+  float: right;
+  top: -29px;
+  position: relative;
+  left: -26px;
+}
+
+.signUp .olduser {
+  text-align: center;
+}
+
+.signUp .membership {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.signUp .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.signUp .user .fa-user-plus {
+  font-size: 30px;
+}
+
+.signUp .user .fa-user {
+  font-size: 30px;
+}
+
+.signUp p span {
+  color: #E87E2E;
+}
+
+.signUp button {
+  background-color: #E87E2E;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.signUp .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0px;
+}
+
+.signUp .brands .brandLogo {
+  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.signUp .brands .brandLogo .fa-brands {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .fa-circle-xmark {
+    display: none;
+  }
+  .signupimg img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .signupimg .fa-circle-xmark {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  .signupimg img {
+    display: block;
+    padding: 0px 0px;
+    width: 40vw;
+    margin: auto;
+    border-radius: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
