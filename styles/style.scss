@@ -96,10 +96,52 @@ body {
       margin: auto;
     }
   }
-  .secondSection{
+  .secondSection {
     background-color: #212121;
     min-height: 500px;
-}
+    h3 {
+      color: $myWhite;
+    }
+    .imgs {
+      width: 120px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      .cartitems {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 291px;
+        }
+      }
+      x,
+      b {
+        margin-top: 5px;
+        color: $myWhite;
+      }
+      span {
+        color: $myWhite;
+      }
+      button {
+        background-color: $myOrange;
+        padding: 5px 10px;
+        color: $myWhite;
+        margin-top: 10px;
+      }
+    }
+    .showmorebtn {
+      display: flex;
+      justify-content: center;
+      button {
+          margin-top: 30px;
+        background-color: $myOrange;
+        padding: 10px 30px;
+        font-weight: bold;
+        color: $myWhite;
+      }
+    }
+  }
   .thirdSection {
     .row {
       .trust {
@@ -259,7 +301,54 @@ body {
         }
       }
     }
-    
+    .secondSection {
+        background-color: #212121;
+        min-height: 500px;
+        h3 {
+          color: $myWhite;
+        }
+        .imgs {
+          width: 120px;
+          display: flex;
+          justify-content: space-between;
+          gap: 40px;
+          .cartitems {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            img {
+              width: 100px;
+            }
+          }
+          x,
+          b {
+            margin-top: 5px;
+            font-size: 8px;
+            color: $myWhite;
+          }
+          span {
+            color: $myWhite;
+          }
+          button {
+
+            padding: 5px 5px;
+
+border-radius: 0px;
+            font-size: 8px;
+          }
+        }
+        .showmorebtn {
+          display: flex;
+          justify-content: center;
+          button {
+              border-radius: 0px;
+            padding: 10px 15px;
+            width: auto;
+           
+          }
+        }
+      }
+
     .thirdSection {
       .row {
         .trust {
@@ -425,11 +514,11 @@ body {
   flex-direction: column;
   min-height: 500px;
   font-size: 20px;
-  .signupimg{
-      a{
-          text-decoration: none;
-          color: black;
-      }
+  .signupimg {
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
   .formtext {
     justify-content: center;

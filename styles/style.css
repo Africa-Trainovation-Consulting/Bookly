@@ -148,6 +148,72 @@ body .secondSection {
   min-height: 500px;
 }
 
+body .secondSection h3 {
+  color: #FFFFFF;
+}
+
+body .secondSection .imgs {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+body .secondSection .imgs .cartitems {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .secondSection .imgs .cartitems img {
+  width: 291px;
+}
+
+body .secondSection .imgs x,
+body .secondSection .imgs b {
+  margin-top: 5px;
+  color: #FFFFFF;
+}
+
+body .secondSection .imgs span {
+  color: #FFFFFF;
+}
+
+body .secondSection .imgs button {
+  background-color: #E87E2E;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+body .secondSection .showmorebtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .secondSection .showmorebtn button {
+  margin-top: 30px;
+  background-color: #E87E2E;
+  padding: 10px 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
 body .thirdSection .row .trust h2 {
   font-size: 45px;
   color: #000000;
@@ -353,6 +419,65 @@ body .dropDown .searchbutton {
   }
   body .firstSection .row .bgtext button {
     display: none;
+  }
+  body .secondSection {
+    background-color: #212121;
+    min-height: 500px;
+  }
+  body .secondSection h3 {
+    color: #FFFFFF;
+  }
+  body .secondSection .imgs {
+    width: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 40px;
+  }
+  body .secondSection .imgs .cartitems {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .secondSection .imgs .cartitems img {
+    width: 100px;
+  }
+  body .secondSection .imgs x,
+  body .secondSection .imgs b {
+    margin-top: 5px;
+    font-size: 8px;
+    color: #FFFFFF;
+  }
+  body .secondSection .imgs span {
+    color: #FFFFFF;
+  }
+  body .secondSection .imgs button {
+    padding: 5px 5px;
+    border-radius: 0px;
+    font-size: 8px;
+  }
+  body .secondSection .showmorebtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .secondSection .showmorebtn button {
+    border-radius: 0px;
+    padding: 10px 15px;
+    width: auto;
   }
   body .thirdSection .row .trust h2 {
     font-size: 6.2vw;
