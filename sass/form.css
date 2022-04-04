@@ -146,10 +146,11 @@ body section .backfnt {
 }
 
 body section .backfnt img {
-  width: 80%;
+  width: 50%;
 }
 
-body section .form div:first-child span {
+body section .form div:first-child small {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,11 +160,11 @@ body section .form div:first-child span {
   padding-bottom: 12px;
 }
 
-body section .form div:first-child span img {
+body section .form div:first-child small img {
   width: 20px;
 }
 
-body section .form div:first-child span h6 {
+body section .form div:first-child small h6 {
   padding: 0px;
   margin: 0px;
   font-family: Nunito Sans;
@@ -172,8 +173,15 @@ body section .form div:first-child span h6 {
   padding-left: 4px;
 }
 
-body section .form div:first-child span + p {
+@media screen and (min-width: 768px) {
+  body section .form div:first-child small {
+    padding-bottom: 40px;
+  }
+}
+
+body section .form div:first-child small + p {
   font-size: 13px;
+  padding-bottom: 20px;
 }
 
 body section .form div:first-child span + p + div {
@@ -195,6 +203,35 @@ body section .form div:first-child button:hover {
   color: #E77D2C;
 }
 
+@media screen and (min-width: 500px) {
+  body section .form div:first-child {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body section .form div:first-child {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+}
+
+body section .form div:first-child .return {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+body section .form div:first-child .return span {
+  padding-left: 4px;
+  color: #E77D2C;
+}
+
 body section .form button + h6 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,11 +239,53 @@ body section .form button + h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 15px;
+  padding-top: 40px;
 }
 
 body section .form button + h6 span {
   padding-left: 4px;
   color: #E77D2C;
+}
+
+body section .form div:nth-child(2) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body section .form div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.topinp {
+  padding: 0px !important;
+  position: relative;
+}
+
+.topinp .fa-eye {
+  position: absolute;
+  margin-top: -26px;
+  right: 5px;
+}
+
+.valt {
+  display: block !important;
+  position: relative;
+}
+
+.valt .fa-eye {
+  position: absolute;
+  margin-top: -26px;
+  right: 5px;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-image: none !important;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+  background-image: none;
 }
 /*# sourceMappingURL=form.css.map */
