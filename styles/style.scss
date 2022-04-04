@@ -95,6 +95,42 @@ body {
       width: 76vw;
       margin: auto;
     }
+    .dropDown {
+      display: flex;
+      flex-direction: row;
+      background-color: #c4c4c44d;
+      height: 100px;
+      align-items: center;
+      padding: 0px 0px;
+      border-radius: 10px;
+      span {
+        font-size: 18px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        width: fit-content;
+        .selectDropdown {
+          width: 200px;
+          padding: 0px 0px;
+          padding-bottom: 20px;
+          button {
+            background-color: $myBlack;
+            height: 20px;
+            width: 4vw;
+            border-radius: 10px;
+            color: $myWhite;
+          }
+        }
+      }
+      .searchbutton {
+        background-color: $myOrange;
+        padding: 11px 12px;
+        border-radius: 5px;
+        color: white;
+        border: 1px solid grey;
+      }
+    }
   }
   .secondSection {
     background-color: #212121;
@@ -134,7 +170,7 @@ body {
       display: flex;
       justify-content: center;
       button {
-          margin-top: 30px;
+        margin-top: 30px;
         background-color: $myOrange;
         padding: 10px 30px;
         font-weight: bold;
@@ -222,42 +258,6 @@ body {
     }
   }
 
-  .dropDown {
-    display: flex;
-    flex-direction: row;
-    background-color: #c4c4c44d;
-    height: 100px;
-    align-items: center;
-    padding: 0px 0px;
-    border-radius: 10px;
-    span {
-      font-size: 18px;
-      text-align: center;
-    }
-    .container {
-      display: flex;
-      width: fit-content;
-      .selectDropdown {
-        width: 200px;
-        padding: 0px 0px;
-        padding-bottom: 20px;
-        button {
-          background-color: $myBlack;
-          height: 20px;
-          width: 4vw;
-          border-radius: 10px;
-          color: $myWhite;
-        }
-      }
-    }
-    .searchbutton {
-      background-color: $myOrange;
-      padding: 11px 12px;
-      border-radius: 5px;
-      color: white;
-      border: 1px solid grey;
-    }
-  }
   @media screen and (max-width: 992px) {
     header {
       .elements {
@@ -302,52 +302,49 @@ body {
       }
     }
     .secondSection {
-        background-color: #212121;
-        min-height: 500px;
-        h3 {
+      background-color: #212121;
+      min-height: 500px;
+      h3 {
+        color: $myWhite;
+      }
+      .imgs {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        .cartitems {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          img {
+            width: 100px;
+          }
+        }
+        x,
+        b {
+          margin-top: 5px;
+          font-size: 8px;
           color: $myWhite;
         }
-        .imgs {
-          width: 120px;
-          display: flex;
-          justify-content: space-between;
-          gap: 40px;
-          .cartitems {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            img {
-              width: 100px;
-            }
-          }
-          x,
-          b {
-            margin-top: 5px;
-            font-size: 8px;
-            color: $myWhite;
-          }
-          span {
-            color: $myWhite;
-          }
-          button {
-
-            padding: 5px 5px;
-
-border-radius: 0px;
-            font-size: 8px;
-          }
+        span {
+          color: $myWhite;
         }
-        .showmorebtn {
-          display: flex;
-          justify-content: center;
-          button {
-              border-radius: 0px;
-            padding: 10px 15px;
-            width: auto;
-           
-          }
+        button {
+          padding: 5px 5px;
+          border-radius: 0px;
+          font-size: 8px;
         }
       }
+      .showmorebtn {
+        display: flex;
+        justify-content: center;
+        button {
+          border-radius: 0px;
+          padding: 10px 15px;
+          width: auto;
+        }
+      }
+    }
 
     .thirdSection {
       .row {
@@ -403,12 +400,11 @@ border-radius: 0px;
     footer {
       background-color: #212121;
       width: 100%;
-      padding: 40px 40px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       min-height: 500px;
       .arrowtop {
+          padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -419,16 +415,22 @@ border-radius: 0px;
       }
       .footerdetails {
         display: grid;
+        justify-content: space-between;
         h3 {
           font-size: 15px;
           color: $myWhite;
         }
         p {
           color: $myWhite;
+          a{
+              text-decoration: none;
+              color: $myWhite;
+          }
         }
         .logoncatalogue {
           display: flex;
-          gap: 20px;
+          flex-direction: row;
+          gap: 0px;
           .catalogues {
             p {
               margin-bottom: 0px;
@@ -445,22 +447,27 @@ border-radius: 0px;
         .contactnsubscribe {
           display: flex;
           gap: 20px;
+          flex-direction: row;
 
           p {
             font-size: 8px;
             color: rgba(255, 255, 255, 0.7);
           }
-          button {
-            padding-left: 0px;
+          .buttonarrow {
             height: 30px;
-            font-size: 8px;
-            span {
-              border: 1px solid white;
-              background-color: #ffffff;
-              min-height: 30px;
-              border-radius: 9px;
-              img {
-                width: 10px;
+            width: 100px;
+            button{
+                font-size: 8px;
+                padding: 0px;
+            }
+            img {
+                width: 20px;
+                position: absolute;
+                left: 263px;
+                background-color: white;
+                padding: 15px 14px;
+                border-radius: 7px;
+                color: black;
               }
             }
           }
@@ -478,7 +485,7 @@ border-radius: 0px;
       width: 150px;
     }
   }
-}
+
 @media screen and (min-width: 992px) {
   header {
     .fa-bars {

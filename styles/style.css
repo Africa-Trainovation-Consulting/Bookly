@@ -143,6 +143,59 @@ body .firstSection .libraryImage img {
   margin: auto;
 }
 
+body .firstSection .dropDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #c4c4c44d;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px;
+  border-radius: 10px;
+}
+
+body .firstSection .dropDown span {
+  font-size: 18px;
+  text-align: center;
+}
+
+body .firstSection .dropDown .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .firstSection .dropDown .container .selectDropdown {
+  width: 200px;
+  padding: 0px 0px;
+  padding-bottom: 20px;
+}
+
+body .firstSection .dropDown .container .selectDropdown button {
+  background-color: #000000;
+  height: 20px;
+  width: 4vw;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+body .firstSection .dropDown .searchbutton {
+  background-color: #E87E2E;
+  padding: 11px 12px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid grey;
+}
+
 body .secondSection {
   background-color: #212121;
   min-height: 500px;
@@ -323,59 +376,6 @@ body footer .footerdetails .logoncatalogue p {
   color: #FFFFFF;
 }
 
-body .dropDown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #c4c4c44d;
-  height: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 0px;
-  border-radius: 10px;
-}
-
-body .dropDown span {
-  font-size: 18px;
-  text-align: center;
-}
-
-body .dropDown .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-body .dropDown .container .selectDropdown {
-  width: 200px;
-  padding: 0px 0px;
-  padding-bottom: 20px;
-}
-
-body .dropDown .container .selectDropdown button {
-  background-color: #000000;
-  height: 20px;
-  width: 4vw;
-  border-radius: 10px;
-  color: #FFFFFF;
-}
-
-body .dropDown .searchbutton {
-  background-color: #E87E2E;
-  padding: 11px 12px;
-  border-radius: 5px;
-  color: white;
-  border: 1px solid grey;
-}
-
 @media screen and (max-width: 992px) {
   body header .elements {
     display: block;
@@ -531,7 +531,6 @@ body .dropDown .searchbutton {
   body footer {
     background-color: #212121;
     width: 100%;
-    padding: 40px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -539,12 +538,10 @@ body .dropDown .searchbutton {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     min-height: 500px;
   }
   body footer .arrowtop {
+    padding-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,6 +560,9 @@ body .dropDown .searchbutton {
   body footer .footerdetails {
     display: -ms-grid;
     display: grid;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body footer .footerdetails h3 {
     font-size: 15px;
@@ -571,11 +571,19 @@ body .dropDown .searchbutton {
   body footer .footerdetails p {
     color: #FFFFFF;
   }
+  body footer .footerdetails p a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
   body footer .footerdetails .logoncatalogue {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0px;
   }
   body footer .footerdetails .logoncatalogue .catalogues p {
     margin-bottom: 0px;
@@ -592,35 +600,44 @@ body .dropDown .searchbutton {
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body footer .footerdetails .contactnsubscribe p {
     font-size: 8px;
     color: rgba(255, 255, 255, 0.7);
   }
-  body footer .footerdetails .contactnsubscribe button {
-    padding-left: 0px;
+  body footer .footerdetails .contactnsubscribe .buttonarrow {
     height: 30px;
+    width: 100px;
+  }
+  body footer .footerdetails .contactnsubscribe .buttonarrow button {
     font-size: 8px;
+    padding: 0px;
   }
-  body footer .footerdetails .contactnsubscribe button span {
-    border: 1px solid white;
-    background-color: #ffffff;
-    min-height: 30px;
-    border-radius: 9px;
+  body footer .footerdetails .contactnsubscribe .buttonarrow img {
+    width: 20px;
+    position: absolute;
+    left: 263px;
+    background-color: white;
+    padding: 15px 14px;
+    border-radius: 7px;
+    color: black;
   }
-  body footer .footerdetails .contactnsubscribe button span img {
-    width: 10px;
-  }
-  body button {
-    background-color: #E87E2E;
-    padding: 10px 30px;
-    width: 100%;
-    border-radius: 10px;
-    color: white;
-  }
-  body .logo {
-    width: 150px;
-  }
+}
+
+body button {
+  background-color: #E87E2E;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+}
+
+body .logo {
+  width: 150px;
 }
 
 @media screen and (min-width: 992px) {
