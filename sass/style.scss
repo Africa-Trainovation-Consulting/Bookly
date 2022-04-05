@@ -10,7 +10,10 @@
   outline: none;
 }
 
-
+::selection{
+  color: pink;
+  background-color: red;
+}
 body {
   .header {
     display: flex;
@@ -22,6 +25,14 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-left: 3vw;
     padding-right: 3vw;
+
+    .logo {
+      img {
+        padding-top: 10px;
+        width: 85%;
+
+      }
+    }
 
     .icon {
       font-size: 30px;
@@ -50,6 +61,7 @@ body {
         @include font;
         font-size: 18px;
         line-height: 2.5;
+        
 
         button {
           padding-left: 30px;
@@ -83,9 +95,10 @@ body {
             padding-left: 3.5vw;
             text-decoration: none;
             color: black;
-            // &:hover{
-            //   border-bottom: 5px solid black;
-            // }
+             &:hover{
+             // border-bottom: 5px solid black;
+            color: $firstcolor;
+            }
           }
 
           .btn {
@@ -97,6 +110,10 @@ body {
               @include font;
               color: white;
               font-weight: 400;
+              &:hover{
+                background-color: $colourwhite;
+                color: $colourblack;
+              }
             }
           }
         }
@@ -292,7 +309,9 @@ body {
           border-radius: 0%;
           font-family: $familyN;
           font-weight: 500;
-
+          @media screen and (min-width: 752px) {
+            font-size: 11px;
+          }
           @media screen and (min-width: 992px) {
             font-size: 20px;
             width: 20% !important;
@@ -1115,12 +1134,13 @@ body {
                 // padding-right: $align *5;
                 margin-right: $align;
               }
+
               // @media screen and (min-width:1037px) {
               //   margin-right: $align *2;
               // }
-              
 
-              
+
+
             }
 
             button {
@@ -1139,32 +1159,39 @@ body {
                 padding-top: 8px;
                 text-align: center;
               }
+
               @media screen and (min-width:1037px) {
                 right: 1.5vw;
               }
+
               @media screen and (min-width:1095px) {
                 right: 3vw;
               }
+
               @media screen and (min-width:1114px) {
                 right: $align * 1.5;
               }
+
               @media screen and (min-width:1116px) {
                 right: 20px;
               }
+
               @media screen and (min-width:1128px) {
-                right: $align *2 ;
+                right: $align *2;
               }
+
               @media screen and (min-width:1136px) {
-                right: 2vw ;
+                right: 2vw;
               }
-              
+
               @media screen and (min-width:1259px) {
                 right: 1vw;
               }
-              
+
               @media screen and (min-width:1280px) {
                 right: $align;
               }
+
               @media screen and (min-width:1400px) {
                 right: 3.5vw;
               }
@@ -1177,7 +1204,7 @@ body {
 
           @media screen and (min-width:1250px) {
             padding-left: 17vw;
-           
+
           }
         }
       }
