@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookly | Login</title>
     <link rel="icon" type="image/x-icon" href="/images/booklyicon.svg">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,6 +27,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
     <header>
         <img class="logo" src="/images/logo.svg" alt="">
@@ -61,7 +61,7 @@
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Password</label>
                     <input type="password" name="password" id="password" class="form-control"
-                        id="formGroupExampleInput2" required>
+                        id="formGroupExampleInput2" minlength="5" required>
                     <div class="fa fa-eye-low-vision" style="color:rgb(180, 179, 179)" id="togglePassword"></div>
                     <div class="valid-feedback">
                         Looks good!
@@ -78,7 +78,9 @@
                 <p class="olduser">Don’t have an account? <span> <a href="/signup.html">Sign Up</a> </span> </p>
             </div>
             <div class="col-lg-6 signupimg">
-                <a href="/index.html"><div class="fa-solid fa-circle-xmark"></div></a>
+                <a href="/index.html">
+                    <div class="fa-solid fa-circle-xmark"></div>
+                </a>
                 <img src="/images/login.svg" alt="">
             </div>
         </form>
@@ -95,4 +97,5 @@
 
     <script src="/main.js"></script>
 </body>
+
 </html>

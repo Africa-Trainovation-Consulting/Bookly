@@ -196,27 +196,28 @@ body .firstSection .dropDown .searchbutton {
   border: 1px solid grey;
 }
 
-body .secondSection {
+body .secondSection, body .secondSection_ {
   background-color: #212121;
-  min-height: 500px;
 }
 
-body .secondSection h3 {
-  color: #FFFFFF;
+body .secondSection .carousel-item, body .secondSection_ .carousel-item {
+  padding-bottom: 50px;
 }
 
-body .secondSection .imgs {
-  width: 120px;
+body .secondSection .carousel-item h2, body .secondSection_ .carousel-item h2 {
+  padding-left: 92px;
+}
+
+body .secondSection .line, body .secondSection_ .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 40px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-body .secondSection .imgs .cartitems {
+body .secondSection .line .book, body .secondSection_ .line .book {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -229,28 +230,71 @@ body .secondSection .imgs .cartitems {
           flex-direction: column;
 }
 
-body .secondSection .imgs .cartitems img {
+body .secondSection .line .book span, body .secondSection_ .line .book span {
+  font-weight: bold;
+  padding-top: 10px;
+  color: #FFFFFF;
+}
+
+body .secondSection .line .book p, body .secondSection_ .line .book p {
+  color: #FFFFFF;
+}
+
+body .secondSection .line .book img, body .secondSection_ .line .book img {
+  width: 220px;
+}
+
+body .secondSection h3, body .secondSection_ h3 {
+  color: #FFFFFF;
+}
+
+body .secondSection .imgs, body .secondSection_ .imgs {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+body .secondSection .imgs .cartitems, body .secondSection_ .imgs .cartitems {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .secondSection .imgs .cartitems img, body .secondSection_ .imgs .cartitems img {
   width: 291px;
 }
 
 body .secondSection .imgs x,
-body .secondSection .imgs b {
+body .secondSection .imgs b, body .secondSection_ .imgs x,
+body .secondSection_ .imgs b {
   margin-top: 5px;
   color: #FFFFFF;
 }
 
-body .secondSection .imgs span {
+body .secondSection .imgs span, body .secondSection_ .imgs span {
   color: #FFFFFF;
 }
 
-body .secondSection .imgs button {
+body .secondSection .imgs button, body .secondSection_ .imgs button {
   background-color: #E87E2E;
   padding: 5px 10px;
   color: #FFFFFF;
   margin-top: 10px;
 }
 
-body .secondSection .showmorebtn {
+body .secondSection .showmorebtn, body .secondSection_ .showmorebtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,12 +303,17 @@ body .secondSection .showmorebtn {
           justify-content: center;
 }
 
-body .secondSection .showmorebtn button {
+body .secondSection .showmorebtn button, body .secondSection_ .showmorebtn button {
   margin-top: 30px;
   background-color: #E87E2E;
   padding: 10px 30px;
   font-weight: bold;
   color: #FFFFFF;
+}
+
+body .thirdSection {
+  background-color: #FFFFFF;
+  margin: 0px;
 }
 
 body .thirdSection .row .trust h2 {
@@ -424,6 +473,47 @@ body footer .footerdetails .logoncatalogue p {
     background-color: #212121;
     min-height: 500px;
   }
+  body .secondSection h2 {
+    color: #FFFFFF !important;
+    padding-bottom: 10px;
+    padding-left: 4vw;
+  }
+  body .secondSection .line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 44px;
+  }
+  body .secondSection .line .book {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  body .secondSection .line .book span {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    color: #FFFFFF;
+  }
+  body .secondSection .line .book p {
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+  }
+  body .secondSection .line .book img {
+    width: 220px;
+  }
   body .secondSection h3 {
     color: #FFFFFF;
   }
@@ -478,6 +568,55 @@ body footer .footerdetails .logoncatalogue p {
     border-radius: 0px;
     padding: 10px 15px;
     width: auto;
+  }
+  body .secondSection_ {
+    background-color: #212121;
+  }
+  body .secondSection_ .carousel-item {
+    padding: 0px 40px;
+    padding-bottom: 50px;
+  }
+  body .secondSection_ .carousel-item h2 {
+    color: #FFFFFF;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    padding-left: 4vw;
+  }
+  body .secondSection_ .line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 44px;
+  }
+  body .secondSection_ .line .book {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  body .secondSection_ .line .book span {
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    color: #FFFFFF;
+  }
+  body .secondSection_ .line .book p {
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+  }
+  body .secondSection_ .line .book img {
+    width: 220px;
   }
   body .thirdSection .row .trust h2 {
     font-size: 6.2vw;
@@ -619,7 +758,7 @@ body footer .footerdetails .logoncatalogue p {
   }
   body footer .footerdetails .contactnsubscribe .buttonarrow img {
     width: 20px;
-    position: absolute;
+    position: fabsolute;
     left: 263px;
     background-color: white;
     padding: 15px 14px;
@@ -638,6 +777,11 @@ body button {
 
 body .logo {
   width: 150px;
+}
+
+.carousel-item h2 {
+  color: #FFFFFF;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 992px) {

@@ -81,8 +81,8 @@
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Password</label>
                     <input type="password" name="password" id="password" class="form-control"
-                        id="formGroupExampleInput2" required>
-                    <div class="fa fa-eye-low-vision" style="color:rgb(180, 179, 179)"  id="togglePassword"></div>
+                        id="formGroupExampleInput2" minlength="10" required>
+                    <div class="fa fa-eye-low-vision" style="color:rgb(180, 179, 179)" id="togglePassword"></div>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
@@ -91,11 +91,10 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="formGroupExampleInput"  class="form-label">Re-enter password</label>
-                    <input type="password" name="xpassword" id="xpassword" class="form-control" 
-                        id="formGroupExampleInput"
-                        autocomplete="current-password" required>
-                    <div class="fa fa-eye-low-vision" style="color:rgb(180, 179, 179)"  id="retogglePassword"></div>
+                    <label for="formGroupExampleInput" class="form-label">Re-enter password</label>
+                    <input type="password" name="xpassword" id="secondpassword" class="form-control"
+                        id="formGroupExampleInput" autocomplete="current-password" minlength="10" required>
+                    <div class="fa fa-eye-low-vision" style="color:rgb(180, 179, 179)" id="retogglePassword"></div>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
@@ -107,11 +106,13 @@
                     <p class="mb-3">By signing up, you agree to our <span>Terms & Conditions</span>
                         and <span>Privacy policy.</span> </p>
                 </div>
-                <button class="mb-3 btn" type="submit">Submit</button>
+                <button class="mb-3 btn" type="submit" onclick="myfunction()">Submit</button>
                 <p class="olduser">Already have an account? <span> <a href="/login.html">Login</a> </span> </p>
             </div>
             <div class="col-lg-6 signupimg">
-                <a href="/index.html"><div class="fa-solid fa-circle-xmark"></div></a>
+                <a href="/index.html">
+                    <div class="fa-solid fa-circle-xmark"></div>
+                </a>
                 <img src="/images/signupimg.svg" alt="">
             </div>
         </form>

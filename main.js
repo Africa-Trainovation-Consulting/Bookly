@@ -1,4 +1,14 @@
 
+    function myfunction(){
+
+        if (password.value != secondpassword.value){
+            alert('Password does not match')
+        }
+        else {
+        
+            alert('Password Match')}
+    }
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict'
@@ -14,6 +24,7 @@
                     event.preventDefault()
                     event.stopPropagation()
                 }
+                
 
                 form.classList.add('was-validated')
             }, false)
@@ -38,7 +49,6 @@ const togglePassword = document
     .querySelector('#togglePassword');
 
 const password = document.querySelector('#password');
-
 togglePassword.addEventListener('click', () => {
 
     // Toggle the type attribute using
@@ -49,7 +59,7 @@ togglePassword.addEventListener('click', () => {
 
     password.setAttribute('type', type);
 
-    const fixed = xpassword
+    const fixed = secondpassword
         .getAttribute('type') === 'password' ?
         'text' : 'password';
 
@@ -57,8 +67,8 @@ togglePassword.addEventListener('click', () => {
 
 
     // Toggle the eye and bi-eye icon
-    togglePassword.classList.toggle('fa-eye-slash');
-    retogglePassword.classList.toggle('fa-eye-slash');
+    togglePassword.classList.toggle('fa-times');
+    retogglePassword.classList.toggle('fa-times');
 
 });
 

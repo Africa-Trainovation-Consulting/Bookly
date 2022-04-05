@@ -132,9 +132,38 @@ body {
       }
     }
   }
-  .secondSection {
+  .secondSection, .secondSection_ {
     background-color: #212121;
-    min-height: 500px;
+    .carousel-item{
+        padding-bottom: 50px;
+        h2{
+            padding-left: 92px;
+        
+        }
+    }
+
+    .line{
+        display:flex;
+        justify-content: space-evenly;
+        .book{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            span{
+                font-weight: bold;
+                padding-top: 10px;
+                color: $myWhite;
+            }
+            p{
+                color: $myWhite;
+            }
+            img{
+                width: 220px;
+            }
+        }
+    }
+    
+
     h3 {
       color: $myWhite;
     }
@@ -179,6 +208,8 @@ body {
     }
   }
   .thirdSection {
+      background-color: $myWhite;
+      margin: 0px;
     .row {
       .trust {
         h2 {
@@ -258,6 +289,16 @@ body {
     }
   }
 
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 992px) {
     header {
       .elements {
@@ -304,6 +345,37 @@ body {
     .secondSection {
       background-color: #212121;
       min-height: 500px;
+      h2{
+          color: $myWhite !important;
+          padding-bottom: 10px;
+          padding-left: 4vw;
+      }
+      .line{
+        display:flex;
+        justify-content: space-between;
+        gap: 44px;
+        .book{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            span{
+                font-weight: bold;
+                padding: 0px;
+                margin: 0px;
+                color: $myWhite;
+            }
+            p{
+                color: $myWhite;
+                padding: 0px;
+                margin: 0px;
+            }
+            img{
+                width: 220px;
+            }
+        }
+    
+    }
       h3 {
         color: $myWhite;
       }
@@ -344,8 +416,79 @@ body {
           width: auto;
         }
       }
+      
+    
+    
+    //   .line{
+    //     display:flex;
+    //     justify-content: space-evenly;
+    //     .book{
+    //         align-items: center;
+    //         display: flex;
+    //         flex-direction: column;
+    //         gap: 5px;
+    //         span{
+    //             padding: 0px;
+    //             font-size: 1.6vw;
+    //             color: $myWhite;
+    //         }
+    //         p{
+    //             font-size: 1.6vw;
+    //             color: $myWhite;
+    //             padding: 0px;
+    //             margin: 0px;
+    //         }
+    //         img{
+    //             width: 17.5vw
+    //         }
+    //         button{
+    //             font-size: 1.6vw;
+    //             // width: 70px;
+    //             height: 4vw;
+    //             padding: 0px;
+    //         }
+    //     }
+    // }
+    
     }
+    .secondSection_{
+        background-color: #212121;
 
+        .carousel-item{
+            padding: 0px 40px;
+            padding-bottom: 50px;
+            h2{
+                color: $myWhite;
+                margin-left: 10px;
+                padding-bottom: 10px;
+          padding-left: 4vw;
+
+            }
+        }
+        .line{
+            display:flex;
+            justify-content: space-between;
+            gap: 44px;
+            .book{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                span{
+                    font-weight: bold;
+                    padding: 0px;
+                    margin: 0px;
+                    color: $myWhite;
+                }
+                p{
+                    color: $myWhite;
+                    padding: 0px;
+                    margin: 0px;
+                }
+                img{
+                    width: 220px;
+                }
+            }}}
     .thirdSection {
       .row {
         .trust {
@@ -462,7 +605,7 @@ body {
             }
             img {
                 width: 20px;
-                position: absolute;
+                position: fabsolute;
                 left: 263px;
                 background-color: white;
                 padding: 15px 14px;
@@ -485,6 +628,24 @@ body {
       width: 150px;
     }
   }
+.carousel-item{
+    h2{
+        color: $myWhite;
+        padding-bottom: 10px;
+    }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 992px) {
   header {
@@ -597,6 +758,13 @@ body {
     }
   }
 }
+
+
+
+
+
+
+
 @media screen and (max-width: 992px) {
   .fa-circle-xmark {
     display: none;
