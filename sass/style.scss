@@ -435,11 +435,15 @@ body {
 
         .firstLine {
           display: flex;
+          justify-content: center;
 
           img {
             width: 100%;
             padding-left: 5vw;
             padding-right: 5vw;
+            display: flex;
+           
+           
           }
 
           p {
@@ -468,42 +472,8 @@ body {
             }
           }
         }
-
-        .secondLine {
-          display: flex;
-
-          img {
-            width: 100%;
-            padding-left: 5vw;
-            padding-right: 5vw;
-          }
-
-          p {
-            color: $colourwhite;
-            text-align: center;
-            font-family: $familyN;
-            font-size: 18px;
-            line-height: 25px;
-            padding-top: 25px;
-          }
-
-          button {
-            display: flex;
-            margin: auto;
-            margin-bottom: 20px;
-            padding: 10px 20px 10px 20px;
-            background-color: $firstcolor;
-            color: $colourwhite;
-            font-size: $familyN;
-            font-weight: 600;
-            font-size: 16px;
-
-            &:hover {
-              background-color: $colourwhite;
-              color: $colourblack;
-            }
-          }
-        }
+        
+       
       }
 
       .content2 {
@@ -512,6 +482,7 @@ body {
 
         .thirdLine {
           display: flex;
+          justify-content: center;
 
           img {
             width: 100%;
@@ -546,41 +517,7 @@ body {
           }
         }
 
-        .fourthLine {
-          display: flex;
-
-          img {
-            width: 100%;
-            padding-left: 5vw;
-            padding-right: 5vw;
-          }
-
-          p {
-            color: $colourwhite;
-            text-align: center;
-            font-family: $familyN;
-            font-size: 18px;
-            line-height: 25px;
-            padding-top: 25px;
-          }
-
-          button {
-            display: flex;
-            margin: auto;
-            margin-bottom: 20px;
-            padding: 10px 20px 10px 20px;
-            background-color: $firstcolor;
-            color: $colourwhite;
-            font-size: $familyN;
-            font-weight: 600;
-            font-size: 16px;
-
-            &:hover {
-              background-color: $colourwhite;
-              color: $colourblack;
-            }
-          }
-        }
+        
       }
 
       .content3 {
@@ -589,6 +526,8 @@ body {
 
         .fifthLine {
           display: flex;
+          justify-content: center;
+          
 
           img {
             width: 100%;
@@ -623,41 +562,7 @@ body {
           }
         }
 
-        .sixLine {
-          display: flex;
-
-          img {
-            width: 100%;
-            padding-left: 5vw;
-            padding-right: 5vw;
-          }
-
-          p {
-            color: $colourwhite;
-            text-align: center;
-            font-family: $familyN;
-            font-size: 18px;
-            line-height: 25px;
-            padding-top: 25px;
-          }
-
-          button {
-            display: flex;
-            margin: auto;
-            margin-bottom: 20px;
-            padding: 10px 20px 10px 20px;
-            background-color: $firstcolor;
-            color: $colourwhite;
-            font-size: $familyN;
-            font-weight: 600;
-            font-size: 16px;
-
-            &:hover {
-              background-color: $colourwhite;
-              color: $colourblack;
-            }
-          }
-        }
+        
       }
 
       .content4 {
@@ -666,6 +571,7 @@ body {
 
         .sevenLine {
           display: flex;
+          justify-content: center;
 
           img {
             width: 100%;
@@ -700,41 +606,7 @@ body {
           }
         }
 
-        .eightLine {
-          display: flex;
-
-          img {
-            width: 100%;
-            padding-left: 5vw;
-            padding-right: 5vw;
-          }
-
-          p {
-            color: $colourwhite;
-            text-align: center;
-            font-family: $familyN;
-            font-size: 18px;
-            line-height: 25px;
-            padding-top: 25px;
-          }
-
-          button {
-            display: flex;
-            margin: auto;
-            margin-bottom: 20px;
-            padding: 10px 20px 10px 20px;
-            background-color: $firstcolor;
-            color: $colourwhite;
-            font-size: $familyN;
-            font-weight: 600;
-            font-size: 16px;
-
-            &:hover {
-              background-color: $colourwhite;
-              color: $colourblack;
-            }
-          }
-        }
+       
       }
     }
 
@@ -744,7 +616,7 @@ body {
     }
 
     .nm {
-      @media only screen and(min-width:500px) {
+      @media only screen and(min-width:400px) {
         display: inline-block;
       }
     }
@@ -871,7 +743,7 @@ body {
           padding: 10px;
           padding-top: 30px;
           width: 90%;
-          height: 40vh;
+          min-height: 40vh;
           margin-left: 5vw;
           font-size: 1em;
 
@@ -905,7 +777,7 @@ body {
             padding: 10px;
             padding-top: 40px;
             font-size: 1em;
-            height: 40vh;
+            
 
           }
 
@@ -926,7 +798,7 @@ body {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             padding: 10px;
             padding-top: 40px;
-            height: 40vh;
+            
           }
         }
       }
@@ -999,7 +871,7 @@ body {
       }
 
       @media screen and (min-width:766px) {
-        padding-top: 40px;
+        padding-top: 42px;
 
         i {
           font-size: 30px;
@@ -1071,7 +943,8 @@ body {
           }
 
           @media screen and (min-width:1250px) {
-            padding-left: 17vw;
+            padding-left: 14vw;
+            
           }
         }
       }
@@ -1117,15 +990,16 @@ body {
           }
 
           span {
+            display: flex;
             input {
-              width: 90px;
+              width: 100%;
               padding: 5px;
               font-size: 10px;
               border-radius: 10px 0px 0px 10px;
               background-color: $section3colour;
               color: $colourwhite;
               padding-left: 3px;
-              position: relative;
+              // position: relative;
 
               @media screen and (min-width:600px) {
                 width: 200px;
@@ -1150,62 +1024,32 @@ body {
 
               width: 40px;
               border-radius: 10px;
-              position: absolute;
-
-              @media screen and (min-width:600px) {
-                right: $align *1.5;
-                width: 70px;
-                padding-bottom: 8px;
-                padding-top: 8px;
-                text-align: center;
+              // position: absolute;
+               transform: translateX(-5x);
+               @media screen and (min-width:600px) {
+              //   right: $align *1.5;
+               width: 70px;
+               transform: translateX(-30px);
               }
 
-              @media screen and (min-width:1037px) {
-                right: 1.5vw;
-              }
+              
 
-              @media screen and (min-width:1095px) {
-                right: 3vw;
-              }
+               @media screen and (min-width:1035px) {
+                transform: translateX(-70px);
+               }
 
-              @media screen and (min-width:1114px) {
-                right: $align * 1.5;
-              }
-
-              @media screen and (min-width:1116px) {
-                right: 20px;
-              }
-
-              @media screen and (min-width:1128px) {
-                right: $align *2;
-              }
-
-              @media screen and (min-width:1136px) {
-                right: 2vw;
-              }
-
-              @media screen and (min-width:1259px) {
-                right: 1vw;
-              }
-
-              @media screen and (min-width:1280px) {
-                right: $align;
-              }
-
-              @media screen and (min-width:1400px) {
-                right: 3.5vw;
-              }
+              
             }
           }
 
-          @media screen and (min-width:766px) {
-            padding-left: 10vw;
+           @media screen and (min-width:1125px) {
+             padding-left: 100px;
           }
 
-          @media screen and (min-width:1250px) {
-            padding-left: 17vw;
+          // @media screen and (min-width:1250px) {
+          //   padding-left: 17vw;
 
-          }
+          // }
         }
       }
     }
@@ -1224,4 +1068,154 @@ body {
     }
   }
 
+}
+.secondDep{
+  padding-top: 0px;
+  margin-top: -120px;
+  padding-left: 4vw;
+ padding-right: 4vw;
+  .secondLine {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    p {
+      color: $colourwhite;
+      text-align: center;
+      font-family: $familyN;
+      font-size: 18px;
+      line-height: 25px;
+      padding-top: 25px;
+    }
+
+    button {
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 10px 20px 10px 20px;
+      background-color: $firstcolor;
+      color: $colourwhite;
+      font-size: $familyN;
+      font-weight: 600;
+      font-size: 16px;
+
+      &:hover {
+        background-color: $colourwhite;
+        color: $colourblack;
+      }
+    }
+  } 
+  .fourthLine {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    p {
+      color: $colourwhite;
+      text-align: center;
+      font-family: $familyN;
+      font-size: 18px;
+      line-height: 25px;
+      padding-top: 25px;
+    }
+
+    button {
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 10px 20px 10px 20px;
+      background-color: $firstcolor;
+      color: $colourwhite;
+      font-size: $familyN;
+      font-weight: 600;
+      font-size: 16px;
+
+      &:hover {
+        background-color: $colourwhite;
+        color: $colourblack;
+      }
+    }
+  }
+  .sixLine {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    p {
+      color: $colourwhite;
+      text-align: center;
+      font-family: $familyN;
+      font-size: 18px;
+      line-height: 25px;
+      padding-top: 25px;
+    }
+
+    button {
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 10px 20px 10px 20px;
+      background-color: $firstcolor;
+      color: $colourwhite;
+      font-size: $familyN;
+      font-weight: 600;
+      font-size: 16px;
+
+      &:hover {
+        background-color: $colourwhite;
+        color: $colourblack;
+      }
+    }
+  } 
+  .eightLine {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    p {
+      color: $colourwhite;
+      text-align: center;
+      font-family: $familyN;
+      font-size: 18px;
+      line-height: 25px;
+      padding-top: 25px;
+    }
+
+    button {
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      padding: 10px 20px 10px 20px;
+      background-color: $firstcolor;
+      color: $colourwhite;
+      font-size: $familyN;
+      font-weight: 600;
+      font-size: 16px;
+
+      &:hover {
+        background-color: $colourwhite;
+        color: $colourblack;
+      }
+    }
+  } 
 }
