@@ -32,6 +32,39 @@
   cursor: pointer;
 }
 
+.modaal-body {
+  width: 70%;
+  min-height: 50vh;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-header button {
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+
+.back {
+  color: #000000 !important;
+}
+
+.an {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pass {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .pass {
+    font-size: 1rem;
+  }
+}
+
 .lid {
   border-bottom: 3px solid #e5e5e5;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -185,6 +218,7 @@
 .reset-sec .secondrow form .form-control:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  border: 2px solid #000000;
 }
 
 .reset-sec .secondrow form .in {
@@ -192,7 +226,8 @@
   height: 6.8vh;
   border: 1px solid;
   border-radius: 10px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   letter-spacing: 0.2ch;
 }
 
@@ -204,7 +239,7 @@
 
 .reset-sec .secondrow form .but {
   width: 83%;
-  border: 1px solid #e77d2c;
+  border: 2px solid #e77d2c !important;
   border-radius: 12px;
   height: 6vh;
   background-color: #e77d2c;
@@ -216,6 +251,7 @@
 .reset-sec .secondrow form .but:hover {
   background-color: #fdb680;
   color: #000000;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 787px) {

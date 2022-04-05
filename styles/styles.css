@@ -161,8 +161,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(20.2px);
+          transform: translateY(20.2px);
 }
 
 .in .dropp i {
@@ -366,6 +366,10 @@
 .get:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+.sm-M {
+  margin-top: 2vh;
 }
 
 .lid {

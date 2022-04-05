@@ -22,3 +22,27 @@
         cursor: pointer;
     }
 }
+.modaal-body{
+    width: 70%;
+    min-height: 50vh;
+}
+.modal-header{
+    border-bottom: none!important;
+    button{
+        border: 3px solid $color;
+        border-radius: 50%;
+    }
+}
+.back{
+    color: $color!important;
+}
+.an{
+    font-size: 15px;
+    font-weight: 600;
+}
+.pass{
+    font-size: 30px;
+    @media screen and (max-width:500px) {
+        font-size: 1rem;
+    }
+}

@@ -115,6 +115,7 @@
             .form-control{
                 &:focus{
                     box-shadow: none !important;
+                    border: 2px solid $color;
                 }
             }
             .in {
@@ -122,7 +123,8 @@
                 height: 6.8vh;
                 border: 1px solid;
                 border-radius: 10px;
-                font-family: $font2;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
                 letter-spacing: 0.2ch;
                 @media screen and (max-width: 787px) {
                     width: 95%;
@@ -130,7 +132,7 @@
             }
             .but {
                 width: 83%;
-                border: 1px solid $btncolor;
+                border: 2px solid $btncolor!important;
                 border-radius: 12px;
                 height: 6vh;
                 background-color: $btncolor;
@@ -140,6 +142,7 @@
                 &:hover {
                     background-color: $hover2;
                     color: $color;
+                    cursor: pointer;
                 }
                 @media screen and (max-width: 787px) {
                     width: 95%;

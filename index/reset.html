@@ -112,8 +112,9 @@
                                 <span><i class="fas fa-eye-slash eyes" id="showConfirmPassword"></i></span>
                             </div>
                         </div>
-                        <div id="msg"></div>
-                        <button type="submit" class="but my-3">Save</button>
+                        <!-- <div id="msg">incorrect Field</div> -->
+                        <button type="submit" class="but my-3" data-bs-toggle="modal"
+                            href="#exampleModalToggle" id="save">Save</button>
                     </form>
                     <p class="text-center return">Return to <a href="#">Login</a></p>
                 </div>
@@ -121,6 +122,30 @@
                     <img src="/index/reset/img/booklibary2.svg" alt="booklibary2" class="img-fluid w-75 w-md-100">
                 </div>
             </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content p-0 pb-4">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                <img src="/index/reset/img/phone.svg" alt="phone" class="img-fluid">    
+                                </div>
+                                <div class="col-md-6 d-none d-md-block">
+                                    <img src="/index/reset/img/avatargirl.svg" alt="hellogirl" class="img-fluid">
+                                </div>
+                            </div>
+                            <h5 class="text-center my-3 back pass">Password changed successfully!</h5>
+                            <a href="#" class="nav-link text-center back an">Proceed to Login</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
