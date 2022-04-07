@@ -191,6 +191,17 @@ h5 {
   }
 }
 
+.wrapper h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 364px) {
+  .sub {
+    font-size: 15px !important;
+  }
+}
+
 .lid {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -209,7 +220,7 @@ h5 {
 .lid .ul .nav-item .nav-link {
   color: #000000;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
 
@@ -365,5 +376,115 @@ h5 {
 .dash-select .bg .last .btn:hover {
   background-color: #ffffff;
   color: #000000;
+}
+
+@media screen and (min-width: 1000px) {
+  .dash-select .bg {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+.wrapper {
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    width: 125%;
+    -webkit-transform: translateX(-105px);
+            transform: translateX(-105px);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .wrapper {
+    -webkit-transform: translateX(-127px);
+            transform: translateX(-127px);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    -webkit-transform: translateX(-148px);
+            transform: translateX(-148px);
+  }
+}
+
+.wrapper-box {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper-box {
+    width: 125%;
+    -webkit-transform: translateX(-105px);
+            transform: translateX(-105px);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .wrapper-box {
+    -webkit-transform: translateX(-127px);
+            transform: translateX(-127px);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper-box {
+    -webkit-transform: translateX(-148px);
+            transform: translateX(-148px);
+  }
+}
+
+.wrapper-box .row .half .mind {
+  border: 2px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.wrapper-box .row .half .mind .bord {
+  border-bottom: 2px solid #e5e5e5;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper-box .row .half .mind .bord {
+    font-size: 15px;
+  }
+}
+
+.wrapper-box .row .half .mind .good .lead {
+  font-weight: 400;
+}
+
+.wrapper-box .row .half .mind .good .email a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 300;
+}
+
+.wrapper-box .row .half .mind .good .add {
+  font-weight: 300;
+}
+
+.wrapper-box .row .half .mind .good .leads {
+  font-size: 18px;
+  gap: 8px;
+  min-height: 15vh;
+}
+
+.wrapper-box .row .half .mind .c-foot {
+  border: none;
+}
+
+.wrapper-box .row .half .mind .c-foot p a {
+  text-decoration: none;
+  color: #E77D2C;
+  font-size: 18px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=dashboard.css.map */

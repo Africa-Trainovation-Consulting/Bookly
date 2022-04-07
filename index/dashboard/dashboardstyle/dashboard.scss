@@ -11,7 +11,7 @@
             .nav-link {
                 color: $color;
                 font-size: 20px;
-                font-weight: 600;
+                font-weight: 500;
                 font-family: $firstfamily;
                 &:hover {
                     color: $btncolor;
@@ -59,7 +59,7 @@
         a {
             text-decoration: none;
             color: $color;
-            &:hover{
+            &:hover {
                 color: $btncolor;
             }
         }
@@ -81,7 +81,7 @@
             &:focus {
                 box-shadow: none !important;
             }
-            &:hover{
+            &:hover {
                 color: $color;
                 background-color: $user2;
             }
@@ -92,7 +92,7 @@
         }
     }
 }
-.dash-select{
+.dash-select {
     .bg {
         background-color: $bookbg;
         border-radius: 13px;
@@ -129,6 +129,85 @@
                 &:hover {
                     background-color: $hover;
                     color: $color;
+                }
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            transform: translateX(10px);
+        }
+    }
+}
+.wrapper {
+    background-color: $hover;
+    color: $color;
+    border-bottom: 2px solid $bookbg;
+    @media screen and (min-width: 1000px) {
+        width: 125%;
+        transform: translateX(-105px);
+    }
+    @media screen and (min-width: 1300px) {
+        transform: translateX(-127px);
+    }
+    @media screen and (min-width: 1400px) {
+        transform: translateX(-148px);
+    }
+}
+.wrapper-box {
+    background-color: $hover;
+    color: $color;
+    @media screen and (min-width: 1000px) {
+        width: 125%;
+        transform: translateX(-105px);
+    }
+    @media screen and (min-width: 1300px) {
+        transform: translateX(-127px);
+    }
+    @media screen and (min-width: 1400px) {
+        transform: translateX(-148px);
+    }
+    .row{
+        .half{
+            .mind{
+                border: 2px solid $border;
+                border-radius: 12px;
+                .bord{
+                    border-bottom: 2px solid $border;
+                    font-size: 20px;
+                    font-weight: 600;
+                    @media screen and (max-width:992px) {
+                        font-size: 15px;
+                    }
+                }
+                .good{
+                    .lead{
+                        font-weight: 400;
+                    }
+                    .email{
+                        a{
+                            text-decoration: none;
+                            color: $color;
+                            font-weight: 300;
+                        }
+                    }
+                    .add{
+                        font-weight: 300;
+                    }
+                    .leads{
+                        font-size: 18px;
+                        gap: 8px;
+                        min-height: 15vh;
+                    }
+                }
+                .c-foot{
+                    border: none;
+                    p{
+                        a{
+                            text-decoration: none;
+                            color: $change;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
                 }
             }
         }
