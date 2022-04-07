@@ -1,0 +1,90 @@
+.bar {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 537px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  h5 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h5 {
+    width: 73%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h5 {
+    width: 49%;
+  }
+}
+
+.lid {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+}
+
+.lid .ul {
+  padding-right: 3vw;
+  width: 86%;
+}
+
+.lid .ul .nav-item {
+  padding-left: 20px;
+}
+
+.lid .ul .nav-item .nav-link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.lid .ul .nav-item .nav-link:hover {
+  color: #e77d2c;
+}
+
+.lid .ul .nav-item:last-child .nav-link {
+  background-color: #e77d2c;
+  width: 170%;
+  border-radius: 12px;
+}
+
+.lid .ul .nav-item:last-child .nav-link:hover {
+  background-color: #ffffff;
+  border: 1px solid #e77d2c;
+  color: #000000 !important;
+}
+
+@media screen and (max-width: 990px) {
+  .lid .ul .nav-item:last-child .nav-link {
+    width: 127px;
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .lid .ul {
+    margin-left: 0 !important;
+  }
+}
+
+.dashboard {
+  background-color: #6b6561;
+  color: #ffffff;
+  min-height: 90vh;
+}
+/*# sourceMappingURL=dashboard.css.map */
