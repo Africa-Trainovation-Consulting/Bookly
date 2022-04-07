@@ -585,7 +585,20 @@ body {
       padding-right: $align;
       padding-top: 10px;
       border: 2px solid black;
-
+      @media  screen and (min-width:768px) {
+        font-size: 20px;
+        padding-top: 80px; 
+        padding-left: $align*1.8; 
+        line-height: 4vw;  
+      }
+       @media  screen and (min-width:1000px) {
+          line-height: 3vw;
+             
+          }
+          @media  screen and (min-width:1170px) {
+            padding-left:$align * 3.5;
+               
+            }
     }
 
     div:nth-child(2) {

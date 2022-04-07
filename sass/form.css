@@ -590,6 +590,27 @@ body section .form div:nth-child(2) {
   border: 2px solid black;
 }
 
+@media screen and (min-width: 768px) {
+  .section3shop .rok .list {
+    font-size: 20px;
+    padding-top: 80px;
+    padding-left: 5.4vw;
+    line-height: 4vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section3shop .rok .list {
+    line-height: 3vw;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .section3shop .rok .list {
+    padding-left: 10.5vw;
+  }
+}
+
 .section3shop .rok div:nth-child(2) h3 {
   text-align: center;
   padding-top: 20px;
