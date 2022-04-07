@@ -495,7 +495,7 @@ body {
 .section2Shop {
 
   padding-left: 3vw;
-   padding-right: 3vw;
+  padding-right: 3vw;
   padding-bottom: 50px;
 
   .rol {
@@ -564,106 +564,118 @@ body {
 }
 
 .section3shop {
-  
-  padding-right: 0px;
+  //   padding-right: 0px;
 
   .rok {
     display: flex;
-    justify-content: space-between;
+    background-color: $section2colour;
+    //     justify-content: space-between;
+    color: $colourwhite;
 
     div:first-child {
-      // display: none;
-      margin-right: 0px;
-      padding-right: 0px;
-      padding-left: 70px;
-      line-height: 3;
-      font-size: 18px;
-      background-color:$colourwhite;
+      //       // display: none;
+      //       margin-right: 0px;
+      //       padding-right: 0px;
+      //       padding-left: 70px;
+      //       line-height: 3;
+      //       font-size: 18px;
+      background-color: $colourwhite;
+      color: $colourblack;
+      padding-left: $align;
+      padding-right: $align;
+      padding-top: 10px;
+      border: 2px solid black;
 
     }
 
     div:nth-child(2) {
-      background-color: $section2colour;
-      width: 100%;
-      justify-content: center;
-      display: grid;
-      margin-left: -20px;
-      
+      //  background-color: $section2colour;
+      //       width: 100%;
+      //       justify-content: center;
+      //       display: grid;
+      //       margin-left: -20px;
 
-      width: 1050px;
+
+      //       width: 1050px;
       h3 {
         text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: 700;
       }
 
-      padding-left: 40px;
-      padding-right: 30px;
+      //       padding-left: 40px;
+      //       padding-right: 30px;
 
       .books {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 30px;
-        padding-top: 30px;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-left: $align;
+        padding-right: $align;
 
-        .none {
-          display: none;
+        //         display: flex;
+        //         justify-content: space-between;
+        //         padding-bottom: 30px;
+        //         padding-top: 30px;
+        //         padding-right: 30px;
+        //         padding-left: 30px;
 
-        }
+        //         .none {
+        //           display: none;
 
-        .nm {
-          @media only screen and(min-width:400px) {
-            display: inline-block;
-          }
-        }
+        //         }
 
-        .nt {
-          @media only screen and(min-width:700px) {
-            display: inline-block;
-          }
-        }
+        //         .nm {
+        //           @media only screen and(min-width:400px) {
+        //             display: inline-block;
+        //           }
+        //         }
 
-        .nd {
-          @media only screen and(min-width:992px) {
-            display: inline-block;
-          }
+        //         .nt {
+        //           @media only screen and(min-width:700px) {
+        //             display: inline-block;
+        //           }
+        //         }
 
-        }
-       
+        //         .nd {
+        //           @media only screen and(min-width:992px) {
+        //             display: inline-block;
+        //           }
+
       }
+
 
       .book2 {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 20px;
-        padding-right: 30px;
-        padding-left: 30px;
+        display: none;
+        //         display: flex;
+        //         justify-content: space-between;
+        //         padding-bottom: 20px;
+        //         padding-right: 30px;
+        //         padding-left: 30px;
 
-        .none {
-          display: none;
+        //         .none {
+        //           display: none;
 
-        }
+        //         }
 
-        .nm {
-          @media only screen and(min-width:400px) {
-            display: inline-block;
-          }
-        }
+        //         .nm {
+        //           @media only screen and(min-width:400px) {
+        //             display: inline-block;
+        //           }
+        //         }
 
-        .nt {
-          @media only screen and(min-width:700px) {
-            display: inline-block;
-          }
-        }
+        //         .nt {
+        //           @media only screen and(min-width:700px) {
+        //             display: inline-block;
+        //           }
+        //         }
 
-        .nd {
-          @media only screen and(min-width:992px) {
-            display: inline-block;
-          }
+        //         .nd {
+        //           @media only screen and(min-width:992px) {
+        //             display: inline-block;
+        //           }
 
-        }
+        //         }
       }
     }
-
   }
 }
