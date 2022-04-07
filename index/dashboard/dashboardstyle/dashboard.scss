@@ -40,8 +40,97 @@
         }
     }
 }
-.dashboard{
+.dashboard {
     background-color: $dashboard;
     color: $hover;
-    min-height: 90vh;
+    min-height: 200vh;
+    .side-view1 {
+        border: 2px solid $user;
+        background-color: $user;
+        padding: 8px;
+        @media screen and (min-width: 992px) {
+            width: 50%;
+        }
+    }
+    .side-views {
+        background-color: $hover;
+        padding: 8px;
+        border-bottom: 2px solid #6b65614a;
+        a {
+            text-decoration: none;
+            color: $color;
+            &:hover{
+                color: $btncolor;
+            }
+        }
+        .textme {
+            font-size: 20px;
+            font-weight: 300;
+            font-family: $font2;
+        }
+        @media screen and (min-width: 992px) {
+            width: 50%;
+        }
+        .btn {
+            width: 180px;
+            height: 8vh;
+            background-color: $btncolor;
+            border: 2px solid $btncolor;
+            border-radius: 13px;
+            color: $hover;
+            &:focus {
+                box-shadow: none !important;
+            }
+            &:hover{
+                color: $color;
+                background-color: $user2;
+            }
+        }
+        .log {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+    }
+}
+.dash-select{
+    .bg {
+        background-color: $bookbg;
+        border-radius: 13px;
+        .search {
+            padding-left: 2vw !important;
+            .book {
+                font-weight: 400 !important;
+                font-family: $font2;
+            }
+        }
+        .sec {
+            @media screen and (max-width: 990px) {
+                margin-bottom: 0 !important;
+            }
+        }
+        .last {
+            position: relative;
+            .btn {
+                color: $hover;
+                position: absolute;
+                right: -66%;
+                top: 0;
+                height: 8vh;
+                width: 67%;
+                font-size: 20px;
+                border: 2px solid $btncolor;
+                background-color: $btncolor;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 575px) {
+                    margin-right: 2vw;
+                }
+                &:hover {
+                    background-color: $hover;
+                    color: $color;
+                }
+            }
+        }
+    }
 }
