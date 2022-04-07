@@ -572,7 +572,7 @@ body {
     //     justify-content: space-between;
     color: $colourwhite;
 
-    div:first-child {
+    .list {
       //       // display: none;
       //       margin-right: 0px;
       //       padding-right: 0px;
@@ -611,35 +611,38 @@ body {
       .books {
         padding-left: $align;
         padding-right: $align;
+         padding-bottom: 20px;
+         column-gap: 6.5vw;
+         display: flex;
+         justify-content: space-evenly;
 
-        //         display: flex;
-        //         justify-content: space-between;
         //         padding-bottom: 30px;
         //         padding-top: 30px;
         //         padding-right: 30px;
         //         padding-left: 30px;
 
-        //         .none {
-        //           display: none;
+                .none {
+                  display: none;
 
-        //         }
+                }
 
-        //         .nm {
-        //           @media only screen and(min-width:400px) {
-        //             display: inline-block;
-        //           }
-        //         }
+                .nm {
+                  @media only screen and(min-width:450px) {
+                    display: inline-block;
+                  }
+                }
 
-        //         .nt {
-        //           @media only screen and(min-width:700px) {
-        //             display: inline-block;
-        //           }
-        //         }
+                .nt {
+                  @media only screen and(min-width:700px) {
+                    display: inline-block;
+                  }
+                }
 
-        //         .nd {
-        //           @media only screen and(min-width:992px) {
-        //             display: inline-block;
-        //           }
+                .nd {
+                  @media only screen and(min-width:992px) {
+                    display: inline-block;
+                  }
+                }
 
       }
 
@@ -651,30 +654,12 @@ body {
         //         padding-bottom: 20px;
         //         padding-right: 30px;
         //         padding-left: 30px;
-
-        //         .none {
-        //           display: none;
-
-        //         }
-
-        //         .nm {
-        //           @media only screen and(min-width:400px) {
-        //             display: inline-block;
-        //           }
-        //         }
-
-        //         .nt {
-        //           @media only screen and(min-width:700px) {
-        //             display: inline-block;
-        //           }
-        //         }
-
-        //         .nd {
-        //           @media only screen and(min-width:992px) {
-        //             display: inline-block;
-        //           }
-
-        //         }
+      @media screen and (min-width:760px){
+        display: flex;
+        
+        
+        
+          }
       }
     }
   }

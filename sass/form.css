@@ -581,7 +581,7 @@ body section .form div:nth-child(2) {
   color: #FFFFFF;
 }
 
-.section3shop .rok div:first-child {
+.section3shop .rok .list {
   background-color: #FFFFFF;
   color: black;
   padding-left: 3vw;
@@ -601,9 +601,48 @@ body section .form div:nth-child(2) {
 .section3shop .rok div:nth-child(2) .books {
   padding-left: 3vw;
   padding-right: 3vw;
+  padding-bottom: 20px;
+  -webkit-column-gap: 6.5vw;
+          column-gap: 6.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section3shop .rok div:nth-child(2) .books .none {
+  display: none;
+}
+
+@media only screen and (min-width: 450px) {
+  .section3shop .rok div:nth-child(2) .books .nm {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .section3shop .rok div:nth-child(2) .books .nt {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section3shop .rok div:nth-child(2) .books .nd {
+    display: inline-block;
+  }
 }
 
 .section3shop .rok div:nth-child(2) .book2 {
   display: none;
+}
+
+@media screen and (min-width: 760px) {
+  .section3shop .rok div:nth-child(2) .book2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=form.css.map */
