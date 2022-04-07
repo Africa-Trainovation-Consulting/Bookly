@@ -593,7 +593,7 @@ body section .form div:nth-child(2) {
 @media screen and (min-width: 768px) {
   .section3shop .rok .list {
     font-size: 20px;
-    padding-top: 80px;
+    padding-top: 65px;
     padding-left: 5.4vw;
     line-height: 4vw;
   }
@@ -693,5 +693,34 @@ body section .form div:nth-child(2) {
   .section3shop .rok div:nth-child(2) .book2 .nd {
     display: inline-block;
   }
+}
+
+.articule2 {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.articule2 h4 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.articule2 h4 span {
+  color: #E77D2C;
+}
+
+.articule2 h4 + div {
+  text-align: center;
+}
+
+.articule2 h4 + div span {
+  padding-right: 3vw;
+}
+
+.articule2 h4 + div span img {
+  border: 1px  solid #000000;
+  padding: 5px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=form.css.map */

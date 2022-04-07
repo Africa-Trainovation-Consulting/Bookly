@@ -587,7 +587,7 @@ body {
       border: 2px solid black;
       @media  screen and (min-width:768px) {
         font-size: 20px;
-        padding-top: 80px; 
+        padding-top: 65px; 
         padding-left: $align*1.8; 
         line-height: 4vw;  
       }
@@ -706,6 +706,30 @@ body {
 
 
         }
+      }
+    }
+  }
+}
+.articule2{
+  padding-left: $align;
+  padding-right: $align;
+  h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    span{
+      color: $firstcolor;
+    }
+  }
+  h4 + div{
+    text-align: center;
+    span{
+    padding-right: 3vw;
+      img{
+
+        border: 1px  solid #000000;
+        padding: 5px;
+        border-radius: 10px;
       }
     }
   }
