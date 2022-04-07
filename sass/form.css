@@ -602,8 +602,8 @@ body section .form div:nth-child(2) {
   padding-left: 3vw;
   padding-right: 3vw;
   padding-bottom: 20px;
-  -webkit-column-gap: 6.5vw;
-          column-gap: 6.5vw;
+  -webkit-column-gap: 8vw;
+          column-gap: 8vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,6 +643,34 @@ body section .form div:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    -webkit-column-gap: 8vw;
+            column-gap: 8vw;
+  }
+  .section3shop .rok div:nth-child(2) .book2 .none {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 760px) and (min-width: 450px) {
+  .section3shop .rok div:nth-child(2) .book2 .nm {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 760px) and (min-width: 700px) {
+  .section3shop .rok div:nth-child(2) .book2 .nt {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 760px) and (min-width: 992px) {
+  .section3shop .rok div:nth-child(2) .book2 .nd {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=form.css.map */

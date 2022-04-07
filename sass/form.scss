@@ -611,55 +611,88 @@ body {
       .books {
         padding-left: $align;
         padding-right: $align;
-         padding-bottom: 20px;
-         column-gap: 6.5vw;
-         display: flex;
-         justify-content: space-evenly;
+        padding-bottom: 20px;
+        column-gap: 8vw;
+        display: flex;
+        justify-content: space-evenly;
 
         //         padding-bottom: 30px;
         //         padding-top: 30px;
         //         padding-right: 30px;
         //         padding-left: 30px;
 
-                .none {
-                  display: none;
+        .none {
+          display: none;
 
-                }
+        }
 
-                .nm {
-                  @media only screen and(min-width:450px) {
-                    display: inline-block;
-                  }
-                }
+        .nm {
+          @media only screen and(min-width:450px) {
+            display: inline-block;
+          }
+        }
 
-                .nt {
-                  @media only screen and(min-width:700px) {
-                    display: inline-block;
-                  }
-                }
+        .nt {
+          @media only screen and(min-width:700px) {
+            display: inline-block;
+          }
+        }
 
-                .nd {
-                  @media only screen and(min-width:992px) {
-                    display: inline-block;
-                  }
-                }
+        .nd {
+          @media only screen and(min-width:992px) {
+            display: inline-block;
+          }
+        }
 
       }
 
 
       .book2 {
         display: none;
+
         //         display: flex;
         //         justify-content: space-between;
         //         padding-bottom: 20px;
         //         padding-right: 30px;
         //         padding-left: 30px;
-      @media screen and (min-width:760px){
-        display: flex;
-        
-        
-        
+        @media screen and (min-width:760px) {
+          display: flex;
+          justify-content: space-evenly;
+
+           padding-left: $align;
+           padding-right: $align;
+          // padding-bottom: 20px;
+         column-gap: 8vw;
+          // display: flex;
+          // justify-content: space-evenly;
+
+
+
+          .none {
+            display: none;
+
           }
+
+          .nm {
+            @media only screen and(min-width:450px) {
+              display: inline-block;
+            }
+          }
+
+          .nt {
+            @media only screen and(min-width:700px) {
+              display: inline-block;
+            }
+          }
+
+          .nd {
+            @media only screen and(min-width:992px) {
+              display: inline-block;
+            }
+          }
+
+
+        }
       }
     }
   }

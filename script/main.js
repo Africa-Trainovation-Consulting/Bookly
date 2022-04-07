@@ -10,7 +10,9 @@ function myfunct() {
   p.classList.toggle("showGrid");
 }
 
-
+// window.addEventListener('resize',()=>{
+//   screen.width> 1212 ? myfun
+// })
 
 (function () {
   "use strict";
