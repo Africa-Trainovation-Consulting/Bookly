@@ -47,13 +47,13 @@ body {
       display: grid;
       position: absolute;
       flex-direction: row;
-      left: 0;
+      left: 80px;
       right: 0;
-      top: 93px;
+      top: px;
       width: 100%;
       padding: 0px;
       margin: 0px;
-      background-color: #e5e5e5;
+      background-color:$colourwhite;
 
       a {
         text-decoration: none;
@@ -1025,7 +1025,7 @@ body {
               width: 40px;
               border-radius: 10px;
               // position: absolute;
-               transform: translateX(-5x);
+               transform: translateX(-5px);
                @media screen and (min-width:600px) {
               //   right: $align *1.5;
                width: 70px;

@@ -60,13 +60,13 @@ body .header .responsiveness {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  left: 0;
+  left: 80px;
   right: 0;
-  top: 93px;
+  top: px;
   width: 100%;
   padding: 0px;
   margin: 0px;
-  background-color: #e5e5e5;
+  background-color: #FFFFFF;
 }
 
 body .header .responsiveness a {
@@ -1113,8 +1113,8 @@ body footer .foot .div2 div:last-child span button {
   margin-left: -6px;
   width: 40px;
   border-radius: 10px;
-  -webkit-transform: translateX(-5x);
-          transform: translateX(-5x);
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
 }
 
 @media screen and (min-width: 600px) {

@@ -16,10 +16,17 @@ function myfunction() {
     i.classList.toggle("fa-times");
   } else {
     x.className = "navbar";
-    i.classList.remove("fa-times");
-    i.classList.add("fa-bars");
+    i.classList.toggle("fa-times");
+    i.classList.toggle("fa-bars");
   }
 }
+function myfunct() {
+  var p = document.getElementById("nv");
+  
+  p.classList.toggle('showGrid');
+  
+}
+
 //   var x = document.getElementById('nav')
 //      if (x.className ==='navbar'){
 //       x.className.add += " responsiveness";
@@ -79,3 +86,9 @@ ogglePassword.addEventListener("click", function (e) {
   // toggle the eye slash icon
   this.classList.toggle("fa-eye-slash");
 });
+
+
+
+
+
+
