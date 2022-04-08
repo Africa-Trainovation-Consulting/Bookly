@@ -9,4 +9,6 @@
 #Finished section 4
 #Started Footer
 #Fixed icon issue
+#Finished working on the dashboard section
+
 
