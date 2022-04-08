@@ -250,3 +250,111 @@
         }
     }
 }
+.footer {
+    color: $hover;
+
+    .first-p {
+        @media screen and (min-width: 1000px) {
+            margin-top: 4vh !important;
+        }
+    }
+
+    .gru2 {
+        @media screen and (min-width: 767px) {
+            margin-top: 1.5vh;
+        }
+    }
+    .row {
+        padding: 15px;
+    }
+    .two {
+        margin-top: 1vh;
+        .light {
+            align-items: center;
+            @media screen and (min-width: 470px) {
+                margin-top: 2vh;
+            }
+            @media screen and (min-width: 700px) {
+                margin-top: 0;
+            }
+            h5 {
+                @media screen and (min-width: 470px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-size: 14px;
+                @media screen and (min-width: 700px) {
+                    font-size: 16px;
+                    margin-top: 1.5vh;
+                }
+                @media screen and (min-width: 1000px) {
+                    font-size: 16px;
+                    margin-top: 0;
+                }
+            }
+            .first-p {
+                @media screen and (min-width: 1000px) {
+                    margin-top: 3.5vh;
+                }
+            }
+        }
+    }
+    .booklygup {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 13px;
+            display: flex;
+            margin: 0 0 2vh 0;
+        }
+    }
+    .paper {
+        font-size: 12px;
+        margin-top: 2vh;
+        @media screen and (min-width: 440px) {
+            font-size: 14px;
+        }
+        @media screen and (min-width: 1000px) {
+            font-size: 17px;
+        }
+    }
+    .contact {
+        font-size: 12.9px;
+        h5 {
+            @media screen and (min-width: 470px) {
+                font-size: 25px;
+            }
+        }
+    }
+    .subscribe {
+        position: relative;
+        h5 {
+            font-size: 18.2px;
+            @media screen and (min-width: 470px) {
+                font-size: 20.5px !important;
+            }
+        }
+        .inn {
+            background-color: $btncolor !important;
+            color: $hover !important;
+            border: none !important;
+            border-radius: 15px;
+            &::placeholder {
+                color: $hover !important;
+            }
+            &:focus{
+                box-shadow: none !important;
+            }
+        }
+        .bt {
+            background-color: $hover;
+            height: 6vh;
+            border: 1px solid $hover;
+            border-radius: 13px 13px 12px 12px;
+            width: 162%;
+            transform: translateX(-13px);
+        }
+    }
+}

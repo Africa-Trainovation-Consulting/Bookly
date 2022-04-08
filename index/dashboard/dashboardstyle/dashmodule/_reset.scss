@@ -1,7 +1,7 @@
 .bar {
     font-size: 30px;
 }
-h5 {
+.my-h5{
     width: 80%;
     font: {
         size: 22px;
@@ -159,6 +159,46 @@ h5 {
         color: $color !important;
     }
 }
-.sm-M{
+.sm-M {
     margin-top: 2vh;
+}
+.footer {
+    p {
+        font-family: $footerfont;
+        font-weight: 300;
+    }
+}
+.line {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 500px) {
+        font-size: 26px!important;
+    }
+}
+.input-group {
+    border: 1px solid $btncolor;
+    background-color: $btncolor;
+    &::placeholder{
+        color: $hover!important;
+    }
+}
+.good {
+    border-radius: 15px;
+}
+.second-row {
+    .hin {
+        h6 {
+            font-size: 12px;
+            @media screen and (min-width: 767px) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+.wid{
+    @media screen and (min-width:1200px) {
+        width: 60%;
+    }
 }

@@ -1,3 +1,4 @@
+let pattern = /^[^ ]+@[^ ]+\.[a-z]{3,4}$/;
 changeicon = (icon) => icon.classList.toggle('fa-times');
 
 const togglevisibility = (input, icon) => {

@@ -2,38 +2,38 @@
   font-size: 30px;
 }
 
-h5 {
+.my-h5 {
   width: 80%;
   font-size: 22px;
   font-weight: 400;
 }
 
 @media screen and (min-width: 400px) {
-  h5 {
+  .my-h5 {
     width: 66%;
   }
 }
 
 @media screen and (min-width: 576px) {
-  h5 {
+  .my-h5 {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 767px) {
-  h5 {
+  .my-h5 {
     font-size: 24px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  h5 {
+  .my-h5 {
     width: 73%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  h5 {
+  .my-h5 {
     width: 49%;
   }
 }
@@ -225,6 +225,71 @@ h5 {
 
 .sm-M {
   margin-top: 2vh;
+}
+
+.footer p {
+  font-family: "Sunflower", sans-serif;
+  font-weight: 300;
+}
+
+.line {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+  .line {
+    font-size: 26px !important;
+  }
+}
+
+.input-group {
+  border: 1px solid #e77d2c;
+  background-color: #e77d2c;
+}
+
+.input-group::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+
+.input-group:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.input-group::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.input-group::placeholder {
+  color: #ffffff !important;
+}
+
+.good {
+  border-radius: 15px;
+}
+
+.second-row .hin h6 {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 767px) {
+  .second-row .hin h6 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wid {
+    width: 60%;
+  }
 }
 
 .lid {
@@ -570,5 +635,174 @@ h5 {
   .slides .row .texting {
     margin-bottom: 2% !important;
   }
+}
+
+.footer {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer .first-p {
+    margin-top: 4vh !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer .gru2 {
+    margin-top: 1.5vh;
+  }
+}
+
+.footer .row {
+  padding: 15px;
+}
+
+.footer .two {
+  margin-top: 1vh;
+}
+
+.footer .two .light {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 470px) {
+  .footer .two .light {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .footer .two .light {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 470px) {
+  .footer .two .light h5 {
+    font-size: 25px;
+  }
+}
+
+.footer .two .light p {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 700px) {
+  .footer .two .light p {
+    font-size: 16px;
+    margin-top: 1.5vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer .two .light p {
+    font-size: 16px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer .two .light .first-p {
+    margin-top: 3.5vh;
+  }
+}
+
+.footer .booklygup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .booklygup p {
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 2vh 0;
+}
+
+.footer .paper {
+  font-size: 12px;
+  margin-top: 2vh;
+}
+
+@media screen and (min-width: 440px) {
+  .footer .paper {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer .paper {
+    font-size: 17px;
+  }
+}
+
+.footer .contact {
+  font-size: 12.9px;
+}
+
+@media screen and (min-width: 470px) {
+  .footer .contact h5 {
+    font-size: 25px;
+  }
+}
+
+.footer .subscribe {
+  position: relative;
+}
+
+.footer .subscribe h5 {
+  font-size: 18.2px;
+}
+
+@media screen and (min-width: 470px) {
+  .footer .subscribe h5 {
+    font-size: 20.5px !important;
+  }
+}
+
+.footer .subscribe .inn {
+  background-color: #e77d2c !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 15px;
+}
+
+.footer .subscribe .inn::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+
+.footer .subscribe .inn:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.footer .subscribe .inn::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.footer .subscribe .inn::placeholder {
+  color: #ffffff !important;
+}
+
+.footer .subscribe .inn:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.footer .subscribe .bt {
+  background-color: #ffffff;
+  height: 6vh;
+  border: 1px solid #ffffff;
+  border-radius: 13px 13px 12px 12px;
+  width: 162%;
+  -webkit-transform: translateX(-13px);
+          transform: translateX(-13px);
 }
 /*# sourceMappingURL=dashboard.css.map */
