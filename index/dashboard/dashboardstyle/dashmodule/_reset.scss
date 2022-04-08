@@ -54,12 +54,18 @@ h5 {
         box-shadow: none !important;
         border: none;
     }
+    &:hover {
+        cursor: pointer;
+    }
 }
 .drop {
     height: 8vh;
     &:focus {
         border: none;
         box-shadow: none !important;
+    }
+    &:hover {
+        cursor: pointer;
     }
 }
 .glass {
@@ -141,4 +147,18 @@ h5 {
     @media screen and (max-width: 364px) {
         font-size: 15px !important;
     }
+}
+.bnt {
+    background-color: $btncolor;
+    border: 1px solid $btncolor;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 6px;
+    &:hover {
+        background-color: $change;
+        color: $color !important;
+    }
+}
+.sm-M{
+    margin-top: 2vh;
 }

@@ -35,10 +35,11 @@
                         <li class="nav-item">
                             <a href="#Categories" class="nav-link">Categories</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" for="help">
                             <a href="#Request a book" class="nav-link">Help <span><img
                                         src="/index/dashboard/dashboardstyle/modal-img/comment.svg" alt="modal-img"
                                         class="img-fluid"></span></a>
+
                         </li>
                         <li class="nav-item">
                             <a href="#Cart" class="nav-link">Cart<span><img src="/styles/img/basket.svg"
@@ -53,10 +54,10 @@
             </div>
         </nav>
     </header>
-    <section class="dashboard">
+    <section class="dashboard pb-2">
         <div class="container p-3">
             <div class="row">
-                <div class="col-sm-6 mt-5">
+                <div class="col-sm-6 my-5">
                     <h5 class="mb-5">
                         Hello! Aduke Madison.
                         Thank you for coming back!
@@ -135,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 mt-5">
+                <div class="col-sm-6 my-5">
                     <div class="dash-select mb-2">
                         <div class="col-12 bg p-3 pl-4 search d-flex justify-content-center align-items-center">
                             <div class="drolist d-flex">
@@ -148,7 +149,7 @@
                                         <option>Jos</option>
                                         <option>Abuja</option>
                                     </select>
-                                    <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
+                                    <div class="dropp" id="select"><i class="fa-solid fa-caret-down"></i></div>
                                 </div>
                                 <div class="mb-3 in col-sm-2">
                                     <select class="form-select drop" required>
@@ -306,7 +307,10 @@
                                             consequat efesristo.</p>
                                     </div>
                                     <div class="card-footer bg-transparent c-foot">
-                                        <p class="change d-flex align-items-center justify-content-evenly"><span><img src="/index/dashboard/dashboardstyle/modal-img/subscribe.svg" alt="subscribe" class="img-fluid"></span><a href="#" class="sub">SUBSCRIBE BOOKLY PRIME</a></p>
+                                        <p class="change d-flex align-items-center justify-content-evenly"><span><img
+                                                    src="/index/dashboard/dashboardstyle/modal-img/subscribe.svg"
+                                                    alt="subscribe" class="img-fluid"></span><a href="#"
+                                                class="sub">SUBSCRIBE BOOKLY PRIME</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -318,12 +322,191 @@
                                                 src="/index/dashboard/dashboardstyle/modal-img/marker.svg" alt="marker"
                                                 class="img-fluid"></span></div>
                                     <div class="card-body good">
-                                        <p class="mb-5 leads d-flex" id="#"><span><img src="/index/dashboard/dashboardstyle/modal-img/wallet.svg" alt="wallet" class="img-fluid"></span> &#8358 0.00</p>
+                                        <p class="mb-5 leads d-flex" id="#"><span><img
+                                                    src="/index/dashboard/dashboardstyle/modal-img/wallet.svg"
+                                                    alt="wallet" class="img-fluid"></span> &#8358 0.00</p>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slides">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center texting my-3 mb-5">Best Seller Books</h1>
+                <div class="col-md-12 mb-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side">
+                                        <img src="/styles/img/Redmathtextbook.svg" class="d-block w-5"
+                                            alt="Redmathtextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 1</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-sm-block">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="Englishprimary">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Nigeria Pry
+                                            English</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5 w-md-100"
+                                            alt="Mathstextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block mygov">
+                                        <img src="/styles/img/government.svg" class="d-block w-5 img-fluid"
+                                            alt="government">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                            Government</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side d-none d-sm-block">
+                                        <img src="/styles/img/History.svg" class="d-block w-5" alt="History">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Rasmed Basic
+                                            History</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                            alt="Mathstextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/examphysicsss.png" class="d-block w-100" alt="physics">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Exam Focus
+                                            Physics</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="english">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">English
+                                            Primary</p>
+                                        <p class="d-flex justify-content-center align-items-center mb-2">
+                                            &#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side">
+                                        <img src="/styles/img/examphysicsss.png" class="d-block w-5" alt="physics">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Exam Focus
+                                            Physics</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-sm-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                            alt="Mathstextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/government.svg" class="d-block w-100" alt="government">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                            Government</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="english">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">English
+                                            Primary</p>
+                                        <p class="d-flex justify-content-center mb-3 align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>

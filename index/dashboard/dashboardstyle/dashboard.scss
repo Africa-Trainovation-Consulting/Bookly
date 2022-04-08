@@ -43,7 +43,6 @@
 .dashboard {
     background-color: $dashboard;
     color: $hover;
-    min-height: 200vh;
     .side-view1 {
         border: 2px solid $user;
         background-color: $user;
@@ -165,43 +164,43 @@
     @media screen and (min-width: 1400px) {
         transform: translateX(-148px);
     }
-    .row{
-        .half{
-            .mind{
+    .row {
+        .half {
+            .mind {
                 border: 2px solid $border;
                 border-radius: 12px;
-                .bord{
+                .bord {
                     border-bottom: 2px solid $border;
                     font-size: 20px;
                     font-weight: 600;
-                    @media screen and (max-width:992px) {
+                    @media screen and (max-width: 992px) {
                         font-size: 15px;
                     }
                 }
-                .good{
-                    .lead{
+                .good {
+                    .lead {
                         font-weight: 400;
                     }
-                    .email{
-                        a{
+                    .email {
+                        a {
                             text-decoration: none;
                             color: $color;
                             font-weight: 300;
                         }
                     }
-                    .add{
+                    .add {
                         font-weight: 300;
                     }
-                    .leads{
+                    .leads {
                         font-size: 18px;
                         gap: 8px;
                         min-height: 15vh;
                     }
                 }
-                .c-foot{
+                .c-foot {
                     border: none;
-                    p{
-                        a{
+                    p {
+                        a {
                             text-decoration: none;
                             color: $change;
                             font-size: 18px;
@@ -209,6 +208,44 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.slides {
+    .row {
+        .slidess {
+            gap: 5vw;
+            @media screen and (max-width: 990px) {
+                gap: 11vw;
+            }
+        }
+        .bookk {
+            font-size: 16px;
+            font-family: $font2;
+            font-weight: 700;
+        }
+        .side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .bun {
+                width: 47%;
+            }
+        }
+        .mygov {
+            min-width: fit-content;
+            @media screen and (max-width: 1000px) {
+                justify-content: left !important;
+            }
+        }
+
+        .texting {
+            color: $color;
+            @media screen and (max-width: 1000px) {
+                margin-bottom: 2% !important;
             }
         }
     }
