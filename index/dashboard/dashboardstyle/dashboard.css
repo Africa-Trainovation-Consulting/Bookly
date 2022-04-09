@@ -38,6 +38,11 @@
   }
 }
 
+.side-items a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .side-items h6 {
   margin-left: 3vw;
   font-weight: 600;
@@ -477,7 +482,7 @@
 .wrapper {
   background-color: #ffffff;
   color: #000000;
-  border-bottom: 2px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 @media screen and (min-width: 1000px) {
@@ -502,9 +507,104 @@
   }
 }
 
+.wrapper .mean {
+  font-size: 30px;
+}
+
 .wrapper-box {
   background-color: #ffffff;
   color: #000000;
+  min-height: 586px;
+}
+
+.wrapper-box #open {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper-box #open {
+    font-size: 15px;
+  }
+}
+
+.wrapper-box .active {
+  color: #f79240;
+}
+
+.wrapper-box #close {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper-box #close {
+    font-size: 15px;
+    margin-left: 4vw;
+  }
+}
+
+.wrapper-box .order-card {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper-box .order-card .open-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.wrapper-box .order-card .text-order {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper-box .order-card .text-order p {
+  color: #6b6561;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400 !important;
+}
+
+.wrapper-box .order-card .text-order p:nth-child(4) {
+  background-color: #046307;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 12px;
+  width: 69px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper-box .order-card .text-order p:nth-child(4) {
+    width: 70px;
+  }
+}
+
+.wrapper-box .order-card .text-order p:nth-child(5) {
+  color: #000000;
+  font-weight: 700 !important;
+  margin-top: 4px;
+  width: 100%;
+}
+
+.wrapper-box .order-card .view-order a {
+  text-decoration: none;
+  color: #E77D2C;
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper-box .order-card .view-order a {
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
 
 @media screen and (min-width: 1000px) {

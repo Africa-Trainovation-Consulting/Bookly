@@ -29,3 +29,7 @@ showConfirmPassword.addEventListener('click', () => { togglevisibility(confirmPa
             }, false)
         })
 })()
+
+//order slides
+open.addEventListener('click')
+close.addEventListener('click')
