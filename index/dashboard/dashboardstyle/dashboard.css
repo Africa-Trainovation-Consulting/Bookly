@@ -517,6 +517,42 @@
   min-height: 586px;
 }
 
+.wrapper-box .inbox {
+  position: relative;
+}
+
+.wrapper-box .inbox .number {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  width: 4%;
+  background-color: #000000;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-transform: translateY(98px) translateX(54px);
+          transform: translateY(98px) translateX(54px);
+}
+
+@media screen and (min-width: 576px) {
+  .wrapper-box .inbox .number {
+    -webkit-transform: translateY(88px) translateX(48px);
+            transform: translateY(88px) translateX(48px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-box .inbox .number {
+    -webkit-transform: translateY(96px) translateX(54px);
+            transform: translateY(96px) translateX(54px);
+  }
+}
+
+.wrapper-box .inbox-text p {
+  font-weight: 400;
+  color: #6b6561;
+}
+
 .wrapper-box #open {
   cursor: pointer;
 }

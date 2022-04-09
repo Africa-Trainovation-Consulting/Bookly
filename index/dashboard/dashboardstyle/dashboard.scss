@@ -158,6 +158,32 @@
     background-color: $hover;
     color: $color;
     min-height: 586px;
+    .inbox{
+        position: relative;
+        .number{
+            position: absolute;
+            top: 0;
+            color: $hover;
+            width: 4%;
+            background-color: $color;
+            border-radius: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            transform: translateY(98px) translateX(54px);
+            @media screen and (min-width:576px) {
+                transform: translateY(88px) translateX(48px);
+            }
+            @media screen and (min-width:768px) {
+                transform: translateY(96px) translateX(54px);
+            }
+        }
+    }
+    .inbox-text{
+        p{
+            font-weight: 400;
+            color: $dashboard;
+        }
+    }
     #open {
         cursor: pointer;
         @media screen and (max-width: 990px) {
