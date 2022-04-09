@@ -553,6 +553,27 @@
   color: #6b6561;
 }
 
+.wrapper-box .inbox-text .shop {
+  width: 195px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper-box .inbox-text .recent-p {
+    width: 73%;
+    -webkit-transform: translateX(70px);
+            transform: translateX(70px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-box .inbox-text .recent-p {
+    -webkit-transform: translateX(93px);
+            transform: translateX(93px);
+  }
+}
+
 .wrapper-box #open {
   cursor: pointer;
 }

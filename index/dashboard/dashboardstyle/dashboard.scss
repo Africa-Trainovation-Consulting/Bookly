@@ -183,6 +183,20 @@
             font-weight: 400;
             color: $dashboard;
         }
+        .shop{
+            width: 195px;
+            color: $hover;
+            font-weight: 600;
+        }
+        .recent-p{
+            @media screen and (min-width:1000px) {
+                width: 73%;
+                transform: translateX(70px);
+            }
+            @media screen and (min-width:1200px) {
+                transform: translateX(93px);
+            }
+        }
     }
     #open {
         cursor: pointer;
