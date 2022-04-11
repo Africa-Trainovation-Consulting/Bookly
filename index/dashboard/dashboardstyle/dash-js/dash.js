@@ -1,0 +1,1 @@
+help.addEventListener('click',()=> list.classList.toggle('display'))

@@ -1,3 +1,4 @@
+help.addEventListener('click',()=> list.classList.toggle('display'));
 const togglevisibility = (input, icon) => {
     input.type = input.type === 'password' ? 'text' : 'password'
     icon.classList.toggle('fa-eye-slash')

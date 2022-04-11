@@ -30,6 +30,4 @@ showConfirmPassword.addEventListener('click', () => { togglevisibility(confirmPa
         })
 })()
 
-//order slides
-open.addEventListener('click')
-close.addEventListener('click')
+help.addEventListener('click',()=> list.classList.toggle('display'))

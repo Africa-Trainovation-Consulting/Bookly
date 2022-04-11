@@ -273,3 +273,43 @@
         color: #a39e9a80;
     }
 }
+.header {
+    position: relative;  
+}
+.let{
+    border-top: 2px solid $bookbg;
+    .help{
+        gap: 8px;
+        color: $hover;
+        font-weight: 400;
+        &:hover{
+            color: $color;
+        }
+    }
+}
+.listing {
+    display: none;
+    position: absolute;
+    top: 7%;
+    right: 25%;
+    padding: 1em;
+    flex-direction: column;
+    background-color: $hover;
+    z-index: 1;
+    text-align: left;
+    a{
+        text-decoration: none;
+        color: $color;
+        font-weight: 600;
+        &:last-child{
+            background-color: $btncolor;
+        }
+        &:hover{
+            color: $btncolor;
+        }
+    }
+}
+.display{
+    display: flex;
+    transition: all 2s;
+}
