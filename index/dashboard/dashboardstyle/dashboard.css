@@ -224,7 +224,7 @@
 }
 
 .bnt:hover {
-  background-color: #e77d2c;
+  background-color: #fda562;
   color: #000000 !important;
 }
 
@@ -319,6 +319,25 @@
 
 .view {
   visibility: hidden;
+}
+
+.numberss[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.save {
+  width: 70%;
+  height: 44px;
+  border: 1px solid #e77d2c;
+  background-color: #e77d2c;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.save:hover {
+  background-color: #fda562;
+  color: #000000;
 }
 
 .lid {
@@ -541,6 +560,25 @@
   min-height: 586px;
 }
 
+.wrapper-box .bell {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.wrapper-box .bell-in {
+  height: 50px;
+}
+
+.wrapper-box .bell-in:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid;
+}
+
+.wrapper-box .bell-in::-webkit-outer-spin-button, .wrapper-box .bell-in::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .wrapper-box .inbox {
   position: relative;
 }
@@ -695,7 +733,7 @@
 
 .wrapper-box .order-card .view-order a {
   text-decoration: none;
-  color: #e77d2c;
+  color: #fda562;
 }
 
 @media screen and (min-width: 1400px) {
@@ -800,7 +838,7 @@
 
 .wrapper-box .row .half .mind .c-foot p a {
   text-decoration: none;
-  color: #e77d2c;
+  color: #fda562;
   font-size: 18px;
   font-weight: 400;
 }

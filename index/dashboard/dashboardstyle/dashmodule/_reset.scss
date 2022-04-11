@@ -224,6 +224,23 @@
         margin-left: 12px;
     }
 }
-.view{
+.view {
     visibility: hidden;
+}
+.numberss[type="number"] {
+    -moz-appearance: textfield;
+}
+.save{
+    width: 70%;
+    height: 44px;
+    border: 1px solid $btncolor;
+    background-color: $btncolor;
+    color: $hover;
+    border-radius: 10px;
+    font-size: 18px;
+    &:hover{
+        background-color: $change;
+        color: $color;
+        
+    }
 }

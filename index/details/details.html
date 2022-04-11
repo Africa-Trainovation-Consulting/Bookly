@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/index/dashboard/dashboardstyle/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg lid">
+            <div class="container">
+                <a href="#"><img class="img-fluid w-75 w-md-100" src="/styles/img/booklylogo.svg" alt="booklylogo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars bar m-0" onclick="changeicon(this)"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto ul d-flex justify-content-between">
+                        <li class="nav-item">
+                            <a href="#Home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Categories" class="nav-link">Categories</a>
+                        </li>
+                        <li class="nav-item" for="help">
+                            <a href="#Request a book" class="nav-link">Help <span><img
+                                        src="/index/dashboard/dashboardstyle/modal-img/comment.svg" alt="modal-img"
+                                        class="img-fluid"></span></a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Cart" class="nav-link">Cart<span><img src="/styles/img/basket.svg"
+                                        alt="basket"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Login"
+                                class="nav-link text-white d-flex align-items-center justify-content-center w-160 bnt">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="dashboard pb-2">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-sm-6 my-5">
+                    <h5 class="mb-5 my-h5">
+                        Hello! Aduke Madison.
+                        Thank you for coming back!
+                    </h5>
+                    <div class="side-view1">
+                        <div class="side-items">
+                            <a href="/index/dashboard/index.html">
+                                <h6 class="d-flex align-items-center"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/user.svg" alt="user-img"
+                                            class="img-fluid"></span>My Bookly Account</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="side-views">
+                        <div class="side-items boty">
+                            <a href="/index/order/order.html">
+                                <h6 class="d-flex align-items-center textme mb-4"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/order.svg" alt="order-img"
+                                            class="img-fluid"></span>Orders
+                                </h6>
+                            </a>
+                            <a href="/index/saveitems/save.html">
+                                <h6 class="d-flex align-items-center textme mb-4"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/heart.svg" alt="heart-img"
+                                            class="img-fluid"></span>Saved items
+                                </h6>
+                            </a>
+                            <a href="/index/inbox/inbox.html">
+                                <h6 class="d-flex align-items-center textme mb-4"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/inbox.svg" alt="inbox-img"
+                                            class="img-fluid"></span>Inbox
+                                </h6>
+                            </a>
+                            <a href="/index/Recent Reviews/recent.html">
+                                <h6 class="d-flex align-items-center textme mb-4"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/review.svg" alt="review-img"
+                                            class="img-fluid"></span>Pending reviews
+                                </h6>
+                            </a>
+                            <a href="/index/coupon/coupon.html">
+                                <h6 class="d-flex align-items-center textme mb-4"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/coupon.svg" alt="coupon-img"
+                                            class="img-fluid"></span>Bookly coupon
+                                </h6>
+                            </a>
+                            <a href="/index/saveitems/save.html">
+                                <h6 class="d-flex align-items-center textme mb-4"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/heart.svg" alt="saved-img"
+                                            class="img-fluid"></span>Saved items
+                                </h6>
+                            </a>
+                            <a href="/index/update-review/update.html">
+                                <h6 class="d-flex align-items-center textme mb-4"><span style="margin-right: 17px;"><img
+                                            src="/index/dashboard/dashboardstyle/modal-img/recent.svg" alt="recent-img"
+                                            class="img-fluid"></span>Recently viewed
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="side-views">
+                        <div class="side-items">
+                            <a href="/index/details/details.html">
+                                <h6 class="d-flex align-items-center textme mb-4 mt-3">Details</h6>
+                            </a>
+                            <a href="/index/address/address.html">
+                                <h6 class="d-flex align-items-center textme mb-4 mt-3">Address book</h6>
+                            </a>
+                            <a href="/index/changepass/password.html">
+                                <h6 class="d-flex align-items-center textme mb-4 mt-3">Change password</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="side-views">
+                        <div class="side-items d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn d-flex justify-content-center align-items-center">
+                                <h6 class="d-flex align-items-center justify-content-center log">Log Out</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-5">
+                    <div class="dash-select mb-2">
+                        <div class="col-12 bg p-3 pl-4 search d-flex justify-content-center align-items-center">
+                            <div class="drolist d-flex">
+                                <div class="mb-3 in col-sm-3">
+                                    <select class="form-select dropdown" required>
+                                        <option>State</option>
+                                        <option>Kano</option>
+                                        <option>Ibadan</option>
+                                        <option>Port Harcourt</option>
+                                        <option>Jos</option>
+                                        <option>Abuja</option>
+                                    </select>
+                                    <div class="dropp" id="select"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
+                                <div class="mb-3 in col-sm-2">
+                                    <select class="form-select drop" required>
+                                        <option>School</option>
+                                        <option>Primary school</option>
+                                        <option>Junior Secondary</option>
+                                        <option>Senior Secondary School</option>
+                                    </select>
+                                    <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
+                                <div class="mb-3 in col-sm-2">
+                                    <select class="form-select drop" required>
+                                        <option>Class</option>
+                                        <option>Primary 1</option>
+                                        <option>Primary 2</option>
+                                        <option>Primary 3 </option>
+                                        <option>Primary 4</option>
+                                        <option>Primary 5</option>
+                                        <option>Primary 6</option>
+                                        <option>J.S.S.1</option>
+                                        <option>J.S.S.2</option>
+                                        <option>J.S.S.3</option>
+                                        <option>S.S.S.1</option>
+                                        <option>S.S.S.2</option>
+                                        <option>S.S.S.3</option>
+                                    </select>
+                                    <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
+
+                                <div class="mb-3 col-sm-3 in last">
+                                    <select class="form-select drop" required>
+                                        <option>Session</option>
+                                        <option>Kano</option>
+                                        <option>Ibadan</option>
+                                        <option>Port Harcourt</option>
+                                        <option>Jos</option>
+                                        <option>Abuja</option>
+                                    </select>
+                                    <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
+                                    <button type="submit" class="btn btn-dark get">Search</button>
+                                    <button type="submit" class="btn sec d-none d-sm-block glass"><i
+                                            class="fa-solid fa-magnifying-glass min-glass"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 bg p-3 pl-4 secondselect">
+                                <div class="drolist d-flex align-items-center justify-content-center">
+                                    <div class="mb-3 sec col-sm-2">
+                                        <select class="form-select dropdown" required>
+                                            <option>..State</option>
+                                            <option>States</option>
+                                            <option>Kano</option>
+                                            <option>Ibadan</option>
+                                            <option>Port Harcourt</option>
+                                            <option>Jos</option>
+                                            <option>Abuja</option>
+                                        </select>
+                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                    </div>
+                                    <div class="mb-3 sec col-sm-2">
+                                        <select class="form-select drop" required>
+                                            <option>..Sch</option>
+                                            <option>Schools</option>
+                                            <option>Primary school</option>
+                                            <option>Junior Secondary</option>
+                                            <option>Senior Secondary School</option>
+                                        </select>
+                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                    </div>
+                                    <div class="mb-3 sec col-sm-2">
+                                        <select class="form-select drop" required>
+                                            <option>...Class</option>
+                                            <option>Classes</option>
+                                            <option>Primary 1</option>
+                                            <option>Primary 2</option>
+                                            <option>Primary 3 </option>
+                                            <option>Primary 4</option>
+                                            <option>Primary 5</option>
+                                            <option>Primary 6</option>
+                                            <option>J.S.S.1</option>
+                                            <option>J.S.S.2</option>
+                                            <option>J.S.S.3</option>
+                                            <option>S.S.S.1</option>
+                                            <option>S.S.S.2</option>
+                                            <option>S.S.S.3</option>
+                                        </select>
+                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                    </div>
+
+                                    <div class="mb-3 sec col-sm-2 last">
+                                        <select class="form-select drop" required>
+                                            <option>..Session</option>
+                                            <option>Sessions</option>
+                                            <option>Kano</option>
+                                            <option>Ibadan</option>
+                                            <option>Port Harcourt</option>
+                                            <option>Jos</option>
+                                            <option>Abuja</option>
+                                        </select>
+                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                        <button type="submit" class="btn sec "><i
+                                                class="fa-solid fa-magnifying-glass min-glass"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper p-3 d-flex justify-content-start align-items-center">
+                        <h1 class="mean">Details</h1>
+                    </div>
+                    <div class="wrapper-box my-box p-3">
+                        <div class="mt-3">
+                            <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-6">
+                                    <label for="validationCustom01" class="form-label bell">First name</label>
+                                    <input type="text" class="form-control bell-in" id="validationCustom01" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom02" class="form-label bell">Last name</label>
+                                    <input type="text" class="form-control bell-in" id="validationCustom02" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom02" class="form-label bell">Phone Number</label>
+                                    <input type="number" class="form-control bell-in numberss" id="validationCustom02"
+                                        required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please Fill in a number!
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="validationCustom02" class="form-label bell">Email</label>
+                                    <input type="email" class="form-control bell-in" id="validationCustom02" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please Enter an Email-Address!
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="validationCustom01" class="form-label bell">Gender</label>
+                                    <input type="text" class="form-control bell-in" id="validationCustom01" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please Enter Gender!
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label for="validationCustom01" class="form-label bell">Date of Birth
+                                        (optional)</label>
+                                    <input type="date" class="form-control bell-in" id="validationCustom01" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Please Enter Gender!
+                                    </div>
+                                </div>
+                                <div class="col-12 my-5 d-flex justify-content-center align-items-center">
+                                    <button class="save" type="submit">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="slides">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center texting my-3 mb-5">Best Seller Books</h1>
+                <div class="col-md-12 mb-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side">
+                                        <img src="/styles/img/Redmathtextbook.svg" class="d-block w-5"
+                                            alt="Redmathtextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 1</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-sm-block">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="Englishprimary">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Nigeria Pry
+                                            English</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5 w-md-100"
+                                            alt="Mathstextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block mygov">
+                                        <img src="/styles/img/government.svg" class="d-block w-5 img-fluid"
+                                            alt="government">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                            Government</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side d-none d-sm-block">
+                                        <img src="/styles/img/History.svg" class="d-block w-5" alt="History">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Rasmed Basic
+                                            History</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                            alt="Mathstextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/examphysicsss.png" class="d-block w-100" alt="physics">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Exam Focus
+                                            Physics</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="english">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">English
+                                            Primary</p>
+                                        <p class="d-flex justify-content-center align-items-center mb-2">
+                                            &#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex slidess justify-content-center">
+                                    <div class="side">
+                                        <img src="/styles/img/examphysicsss.png" class="d-block w-5" alt="physics">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">Exam Focus
+                                            Physics</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-sm-block">
+                                        <img src="/styles/img/Mathstextbook.svg" class="d-block w-5"
+                                            alt="Mathstextbook">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">New General
+                                            Maths 2</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-xl-block">
+                                        <img src="/styles/img/government.svg" class="d-block w-100" alt="government">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">E to U
+                                            Government</p>
+                                        <p class="d-flex justify-content-center align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                    <div class="side d-none d-md-block">
+                                        <img src="/styles/img/Englishprimary textbook.svg" class="d-block w-5"
+                                            alt="english">
+                                        <p class="d-flex justify-content-center mt-4 mb-0 bookk">English
+                                            Primary</p>
+                                        <p class="d-flex justify-content-center mb-3 align-items-center">&#8358
+                                            3000</p>
+                                        <div class="d-flex w-100 justify-content-center align-items-center">
+                                            <button class="text-light bnt p-2 sm-M">ADD
+                                                TO CART</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="upward text-center my-5">
+                    <a href="#"><img src="/styles/img/uparrow.svg" alt="uparrow" class="img-fluid"></a>
+                    <p class="top">BACK TO TOP</p>
+                </div>
+                <div class="col-12 col-md-6 row mb-5">
+                    <div class="col-6">
+                        <div class="booklygrup">
+                            <img src="/styles/img/whitebooklylogo.svg" alt="logo" class="img-fluid">
+                            <p class="paper">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit,
+                                sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim
+                                veniam,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 two">
+                        <div class="booklygup light">
+                            <h5>Catatogues</h5>
+                            <p class="first-p">Senior School 1</p>
+                            <p>Senior School 1</p>
+                            <p>Senior School 1</p>
+                            <p>Senior School 1</p>
+                            <p>Senior School 1</p>
+                            <p>Senior School 1</p>
+                            <p>Senior School 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 gru2 col-md-6 row">
+                    <div class="col-6 contact">
+                        <h5>Contact Us</h5>
+                        <p class="first-p paper wid">543, Duke Avenue,
+                            Chicago, USA.
+                            <br />
+                            <br />
+                            +919 406 1234
+                            dallaspizzaz@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="col-6 subscribe form-input">
+                        <h5>Subscribe Us</h5>
+                        <div class="input-group good mb-3 first-p">
+                            <input type="email" class="form-control gets inn" id="email" placeholder="Enter your email"
+                                required>
+                            <div class="input-group-append">
+                                <button class="bt" type="submit"><i
+                                        class="fa-solid fa-arrow-right-long line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row second-row">
+                <div class="col-6 hin">
+                    <h6>&#169 Copyright 2022. All rights reserved. </h6>
+                </div>
+                <div class="col-6 hin d-flex justify-content-end align-items-center">
+                    <h6>Made from all the goodness in the dough.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/styles/js/bootstrap.bundle.min.js"></script>
+    <script src="/index/details/js/main2.js"></script>
+</body>
+
+</html>

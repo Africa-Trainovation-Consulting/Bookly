@@ -14,5 +14,6 @@
 # Finished working on the inbox section
 # Finished working on the recent-preview section
 # Finished working on the bookly-coupon section
+# Started working on the Detail section
 
 

@@ -158,6 +158,20 @@
     background-color: $hover;
     color: $color;
     min-height: 586px;
+    .bell{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .bell-in{
+        height: 50px;
+        &:focus{
+            box-shadow: none !important;
+            border: 1px solid;
+        }
+        &::-webkit-outer-spin-button,&::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+    }
     .inbox {
         position: relative;
         .number {
