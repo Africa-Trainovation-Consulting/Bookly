@@ -16,5 +16,7 @@
 # Finished working on the bookly-coupon section
 # Started working on the Detail section
 # Finished working on the Detail section
+# Started working on the Address section
+# Finished working on the Address section
 
 
