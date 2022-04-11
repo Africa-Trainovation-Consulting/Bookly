@@ -257,3 +257,19 @@
 .darks {
     background: $default;
 }
+.child {
+    @media screen and (min-width: 1400px) {
+        width: 84%;
+        transform: translateX(51px);
+    }
+}
+.password {
+    position: relative;
+    .icon {
+        position: absolute;
+        top: 0;
+        right: 11%;
+        transform: translateY(49px);
+        color: #a39e9a80;
+    }
+}

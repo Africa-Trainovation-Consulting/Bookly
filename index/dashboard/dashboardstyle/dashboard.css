@@ -359,6 +359,27 @@
   background: linear-gradient(180deg, rgba(255, 184, 184, 0.3) 66.94%, rgba(255, 255, 255, 0) 83.06%);
 }
 
+@media screen and (min-width: 1400px) {
+  .child {
+    width: 84%;
+    -webkit-transform: translateX(51px);
+            transform: translateX(51px);
+  }
+}
+
+.password {
+  position: relative;
+}
+
+.password .icon {
+  position: absolute;
+  top: 0;
+  right: 11%;
+  -webkit-transform: translateY(49px);
+          transform: translateY(49px);
+  color: #a39e9a80;
+}
+
 .lid {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

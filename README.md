@@ -18,5 +18,6 @@
 # Finished working on the Detail section
 # Started working on the Address section
 # Finished working on the Address section
+# Started working on the change password section
 
 
