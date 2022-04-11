@@ -340,6 +340,25 @@
   color: #000000;
 }
 
+.set {
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #6b6561;
+}
+
+.colo {
+  color: #6b6561;
+}
+
+.cul {
+  color: #e77d2c;
+}
+
+.darks {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(66.94%, rgba(255, 184, 184, 0.3)), color-stop(83.06%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(255, 184, 184, 0.3) 66.94%, rgba(255, 255, 255, 0) 83.06%);
+}
+
 .lid {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

@@ -230,7 +230,7 @@
 .numberss[type="number"] {
     -moz-appearance: textfield;
 }
-.save{
+.save {
     width: 70%;
     height: 44px;
     border: 1px solid $btncolor;
@@ -238,9 +238,22 @@
     color: $hover;
     border-radius: 10px;
     font-size: 18px;
-    &:hover{
+    &:hover {
         background-color: $change;
         color: $color;
-        
     }
+}
+.set {
+    font-size: 17px;
+    font-family: $font2;
+    color: $dashboard;
+}
+.colo {
+    color: $dashboard;
+}
+.cul {
+    color: $btncolor;
+}
+.darks {
+    background: $default;
 }
