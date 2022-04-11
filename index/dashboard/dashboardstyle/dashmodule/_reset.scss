@@ -1,7 +1,7 @@
 .bar {
     font-size: 30px;
 }
-.my-h5{
+.my-h5 {
     width: 80%;
     font: {
         size: 22px;
@@ -24,7 +24,7 @@
     }
 }
 .side-items {
-    a{
+    a {
         text-decoration: none;
         color: $hover;
     }
@@ -178,14 +178,14 @@
     justify-content: center;
     align-items: center;
     @media screen and (min-width: 500px) {
-        font-size: 26px!important;
+        font-size: 26px !important;
     }
 }
 .input-group {
     border: 1px solid $btncolor;
     background-color: $btncolor;
-    &::placeholder{
-        color: $hover!important;
+    &::placeholder {
+        color: $hover !important;
     }
 }
 .good {
@@ -201,8 +201,29 @@
         }
     }
 }
-.wid{
-    @media screen and (min-width:1200px) {
+.wid {
+    @media screen and (min-width: 1200px) {
         width: 60%;
     }
+}
+.new {
+    color: $new;
+    font-weight: 500;
+}
+.not-available {
+    width: 180px;
+    background-color: transparent;
+    border: 1px solid $blocked;
+    height: 46px;
+    border-radius: 7px;
+
+    span {
+        color: $blocked;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 12px;
+    }
+}
+.view{
+    visibility: hidden;
 }

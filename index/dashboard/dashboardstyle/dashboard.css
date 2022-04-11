@@ -224,7 +224,7 @@
 }
 
 .bnt:hover {
-  background-color: #E77D2C;
+  background-color: #e77d2c;
   color: #000000 !important;
 }
 
@@ -295,6 +295,30 @@
   .wid {
     width: 60%;
   }
+}
+
+.new {
+  color: #9c9894;
+  font-weight: 500;
+}
+
+.not-available {
+  width: 180px;
+  background-color: transparent;
+  border: 1px solid #f10707;
+  height: 46px;
+  border-radius: 7px;
+}
+
+.not-available span {
+  color: #f10707;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 12px;
+}
+
+.view {
+  visibility: hidden;
 }
 
 .lid {
@@ -622,6 +646,23 @@
           flex-direction: column;
 }
 
+.wrapper-box .order-card .text-order .price {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
+  width: 70% !important;
+  font-size: 16px !important;
+}
+
+.wrapper-box .order-card .text-order .price .discount {
+  color: #e77d2c !important;
+  margin-left: 24px;
+}
+
+.wrapper-box .order-card .text-order .three {
+  text-decoration: line-through;
+}
+
 .wrapper-box .order-card .text-order p {
   color: #6b6561;
   font-size: 16px;
@@ -654,13 +695,43 @@
 
 .wrapper-box .order-card .view-order a {
   text-decoration: none;
-  color: #E77D2C;
+  color: #e77d2c;
 }
 
 @media screen and (min-width: 1400px) {
   .wrapper-box .order-card .view-order a {
     font-size: 17px;
     font-weight: 600;
+  }
+}
+
+.wrapper-box .order-card .view-order .out {
+  background-color: #6b6561;
+  color: #ffffff;
+  padding: 2px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300 !important;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1399px) {
+  .wrapper-box .order-card .view-order .out {
+    width: 131px;
+    margin-top: 2vh;
+  }
+}
+
+.wrapper-box .order-card .view-order .remove span {
+  color: #e77d2c;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper-box .order-card .view-order .remove {
+    -webkit-transform: translateY(86px) translateX(20px);
+            transform: translateY(86px) translateX(20px);
   }
 }
 
@@ -729,7 +800,7 @@
 
 .wrapper-box .row .half .mind .c-foot p a {
   text-decoration: none;
-  color: #E77D2C;
+  color: #e77d2c;
   font-size: 18px;
   font-weight: 400;
 }

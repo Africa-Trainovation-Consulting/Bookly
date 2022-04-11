@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Dashboard</title>
+    <title>Recently Viewed</title>
     <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -261,29 +261,19 @@
                         </div>
                     </div>
                     <div class="wrapper p-3 d-flex justify-content-start align-items-center">
-                        <h1 class="mean">Orders</h1>
+                        <h1 class="mean">Recently viewed</h1>
                     </div>
                     <div class="wrapper-box my-box p-3">
-                        <div class="slides d-flex border-bottom">
-                            <h4 id="open" class="active">OPEN ORDERS (1)</h4>
-                            <h4 id="close" class="ms-lg-5">CLOSED ORDERS (2)</h4>
+                        <div class="inbox d-flex justify-content-center align-items-center py-4">
+                            <img src="/index/dashboard/dashboardstyle/modal-img/review pend.svg" alt="Recently Viewed"
+                                class="img-fluid">
                         </div>
-                        <div class="card mt-3 order-card">
-                            <div class="open-items" id="openItems">
-                                <div class="items mb-2 mb-lg-0">
-                                    <img src="/styles/img/mathsred.svg" alt="Redmathtextbook" class="img-fluid">
-                                </div>
-                                <div class="text-order d-flex justify-content-center">
-                                    <h6 class="">New General Mathematics for Junior Secondary Schools 1</h6>
-                                    <p class="mb-0">Order 23157</p>
-                                    <p class="mb-0">Quantity: <span id="num">2</span></p>
-                                    <p class="mb-0 deliv">DELIVERED</p>
-                                    <p class="mb-0" id="deliveryDate">On 22-04-2018</p>
-                                </div>
-                                <div class="view-order  text-end">
-                                    <a href="#">SEE DETAILS</a>
-                                </div>
-                            </div>
+                        <div class="inbox-text text-center">
+                            <h5>No recently viewed products</h5>
+                            <p class="m-0">You have no recently viewed products at the moment
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center"><button
+                                    class="bnt shop mt-3 p-2">Start shopping</button></div>
                         </div>
                     </div>
                 </div>
@@ -536,6 +526,7 @@
             </div>
         </div>
     </footer>
+
     <script src="/styles/js/bootstrap.bundle.min.js"></script>
     <script src="/styles/js/main.js"></script>
 </body>

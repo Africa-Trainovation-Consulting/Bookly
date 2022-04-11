@@ -158,9 +158,9 @@
     background-color: $hover;
     color: $color;
     min-height: 586px;
-    .inbox{
+    .inbox {
         position: relative;
-        .number{
+        .number {
             position: absolute;
             top: 0;
             color: $hover;
@@ -170,30 +170,30 @@
             font-size: 20px;
             font-weight: 700;
             transform: translateY(98px) translateX(54px);
-            @media screen and (min-width:576px) {
+            @media screen and (min-width: 576px) {
                 transform: translateY(88px) translateX(48px);
             }
-            @media screen and (min-width:768px) {
+            @media screen and (min-width: 768px) {
                 transform: translateY(96px) translateX(54px);
             }
         }
     }
-    .inbox-text{
-        p{
+    .inbox-text {
+        p {
             font-weight: 400;
             color: $dashboard;
         }
-        .shop{
+        .shop {
             width: 195px;
             color: $hover;
             font-weight: 600;
         }
-        .recent-p{
-            @media screen and (min-width:1000px) {
+        .recent-p {
+            @media screen and (min-width: 1000px) {
                 width: 73%;
                 transform: translateX(70px);
             }
-            @media screen and (min-width:1200px) {
+            @media screen and (min-width: 1200px) {
                 transform: translateX(93px);
             }
         }
@@ -204,9 +204,8 @@
             font-size: 15px;
         }
     }
-    .active{
+    .active {
         color: $user;
-    
     }
     #close {
         cursor: pointer;
@@ -226,6 +225,20 @@
         }
         .text-order {
             flex-direction: column;
+            .price {
+                background-color: $hover !important;
+                color: $color !important;
+                font-weight: 500 !important;
+                width: 70% !important;
+                font-size: 16px !important;
+                .discount {
+                    color: $btncolor !important;
+                    margin-left: 24px;
+                }
+            }
+            .three {
+                text-decoration: line-through;
+            }
             p {
                 color: $dashboard;
                 font-size: 16px;
@@ -259,6 +272,29 @@
                 @media screen and (min-width: 1400px) {
                     font-size: 17px;
                     font-weight: 600;
+                }
+            }
+
+            .out {
+                background-color: $dashboard;
+                color: $hover;
+                padding: 2px;
+                font-family: $font2;
+                font-weight: 300 !important;
+                transform: translateX(20px);
+                border-radius: 4px;
+                @media screen and (max-width: 1399px) {
+                    width: 131px;
+                    margin-top: 2vh;
+                }
+            }
+            .remove {
+                span{
+                    color: $btncolor;
+                    font-weight: 300;
+                }
+                @media screen and (min-width:1400px) {
+                    transform: translateY(86px) translateX(20px);
                 }
             }
         }
