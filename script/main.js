@@ -5,14 +5,12 @@ function myfunction() {
   icon.classList.toggle("fa-times");
 }
 
-function myfunct() {
-  var p = document.getElementById("nv");
-  p.classList.toggle("showGrid");
-}
+const myfunct = () => nv.classList.toggle("showGrid");
 
 // window.addEventListener('resize',()=>{
 //   screen.width> 1212 ? myfun
 // })
+const help = () => nvv.classList.toggle('showhelp');
 
 (function () {
   "use strict";

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="shortcut icon" href="/images/logoM.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,700;1,900&family=Source+Serif+Pro:wght@600&family=Sunflower:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="Nunito_Sans/NunitoSans-Black.ttf"> -->
+    <link rel="stylesheet" href="/Roboto/Roboto-Medium.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,700;1,900&family=Source+Serif+Pro:wght@600&family=Sunflower:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Nunito_Sans/NunitoSans-Black.ttf">
+    <link rel="stylesheet" href="/payment/sass/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+
+        <nav class="navbar" id="nav">
+            <ul class="link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#" onclick="help()">Help <img src="images/help.svg"></a></li>
+                <li><a href="#"><span>Cart <img src="images/Group 1 (5).png" alt="cart" /></span></a></li>
+                <li class="btn"><a href="#"><button>Get started</button> </a></li>
+            </ul>
+        </nav>
+        <nav class="navbar2" id="nvv">
+            <span> Help Center</span>
+            <span> Place & Track Order</span>
+            <span> Order Cancellation</span>
+            <span> Returns & Refunds </span>
+            <span> Payment & Bookly Account</span>
+            <hr>
+            <button> <img src="images/live.svg" />Live Help</button>
+
+        </nav>
+
+        <div class="icon" onclick="myfunction()"> <i id="icon" class="fa-solid fa-bars"></i></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+    <section class="section1">
+        <div class="search">
+
+            <h6>
+                Hello! Aduke Madison <br>
+                Thank you for coming back!
+            </h6>
+            <div class="searchShop">
+
+
+                <span class="search2">
+                    <select class=" form1 form-select  mt-0 mb-0  " id="select1" aria-label="Default select example">
+                        <option selected>State</option>
+                        <option value="1">OGUN</option>
+                        <option value="2">LAGOS</option>
+                        <option value="3">OSUN</option>
+                    </select>
+                    <select class="form-select  form-select-sm " aria-label="Default select example">
+                        <option selected>School</option>
+                        <option value="1">Primary school</option>
+                        <option value="2">Junior Secondary School</option>
+                        <option value="3"> Senior Secondary School</option>
+                    </select>
+                    <select class="form-select  form-select-sm " aria-label="Default select example">
+                        <option selected>Class</option>
+                        <option value="1">S.S.S.1</option>
+                        <option value="2">S.S.S.2</option>
+                        <option value="3">S.S.S.3</option>
+                        <option value="3">J.S.S.1</option>
+                        <option value="3">J.S.S.2</option>
+                        <option value="3">J.S.S.3</option>
+                        <option value="3">Primary 1</option>
+                        <option value="3">Primary 2</option>
+                        <option value="3">Primary 3</option>
+                        <option value="3">Primary 4</option>
+                        <option value="3">Primary 5</option>
+                        <option value="3">Primary 6</option>
+                    </select>
+                    <select class="form-select  form-select-sm " aria-label="Default select example">
+                        <option selected>Session</option>
+                        <option value="1">1st Term</option>
+                        <option value="2">2st Term</option>
+                        <option value="3">3st Term</option>
+                    </select>
+                    <button class="btn3">Search</button>
+                </span>
+            </div>
+        </div>
+        <div class="accountSection">
+            <div class="order">
+                <p><img src="images/white user.svg" alt="icon" /> My Bookly Account</p>
+                <p><img src="images/seconIcon.svg" alt="icon" /> Orders</p>
+                <p><img src="images/thirdIcon.svg" alt="icon" /> Saved items</p>
+                <p><img src="images/inbox.svg" alt="icon" /> <span>Inbox</span></p>
+                <p><img src="images/pend.svg" alt="icon" /> Pending reviews</p>
+                <p><img src="images/coupon.svg" alt="icon" /> Bookly coupon</p>
+                <p><img src="images/seconIcon.svg" alt="icon" /> Saved items</p>
+                <p><img src="images/review.svg" alt="icon" /> Recently viewed</p>
+                <hr>
+                <p> Details</p>
+                <p> Address book</p>
+                <p> Change password</p>
+
+                <hr>
+                <button>Log out</button>
+            </div>
+            <div class="account">
+                <h3>Account Overview</h3>
+                <div class="accountSub">
+
+
+                    <div class="firstDiv">
+                        <div>
+                            <h6>
+                                <p>ACCOUNT DETAILS</p><img src="images/pen.svg" alt="pen" />
+                            </h6>
+                            <small>Aduke Madison</small> <br>
+                            <small>adukemadison@gmail.com</small>
+                            <h5>CHANGE PASSWORD</h5>
+                        </div>
+                        <div>
+                            <h6>
+                                <p>ADDRESS BOOK </p><img src="images/pen.svg" alt="pen" />
+                            </h6>
+                            <small>Your default shipping address:</small><br>
+                            <small>Aduke Madison</small> <br><small>Clinton, Mississippi, U.S.A</small> <br> <small>+
+                                919 023 8096</small>
+
+                        </div>
+                    </div>
+
+                    <div class="secondDiv">
+                        <div>
+                            <h6>
+                                <p>BOOKLY PRIME </p><img src="images/pen.svg" alt="pen" />
+                            </h6>
+                            <p>Bookly prime is a loyalty program that entitles
+                                its members to quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commoso
+                                consequat efesristo.</p>
+                            <button> <img src="images/subscribe.svg" alt="button" /> SUBSCRIBE BOOKLY PRIME</button>
+                        </div>
+                        <div>
+                            <h4> BOOKLY STORE CREDIT
+                            </h4>
+                            <p> <img src="images/moneybag.svg" alt="bag" /> &#8358;0.00</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="/payment/order.js"></script>
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
