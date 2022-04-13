@@ -215,11 +215,11 @@ body {
             font-family: $familyN;
             font-weight: 400;
 
-            @media screen and (min-width:994px) {
-                position: absolute;
-                top: 140px;
-                font-size: 24px;
-            }
+            // @media screen and (min-width:994px) {
+            //     position: absolute;
+            //     top: 140px;
+            //     font-size: 24px;
+            // }
         }
 
         .searchShop {
@@ -327,9 +327,17 @@ body {
     }
 
     .accountSection {
+        @media screen and (min-width:893px) {
+           
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 1vw
+        }
+
         .order {
             background-color: $colourwhite;
-            width: 200px;
+            width: 250px;
             padding-bottom: 10px;
 
             p {
@@ -372,24 +380,39 @@ body {
             background-color: $colourwhite;
             margin-top: 20px;
             font-family: $familyN;
+            @media screen and (min-width:893px) {
+                width: 70%;
+
+            }
 
             h3 {
                 font-weight: 700;
-                padding-left: 10px;
+                padding-left: 3vw *1.5;
                 padding-top: 10px;
                 padding-bottom: 5px;
                 border-bottom: 1px solid rgba(107, 101, 97, 0.6);
             }
 
             .accountSub {
+                @media screen and (min-width:673px) {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+
                 .firstDiv {
                     div:first-child {
                         //  padding: 10px;
                         border: 1.5px solid rgba(107, 101, 97, 0.6);
-                        //width: 250px;
+                        width: 280px;
+                        height: 275px;
+                       
                         margin: 10px;
                         border-radius: 10px;
                         font-family: $familyN;
+                        @media screen and (min-width:1299px) {
+                            width: 390px;
+                            height: 257px;
+                        }
 
                         h6 {
                             display: flex;
@@ -420,14 +443,23 @@ body {
                             padding-top: 30px;
                             padding-left: 10px;
                         }
+                        margin: auto;
+                        margin-bottom: 20px;
                     }
 
                     div:nth-child(2) {
                         border: 1.5px solid rgba(107, 101, 97, 0.6);
                         //width: 250px;
+                        width: 280px;
+                        height: 275px;
                         margin: 10px;
                         border-radius: 10px;
                         font-family: $familyN;
+                        @media screen and (min-width:1299px) {
+                            width: 390px;
+                            height: 257px;
+                        }
+
 
                         h6 {
                             display: flex;
@@ -449,17 +481,27 @@ body {
                             padding: 10px;
                             padding-top: 20px;
                         }
+                        margin: auto;
+                        margin-bottom: 20px;
                     }
 
                 }
+
                 .secondDiv {
                     div:first-child {
                         padding-bottom: 10px;
                         border: 1.5px solid rgba(107, 101, 97, 0.6);
                         //width: 250px;
+                        width: 280px;
+                        height: 275px;
                         margin: 10px;
                         border-radius: 10px;
                         font-family: $familyN;
+                        @media screen and (min-width:1299px) {
+                            width: 390px;
+                            height: 257px;
+                        }
+
 
                         h6 {
                             display: flex;
@@ -476,23 +518,61 @@ body {
                                 width: 15px;
                             }
                         }
-                        p{
+
+                        p {
                             padding: 10px;
                         }
-                        button{
-                           display: flex;
-                           margin: auto;
-                           background-color: $colourwhite;
-                           box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
-                           padding: 10px 10px 0px 10px;
-                           color: $section3colour;
-                           font-family: $familyN;
-                           font-weight: 400;
-                           font-size: 12px;
-                           gap: 10px;
+
+                        button {
+                            display: flex;
+                            margin: auto;
+                            background-color: $colourwhite;
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            padding: 10px 10px 0px 10px;
+                            color: $section3colour;
+                            font-family: $familyN;
+                            font-weight: 400;
+                            font-size: 12px;
+                            gap: 10px;
                         }
+                        margin: auto;
+                        margin-bottom: 20px;
                     }
-                    div:nth-child(@)
+
+                    div:nth-child(2) {
+                        border: 1.5px solid rgba(107, 101, 97, 0.6);
+                        //width: 250px;
+                        width: 280px;
+                        height: 275px;
+                        margin: 10px;
+                        border-radius: 10px;
+                        font-family: $familyN;
+                        padding-bottom: 90px;
+                        @media screen and (min-width:1299px) {
+                            width: 390px;
+                            height: 257px;
+                        }
+
+
+                        h6 {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: baseline;
+                            border-bottom: 1px solid rgba(107, 101, 97, 0.6);
+                            width: 100%;
+                            padding: 10px 10px 0px 10px;
+                            margin-bottom: 0rem !important;
+                            font-size: 18px;
+                            font-weight: 600;
+
+
+                        }
+
+                        p {
+                            padding: 10px;
+                        }
+                        margin: auto;
+                    }
                 }
             }
         }

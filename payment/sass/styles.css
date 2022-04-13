@@ -221,14 +221,6 @@ body header .responsiveness a button {
   font-weight: 400;
 }
 
-@media screen and (min-width: 994px) {
-  .section1 .search h6 {
-    position: absolute;
-    top: 140px;
-    font-size: 24px;
-  }
-}
-
 .section1 .search .searchShop {
   background-color: #C4C4C4;
   padding-top: 10px;
@@ -313,9 +305,22 @@ body header .responsiveness a button {
   }
 }
 
+@media screen and (min-width: 893px) {
+  .section1 .accountSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    gap: 1vw;
+  }
+}
+
 .section1 .accountSection .order {
   background-color: #FFFFFF;
-  width: 200px;
+  width: 250px;
   padding-bottom: 10px;
 }
 
@@ -360,19 +365,47 @@ body header .responsiveness a button {
   font-family: Nunito Sans;
 }
 
+@media screen and (min-width: 893px) {
+  .section1 .accountSection .account {
+    width: 70%;
+  }
+}
+
 .section1 .accountSection .account h3 {
   font-weight: 700;
-  padding-left: 10px;
+  padding-left: 4.5vw;
   padding-top: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(107, 101, 97, 0.6);
 }
 
+@media screen and (min-width: 673px) {
+  .section1 .accountSection .account .accountSub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .section1 .accountSection .account .accountSub .firstDiv div:first-child {
   border: 1.5px solid rgba(107, 101, 97, 0.6);
+  width: 280px;
+  height: 275px;
   margin: 10px;
   border-radius: 10px;
   font-family: Nunito Sans;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1299px) {
+  .section1 .accountSection .account .accountSub .firstDiv div:first-child {
+    width: 390px;
+    height: 257px;
+  }
 }
 
 .section1 .accountSection .account .accountSub .firstDiv div:first-child h6 {
@@ -413,9 +446,20 @@ body header .responsiveness a button {
 
 .section1 .accountSection .account .accountSub .firstDiv div:nth-child(2) {
   border: 1.5px solid rgba(107, 101, 97, 0.6);
+  width: 280px;
+  height: 275px;
   margin: 10px;
   border-radius: 10px;
   font-family: Nunito Sans;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1299px) {
+  .section1 .accountSection .account .accountSub .firstDiv div:nth-child(2) {
+    width: 390px;
+    height: 257px;
+  }
 }
 
 .section1 .accountSection .account .accountSub .firstDiv div:nth-child(2) h6 {
@@ -445,16 +489,23 @@ body header .responsiveness a button {
   padding-top: 20px;
 }
 
-.section1 .accountSection .account .accountSub .secondDiv {
-  div: nth-child();
-}
-
 .section1 .accountSection .account .accountSub .secondDiv div:first-child {
   padding-bottom: 10px;
   border: 1.5px solid rgba(107, 101, 97, 0.6);
+  width: 280px;
+  height: 275px;
   margin: 10px;
   border-radius: 10px;
   font-family: Nunito Sans;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1299px) {
+  .section1 .accountSection .account .accountSub .secondDiv div:first-child {
+    width: 390px;
+    height: 257px;
+  }
 }
 
 .section1 .accountSection .account .accountSub .secondDiv div:first-child h6 {
@@ -497,5 +548,45 @@ body header .responsiveness a button {
   font-weight: 400;
   font-size: 12px;
   gap: 10px;
+}
+
+.section1 .accountSection .account .accountSub .secondDiv div:nth-child(2) {
+  border: 1.5px solid rgba(107, 101, 97, 0.6);
+  width: 280px;
+  height: 275px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: Nunito Sans;
+  padding-bottom: 90px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1299px) {
+  .section1 .accountSection .account .accountSub .secondDiv div:nth-child(2) {
+    width: 390px;
+    height: 257px;
+  }
+}
+
+.section1 .accountSection .account .accountSub .secondDiv div:nth-child(2) h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-bottom: 1px solid rgba(107, 101, 97, 0.6);
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+  margin-bottom: 0rem !important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section1 .accountSection .account .accountSub .secondDiv div:nth-child(2) p {
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
