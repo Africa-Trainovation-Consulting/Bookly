@@ -24,6 +24,7 @@ body header {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 90px;
   padding-top: 10px;
+  position: relative;
 }
 
 body header .logo img {
@@ -40,6 +41,44 @@ body header .icon {
 
 body header .navbar {
   display: none;
+}
+
+body header .responsiveness {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  left: 80px;
+  right: 0;
+  top: 90px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #FFFFFF;
+}
+
+body header .responsiveness a {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+body header .responsiveness a button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #E77D2C;
+  border-radius: 15px;
+  color: #ffff;
+  margin-top: 1px;
 }
 
 @media screen and (min-width: 993px) {
@@ -98,44 +137,6 @@ body header .navbar {
   body header .icon {
     display: none;
   }
-}
-
-body header .responsiveness {
-  display: -ms-grid;
-  display: grid;
-  position: absolute;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  left: 0px;
-  right: 0;
-  top: 90px;
-  width: 100%;
-  padding: 3vw;
-  margin: 0px;
-  background-color: #FFFFFF;
-}
-
-body header .responsiveness a {
-  text-decoration: none;
-  color: black;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 2.5;
-}
-
-body header .responsiveness a button {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #E77D2C;
-  border-radius: 15px;
-  color: #ffff;
-  margin-top: 1px;
 }
 
 .navbar2 {
@@ -203,14 +204,27 @@ body header .responsiveness a button {
 
 .section1 {
   background-color: #6B6561;
-  padding-bottom: 50px;
   padding: 0px 3vw 0px 3vw;
-  position: relative;
+  padding-bottom: 50px;
 }
 
 .section1 .search {
   padding-top: 100px;
   padding-bottom: 50px;
+}
+
+@media screen and (min-width: 935px) {
+  .section1 .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .section1 .search h6 {
@@ -231,8 +245,13 @@ body header .responsiveness a button {
 @media screen and (min-width: 707px) {
   .section1 .search .searchShop {
     padding: 20px 5px 20px 30px;
-    padding-right: 30px;
-    float: right;
+    width: 680px;
+  }
+}
+
+@media screen and (min-width: 935px) {
+  .section1 .search .searchShop {
+    width: 700px;
   }
 }
 
@@ -255,8 +274,6 @@ body header .responsiveness a button {
   .section1 .search .searchShop .search2 {
     height: 60px;
     width: 580px;
-    float: right;
-    margin-left: 0vw;
   }
 }
 
@@ -588,5 +605,327 @@ body header .responsiveness a button {
 
 .section1 .accountSection .account .accountSub .secondDiv div:nth-child(2) p {
   padding: 10px;
+}
+
+.bookSeller {
+  padding-bottom: 50px;
+}
+
+.bookSeller .none {
+  display: none;
+}
+
+@media only screen and (min-width: 400px) {
+  .bookSeller .nm {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .bookSeller .nt {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bookSeller .nd {
+    display: inline-block;
+  }
+}
+
+.bookSeller h3 {
+  text-align: center;
+  padding: 20px 20px;
+  font-family: Nunito Sans;
+  font-weight: 700;
+}
+
+.bookSeller .content {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.bookSeller .content .firstLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bookSeller .content .firstLine img {
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bookSeller .content .firstLine p {
+  color: black;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 25px;
+}
+
+.bookSeller .content .firstLine button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+  background-color: #E77D2C;
+  color: #FFFFFF;
+  font-size: Nunito Sans;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.bookSeller .content .firstLine button:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  padding-left: 4.5vw;
+  padding-right: 6vw;
+  font-family: Nunito Sans;
+}
+
+footer a {
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+  display: block;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+footer a p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 766px) {
+  footer a {
+    padding-top: 42px;
+  }
+  footer a i {
+    font-size: 30px;
+  }
+  footer a p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1037px) {
+  footer .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer .foot .divD {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .foot .divD span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer .foot .divD span + p {
+  padding-top: 10px;
+}
+
+footer .foot .divD p {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  footer .foot .divD p {
+    font-size: 18px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 766px) {
+  footer .foot .divD {
+    padding-top: 40px;
+  }
+}
+
+footer .foot .divD div:first-child {
+  width: 170px;
+}
+
+footer .foot .divD div:nth-child(2) p {
+  line-height: 0.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .foot .divD div:nth-child(2) h5 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 766px) {
+  footer .foot .divD div:nth-child(2) {
+    padding-top: 10px;
+    padding-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  footer .foot .divD div:nth-child(2) {
+    padding-left: 14vw;
+  }
+}
+
+footer .foot .div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+  font-family: Nunito Sans;
+}
+
+@media screen and (min-width: 766px) {
+  footer .foot .div2 {
+    margin-top: -27px;
+  }
+}
+
+footer .foot .div2 div:first-child {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .foot .div2 div:first-child h5 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+footer .foot .div2 div:first-child p {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  footer .foot .div2 div:first-child p {
+    font-size: 18px;
+  }
+}
+
+footer .foot .div2 div:last-child h5 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+footer .foot .div2 div:last-child span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .foot .div2 div:last-child span input {
+  width: 100%;
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #E87E2E;
+  color: #FFFFFF;
+  padding-left: 3px;
+}
+
+@media screen and (min-width: 600px) {
+  footer .foot .div2 div:last-child span input {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    margin-right: 3vw;
+  }
+}
+
+footer .foot .div2 div:last-child span button {
+  background-color: #FFFFFF;
+  padding: 0px 3px 4px 2px;
+  margin-left: -6px;
+  width: 40px;
+  border-radius: 10px;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+@media screen and (min-width: 600px) {
+  footer .foot .div2 div:last-child span button {
+    width: 70px;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+}
+
+@media screen and (min-width: 1035px) {
+  footer .foot .div2 div:last-child span button {
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
+  }
+}
+
+@media screen and (min-width: 1125px) {
+  footer .foot .div2 div:last-child {
+    padding-left: 100px;
+  }
+}
+
+footer .copyright {
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 766px) {
+  footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
