@@ -324,12 +324,16 @@ i {
     z-index: 2;
     transition: all 0.6s linear;
 }
-.myways{
+.myways {
     padding: 2em;
 }
-.pp{
+.pp {
     padding-top: 1em;
 }
-.pp2{
+.pp2 {
     padding: 1em;
+}
+
+.active{
+    color: $user;
 }
