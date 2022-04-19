@@ -461,7 +461,7 @@ i:hover {
   padding: 1em;
 }
 
-.active {
+.active-text {
   color: #f79240;
 }
 
@@ -763,6 +763,8 @@ i:hover {
 
 .wrapper-box #open {
   cursor: pointer;
+  border-bottom: 1px solid #e77d2c;
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width: 990px) {
@@ -773,6 +775,7 @@ i:hover {
 
 .wrapper-box #close {
   cursor: pointer;
+  color: #6b6561;
 }
 
 @media screen and (max-width: 990px) {
@@ -783,7 +786,7 @@ i:hover {
 }
 
 .wrapper-box .order-card {
-  padding: 15px;
+  padding: 18px;
   border-radius: 15px;
 }
 
@@ -792,6 +795,10 @@ i:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -848,8 +855,23 @@ i:hover {
 .wrapper-box .order-card .text-order p:nth-child(5) {
   color: #000000;
   font-weight: 700 !important;
+  font-size: 14px;
   margin-top: 4px;
   width: 100%;
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper-box .order-card .details {
+    -webkit-transform: translateX(68px);
+            transform: translateX(68px);
+  }
+}
+
+.wrapper-box .order-card .details a {
+  text-decoration: none;
+  color: #f79240;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .wrapper-box .order-card .view-order a {

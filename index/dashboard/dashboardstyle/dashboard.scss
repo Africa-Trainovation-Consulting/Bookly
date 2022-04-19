@@ -158,17 +158,18 @@
     background-color: $hover;
     color: $color;
     min-height: 586px;
-    .bell{
+    .bell {
         font-size: 20px;
         font-weight: 400;
     }
-    .bell-in{
+    .bell-in {
         height: 50px;
-        &:focus{
+        &:focus {
             box-shadow: none !important;
             border: 1px solid;
         }
-        &::-webkit-outer-spin-button,&::-webkit-inner-spin-button{
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
     }
@@ -212,25 +213,30 @@
             }
         }
     }
+
     #open {
         cursor: pointer;
+        border-bottom: 1px solid $btncolor;
+        padding-bottom: 15px;
         @media screen and (max-width: 990px) {
             font-size: 15px;
         }
     }
     #close {
         cursor: pointer;
+        color: $dashboard;
         @media screen and (max-width: 990px) {
             font-size: 15px;
             margin-left: 4vw;
         }
     }
     .order-card {
-        padding: 15px;
+        padding: 18px;
         border-radius: 15px;
         .open-items {
             @media screen and (min-width: 1400px) {
                 display: flex;
+                flex-direction: row !important;
                 justify-content: space-evenly;
             }
         }
@@ -271,9 +277,21 @@
                 &:nth-child(5) {
                     color: $color;
                     font-weight: 700 !important;
+                    font-size: 14px;
                     margin-top: 4px;
                     width: 100%;
                 }
+            }
+        }
+        .details {
+            @media screen and (min-width: 1400px) {
+                transform: translateX(68px);
+            }
+            a {
+                text-decoration: none;
+                color: $user;
+                font-size: 18px;
+                font-weight: 600;
             }
         }
         .view-order {
@@ -300,11 +318,11 @@
                 }
             }
             .remove {
-                span{
+                span {
                     color: $btncolor;
                     font-weight: 300;
                 }
-                @media screen and (min-width:1400px) {
+                @media screen and (min-width: 1400px) {
                     transform: translateY(86px) translateX(20px);
                 }
             }
@@ -322,7 +340,6 @@
     }
     .row {
         .half {
-            
             .mind {
                 border: 2px solid $border;
                 border-radius: 12px;
