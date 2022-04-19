@@ -333,7 +333,35 @@ i {
 .pp2 {
     padding: 1em;
 }
-
-.active-text{
-    color: $user;
+.myspan {
+    background-color: $dashboard;
+    border-radius: 12px;
+    padding: 2px;
+    width: 209px;
+    .lookp {
+        padding-left: 3px;
+        font-size: 10px !important;
+        color: $hover !important;
+    }
+    @media screen and (min-width: 1400px) {
+        width: 52%;
+    }
+    @media screen and (min-width: 576px) {
+        width: 173px;
+        .lookp {
+            font-size: 8px !important;
+        }
+    }
+    @media screen and (min-width: 772px) {
+        width: 209px;
+        .lookp {
+            font-size: 10px !important;
+        }
+    }
+}
+.active-text {
+    color: $user !important;
+}
+.myheight{
+    min-height: 599px !important;
 }

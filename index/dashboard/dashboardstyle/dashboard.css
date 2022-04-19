@@ -461,8 +461,49 @@ i:hover {
   padding: 1em;
 }
 
+.myspan {
+  background-color: #6b6561;
+  border-radius: 12px;
+  padding: 2px;
+  width: 209px;
+}
+
+.myspan .lookp {
+  padding-left: 3px;
+  font-size: 10px !important;
+  color: #ffffff !important;
+}
+
+@media screen and (min-width: 1400px) {
+  .myspan {
+    width: 52%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .myspan {
+    width: 173px;
+  }
+  .myspan .lookp {
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (min-width: 772px) {
+  .myspan {
+    width: 209px;
+  }
+  .myspan .lookp {
+    font-size: 10px !important;
+  }
+}
+
 .active-text {
-  color: #f79240;
+  color: #f79240 !important;
+}
+
+.myheight {
+  min-height: 599px !important;
 }
 
 .lid {
@@ -682,7 +723,7 @@ i:hover {
 .wrapper-box {
   background-color: #ffffff;
   color: #000000;
-  min-height: 586px;
+  min-height: 645px;
 }
 
 .wrapper-box .bell {
@@ -761,6 +802,18 @@ i:hover {
   }
 }
 
+.wrapper-box .opens {
+  cursor: pointer;
+  color: #6b6561;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper-box .opens {
+    font-size: 15px;
+  }
+}
+
 .wrapper-box #open {
   cursor: pointer;
   border-bottom: 1px solid #e77d2c;
@@ -780,6 +833,19 @@ i:hover {
 
 @media screen and (max-width: 990px) {
   .wrapper-box #close {
+    font-size: 15px;
+    margin-left: 4vw;
+  }
+}
+
+.wrapper-box .close {
+  cursor: pointer;
+  border-bottom: 1px solid #e77d2c;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 990px) {
+  .wrapper-box .close {
     font-size: 15px;
     margin-left: 4vw;
   }

@@ -157,7 +157,7 @@
 .wrapper-box {
     background-color: $hover;
     color: $color;
-    min-height: 586px;
+    min-height: 645px;
     .bell {
         font-size: 20px;
         font-weight: 400;
@@ -213,7 +213,14 @@
             }
         }
     }
-
+    .opens {
+        cursor: pointer;
+        color: $dashboard;
+        padding-bottom: 15px;
+        @media screen and (max-width: 990px) {
+            font-size: 15px;
+        }
+    }
     #open {
         cursor: pointer;
         border-bottom: 1px solid $btncolor;
@@ -225,6 +232,15 @@
     #close {
         cursor: pointer;
         color: $dashboard;
+        @media screen and (max-width: 990px) {
+            font-size: 15px;
+            margin-left: 4vw;
+        }
+    }
+    .close {
+        cursor: pointer;
+        border-bottom: 1px solid $btncolor;
+        padding-bottom: 15px;
         @media screen and (max-width: 990px) {
             font-size: 15px;
             margin-left: 4vw;
@@ -294,6 +310,7 @@
                 font-weight: 600;
             }
         }
+
         .view-order {
             a {
                 text-decoration: none;

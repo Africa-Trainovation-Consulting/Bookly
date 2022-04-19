@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Dashboard</title>
+    <title>Close Order</title>
     <link rel="stylesheet" href="/styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -151,93 +151,33 @@
                     </div>
                 </div>
                 <div class="col-sm-6 my-5">
-                    <div class="dash-select mb-2">
-                        <div class="col-12 bg p-3 pl-4 search d-flex justify-content-center align-items-center">
-                            <div class="drolist d-flex">
-                                <div class="mb-3 in col-sm-3">
-                                    <select class="form-select dropdown" required>
-                                        <option>State</option>
-                                        <option>Kano</option>
-                                        <option>Ibadan</option>
-                                        <option>Port Harcourt</option>
-                                        <option>Jos</option>
-                                        <option>Abuja</option>
-                                    </select>
-                                    <div class="dropp" id="select"><i class="fa-solid fa-caret-down"></i></div>
-                                </div>
-                                <div class="mb-3 in col-sm-2">
-                                    <select class="form-select drop" required>
-                                        <option>School</option>
-                                        <option>Primary school</option>
-                                        <option>Junior Secondary</option>
-                                        <option>Senior Secondary School</option>
-                                    </select>
-                                    <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
-                                </div>
-                                <div class="mb-3 in col-sm-2">
-                                    <select class="form-select drop" required>
-                                        <option>Class</option>
-                                        <option>Primary 1</option>
-                                        <option>Primary 2</option>
-                                        <option>Primary 3 </option>
-                                        <option>Primary 4</option>
-                                        <option>Primary 5</option>
-                                        <option>Primary 6</option>
-                                        <option>J.S.S.1</option>
-                                        <option>J.S.S.2</option>
-                                        <option>J.S.S.3</option>
-                                        <option>S.S.S.1</option>
-                                        <option>S.S.S.2</option>
-                                        <option>S.S.S.3</option>
-                                    </select>
-                                    <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
-                                </div>
-
-                                <div class="mb-3 col-sm-3 in last">
-                                    <select class="form-select drop" required>
-                                        <option>Session</option>
-                                        <option>Kano</option>
-                                        <option>Ibadan</option>
-                                        <option>Port Harcourt</option>
-                                        <option>Jos</option>
-                                        <option>Abuja</option>
-                                    </select>
-                                    <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
-                                    <button type="submit" class="btn btn-dark get">Search</button>
-                                    <button type="submit" class="btn sec d-none d-sm-block glass"><i
-                                            class="fa-solid fa-magnifying-glass min-glass"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 bg p-3 pl-4 secondselect">
-                                <div class="drolist d-flex align-items-center justify-content-center">
-                                    <div class="mb-3 sec col-sm-2">
+                    <div>
+                        <div class="dash-select mb-2">
+                            <div class="col-12 bg p-3 pl-4 search d-flex justify-content-center align-items-center">
+                                <div class="drolist d-flex">
+                                    <div class="mb-3 in col-sm-3">
                                         <select class="form-select dropdown" required>
-                                            <option>..State</option>
-                                            <option>States</option>
+                                            <option>State</option>
                                             <option>Kano</option>
                                             <option>Ibadan</option>
                                             <option>Port Harcourt</option>
                                             <option>Jos</option>
                                             <option>Abuja</option>
                                         </select>
-                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                        <div class="dropp" id="select"><i class="fa-solid fa-caret-down"></i></div>
                                     </div>
-                                    <div class="mb-3 sec col-sm-2">
+                                    <div class="mb-3 in col-sm-2">
                                         <select class="form-select drop" required>
-                                            <option>..Sch</option>
-                                            <option>Schools</option>
+                                            <option>School</option>
                                             <option>Primary school</option>
                                             <option>Junior Secondary</option>
                                             <option>Senior Secondary School</option>
                                         </select>
-                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                        <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
                                     </div>
-                                    <div class="mb-3 sec col-sm-2">
+                                    <div class="mb-3 in col-sm-2">
                                         <select class="form-select drop" required>
-                                            <option>...Class</option>
-                                            <option>Classes</option>
+                                            <option>Class</option>
                                             <option>Primary 1</option>
                                             <option>Primary 2</option>
                                             <option>Primary 3 </option>
@@ -251,52 +191,131 @@
                                             <option>S.S.S.2</option>
                                             <option>S.S.S.3</option>
                                         </select>
-                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                        <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
                                     </div>
-
-                                    <div class="mb-3 sec col-sm-2 last">
+                                    <div class="mb-3 col-sm-3 in last">
                                         <select class="form-select drop" required>
-                                            <option>..Session</option>
-                                            <option>Sessions</option>
+                                            <option>Session</option>
                                             <option>Kano</option>
                                             <option>Ibadan</option>
                                             <option>Port Harcourt</option>
                                             <option>Jos</option>
                                             <option>Abuja</option>
                                         </select>
-                                        <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
-                                        <button type="submit" class="btn sec "><i
+                                        <div class="dropp"><i class="fa-solid fa-caret-down"></i></div>
+                                        <button type="submit" class="btn btn-dark get">Search</button>
+                                        <button type="submit" class="btn sec d-none d-sm-block glass"><i
                                                 class="fa-solid fa-magnifying-glass min-glass"></i></button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="wrapper p-3 d-flex justify-content-start align-items-center">
-                        <h1 class="mean mb-0">Orders</h1>
-                    </div>
-                    <div class="wrapper-box my-box myheight p-3">
-                        <div class="slides d-flex border-bottom mb-4">
-                            <a href="/index/order/order.html" class="text-decoration-none">
-                                <h4 id="open" class="active-text mb-0">OPEN ORDERS (1)</h4>
-                            </a>
-                            <a href="/index/order/close/close.html" class="text-decoration-none">
-                                <h4 class="ms-lg-5" id="close">CLOSED ORDERS (2)</h4>
-                            </a>
-                        </div>
-                        <div class="card order-card">
-                            <div class="d-xl-flex">
-                                <div class="my-image mb-3 mb-xl-0">
-                                    <img src="/styles/img/mathsred.svg" alt="mathsred" class="img-fluid">
+                            <div class="row">
+                                <div class="col-12 bg p-3 pl-4 secondselect">
+                                    <div class="drolist d-flex align-items-center justify-content-center">
+                                        <div class="mb-3 sec col-sm-2">
+                                            <select class="form-select dropdown" required>
+                                                <option>..State</option>
+                                                <option>States</option>
+                                                <option>Kano</option>
+                                                <option>Ibadan</option>
+                                                <option>Port Harcourt</option>
+                                                <option>Jos</option>
+                                                <option>Abuja</option>
+                                            </select>
+                                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                        </div>
+                                        <div class="mb-3 sec col-sm-2">
+                                            <select class="form-select drop" required>
+                                                <option>..Sch</option>
+                                                <option>Schools</option>
+                                                <option>Primary school</option>
+                                                <option>Junior Secondary</option>
+                                                <option>Senior Secondary School</option>
+                                            </select>
+                                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                        </div>
+                                        <div class="mb-3 sec col-sm-2">
+                                            <select class="form-select drop" required>
+                                                <option>...Class</option>
+                                                <option>Classes</option>
+                                                <option>Primary 1</option>
+                                                <option>Primary 2</option>
+                                                <option>Primary 3 </option>
+                                                <option>Primary 4</option>
+                                                <option>Primary 5</option>
+                                                <option>Primary 6</option>
+                                                <option>J.S.S.1</option>
+                                                <option>J.S.S.2</option>
+                                                <option>J.S.S.3</option>
+                                                <option>S.S.S.1</option>
+                                                <option>S.S.S.2</option>
+                                                <option>S.S.S.3</option>
+                                            </select>
+                                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                        </div>
+                                        <div class="mb-3 sec col-sm-2 last">
+                                            <select class="form-select drop" required>
+                                                <option>..Session</option>
+                                                <option>Sessions</option>
+                                                <option>Kano</option>
+                                                <option>Ibadan</option>
+                                                <option>Port Harcourt</option>
+                                                <option>Jos</option>
+                                                <option>Abuja</option>
+                                            </select>
+                                            <div class="dropped"><i class="fa-solid fa-caret-down"></i></div>
+                                            <button type="submit" class="btn sec "><i
+                                                    class="fa-solid fa-magnifying-glass min-glass"></i></button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-order d-xl-flex ms-xl-4 justify-content-center">
-                                    <h6>New General Mathematics for Junior Secondary Schools 1</h6>
-                                    <p class="mb-0">Order 23157</p>
-                                    <p class="mb-0">Quantity:<span> 2</span></p>
-                                    <p class="mb-0">DELIVERED</p>
-                                    <p class="mb-0">On 22-04-2018</p>
+                            </div>
+                        </div>
+                        <div class="wrapper p-3 d-flex justify-content-start align-items-center">
+                            <h1 class="mean mb-0">Orders</h1>
+                        </div>
+                        <div class="wrapper-box my-box myheight p-3">
+                            <div class="slides d-flex border-bottom mb-4">
+                                <a href="/index/order/order.html" class="text-decoration-none">
+                                    <h4 class="mb-0 opens">OPEN ORDERS (1)</h4>
+                                </a>
+                                <a href="/index/order/close/close.html" class="text-decoration-none">
+                                    <h4 class="ms-lg-5 close active-text mb-0">CLOSED ORDERS (2)</h4>
+                                </a>
+                            </div>
+                            <div class="card order-card">
+                                <div class="d-xxl-flex">
+                                    <div class="my-image mb-3 mb-xxl-0">
+                                        <img src="/styles/img/mathsred.svg" alt="mathsred" class="img-fluid">
+                                    </div>
+                                    <div class="text-order d-xxl-flex ms-xxl-4 justify-content-center">
+                                        <h6>New General Mathematics for Junior Secondary Schools 1</h6>
+                                        <p class="mb-0">Order 23157</p>
+                                        <p class="mb-0">Quantity: <span>3</span></p>
+                                        <div class="myspan">
+                                            <p class="mb-0 lookp">CANCELLED- PAYMENT UNSUCCESSFUL</p>
+                                        </div>
+                                        <p class="mb-0">On 22-04-2018</p>
+                                    </div>
+                                    <div class="d-flex justify-content-end details"><a href="#">SEE DETAILS</a></div>
                                 </div>
-                                <div class="d-flex justify-content-end details"><a href="#">SEE DETAILS</a></div>
+                            </div>
+                            <div class="card order-card mt-3">
+                                <div class="d-xxl-flex">
+                                    <div class="my-image mb-3 mb-xxl-0">
+                                        <img src="/styles/img/mathsred.svg" alt="mathsred" class="img-fluid">
+                                    </div>
+                                    <div class="text-order d-xxl-flex ms-xxl-4 justify-content-center">
+                                        <h6>New General Mathematics for Junior Secondary Schools 1</h6>
+                                        <p class="mb-0">Order 23157</p>
+                                        <p class="mb-0">Quantity: <span>1</span></p>
+                                        <div class="myspan">
+                                            <p class="mb-0 lookp">CANCELLED- PAYMENT UNSUCCESSFUL</p>
+                                        </div>
+                                        <p class="mb-0">On 22-04-2018</p>
+                                    </div>
+                                    <div class="d-flex justify-content-end details"><a href="#">SEE DETAILS</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -551,7 +570,6 @@
             </div>
         </div>
     </footer>
-
 
 
     <script src="/styles/js/bootstrap.bundle.min.js"></script>
