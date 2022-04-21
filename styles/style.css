@@ -378,18 +378,59 @@ body .fourthSection .section4bg img {
 body footer {
   background-color: #000000;
   width: 100%;
-  padding: 40px 40px;
+  padding: 20px 40px;
+  min-height: 200px;
+}
+
+body footer .footercontent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 500px;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+body footer .footercontent .catalog {
+  line-height: 0.6;
+}
+
+body footer .footercontent div {
+  width: 30%;
+}
+
+body footer .footercontent div h3 {
+  padding-bottom: 30px;
+}
+
+body footer .footercontent div .enteremail {
+  margin-bottom: 0px;
+  padding-left: 4px;
+  background-color: #E87E2E;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 38px;
+  font-size: 16px;
+}
+
+body footer .footercontent div .enteremail span {
+  float: right;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 12px;
+}
+
+body footer .footercontent div p {
+  color: white;
+  font-size: 12px;
 }
 
 body footer .arrowtop {
@@ -403,25 +444,6 @@ body footer .arrowtop {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FFFFFF;
-}
-
-body footer .arrowtop img {
-  width: 20px;
-}
-
-body footer .footerdetails {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body footer .footerdetails .logoncatalogue img {
-  width: 100px;
-}
-
-body footer .footerdetails .logoncatalogue p {
-  font-size: 10px;
   color: #FFFFFF;
 }
 

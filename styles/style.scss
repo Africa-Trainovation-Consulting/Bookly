@@ -258,34 +258,71 @@ body {
       }
     }
   }
+  
   footer {
     background-color: $myBlack;
     width: 100%;
-    padding: 40px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px;
+    padding: 20px 40px;
+    min-height: 200px;
+    .footercontent{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 40px;
+      .catalog{
+        line-height: 0.6;
+      }
+      div{
+        width: 30%;
+        h3{
+          padding-bottom: 30px;
+        }
+        
+       
+        .enteremail{
+          margin-bottom: 0px;
+          padding-left: 4px;
+            background-color: $myOrange;
+            border-radius: 5px;
+            align-items: center;
+            height: 38px;
+            font-size: 16px;
+           
+            span{
+              float: right;
+              background-color: $myWhite;
+              border-radius: 5px;
+              padding: 10px 10px;
+              font-size: 12px;
+            }
+          
+        }
+        
+        p{
+        color: white;
+        font-size: 12px;
+      }
+    }}
     .arrowtop {
       display: flex;
       flex-direction: column;
       align-items: center;
       color: $myWhite;
-      img {
-        width: 20px;
-      }
-    }
-    .footerdetails {
-      display: flex;
-      .logoncatalogue {
-        img {
-          width: 100px;
-        }
-        p {
-          font-size: 10px;
-          color: $myWhite;
-        }
-      }
+    //   img {
+    //     width: 20px;
+    //   }
+    // }
+    // .footerdetails {
+    //   display: flex;
+    //   .logoncatalogue {
+    //     img {
+    //       width: 100px;
+    //     }
+    //     p {
+    //       font-size: 10px;
+    //       color: $myWhite;
+    //     }
+    //   }
     }
   }
 
