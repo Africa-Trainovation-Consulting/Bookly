@@ -1,4 +1,5 @@
 # Bookly
+<<<<<<< HEAD
 # Started working on the Header section.
 # Finished the responsiveness
 ## Started section 2
@@ -22,3 +23,7 @@
 # Finished working on the whole section
 
 
+=======
+
+## Live Demo: <a href="https://atc-bookly.netlify.app/">atc-bookly.netlify.app</a>
+>>>>>>> refs/remotes/origin/main
