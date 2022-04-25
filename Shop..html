@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="shortcut icon" href="/images/logoM.svg" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,700;1,900&family=Source+Serif+Pro:wght@600&family=Sunflower:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="Nunito_Sans/NunitoSans-Black.ttf"> -->
+    <link rel="stylesheet" href="Roboto/Roboto-Medium.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,700;1,900&family=Source+Serif+Pro:wght@600&family=Sunflower:wght@300;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Oleo+Script:wght@400;700&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,700;1,900&family=Source+Serif+Pro:wght@600&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Nunito_Sans/NunitoSans-Black.ttf">
+    <link rel="stylesheet" href="sass/form.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo">
+            </div>
+
+            <nav class="navbar" id="nav">
+                <ul class="link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Request a book</a></li>
+                    <li><a href="#"><span>Cart<img src="images/Group 1 (5).png" alt="cart" /></span></a></li>
+                    <li class="btn"><a href="#"><button onclick=" myfunct()"> My Account</button> </a></li>
+                </ul>
+            </nav>
+
+            <nav class="navbar2" id="nv">
+                <span> <img src="images/acctIcon.png"> Account</span>
+                <span><img src="images/seconIcon.svg">Orders</span>
+                <span> <img src="images/thirdIcon.svg">Saved items</span>
+                <hr>
+                <button>sign in</button>
+
+            </nav>
+
+
+
+            <div class="icon" onclick="myfunction()"> <i id="icon" class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <section class="sectionShop">
+        <h3>Shop Now</h3>
+        <p>Buy and sell your textbooks for the best price</p>
+        <div class="searchShop">
+
+
+            <span class="search2">
+                <select class=" form1 form-select  mt-0 mb-0  " id="select1" aria-label="Default select example">
+                    <option selected>State</option>
+                    <option value="1">OGUN</option>
+                    <option value="2">LAGOS</option>
+                    <option value="3">OSUN</option>
+                </select>
+                <select class="form-select  form-select-sm " aria-label="Default select example">
+                    <option selected>School</option>
+                    <option value="1">Primary school</option>
+                    <option value="2">Junior Secondary School</option>
+                    <option value="3"> Senior Secondary School</option>
+                </select>
+                <select class="form-select  form-select-sm " aria-label="Default select example">
+                    <option selected>Class</option>
+                    <option value="1">S.S.S.1</option>
+                    <option value="2">S.S.S.2</option>
+                    <option value="3">S.S.S.3</option>
+                    <option value="3">J.S.S.1</option>
+                    <option value="3">J.S.S.2</option>
+                    <option value="3">J.S.S.3</option>
+                    <option value="3">Primary 1</option>
+                    <option value="3">Primary 2</option>
+                    <option value="3">Primary 3</option>
+                    <option value="3">Primary 4</option>
+                    <option value="3">Primary 5</option>
+                    <option value="3">Primary 6</option>
+                </select>
+                <select class="form-select  form-select-sm " aria-label="Default select example">
+                    <option selected>Session</option>
+                    <option value="1">1st Term</option>
+                    <option value="2">2st Term</option>
+                    <option value="3">3st Term</option>
+                </select>
+                <button class="btn3">Search</button>
+            </span>
+        </div>
+
+        <h1>Best Seller Books</h1>
+
+        <div class="firstLine">
+            <div> <img src="images/newmath.svg" class="img-fluid" alt="textbook1" /></div>
+            <div class="none nm"> <img src="images/newMath2.svg" class="img-fluid" alt="textbook2" /></div>
+            <div class="none nt"> <img src="images/newHistory.svg" class="img-fluid" alt="textbook4" /></div>
+            <div class="none nd"> <img src="images/newGovment.svg" class="img-fluid" alt="textbook3" /></div>
+        </div>
+
+
+        <div class="secondLine">
+            <span class="none nm"> <img src="images/newGovment.svg" class="img-fluid" alt="textbook1" />
+
+            </span>
+            <span> <img src="images/newHistory.svg" class="img-fluid" alt="textbook2" />
+
+            </span>
+            <span class="none nt"> <img src="images/newMath2.svg" class="img-fluid" alt="textbook4" />
+
+            </span>
+            <span class="none nd"> <img src="images/newGovment.svg" class="img-fluid" alt="textbook3" />
+
+            </span>
+        </div>
+
+
+        </div>
+    </section>
+    <section class="section2Shop">
+        <div class="row">
+            <div class="rol col-md-6">
+                <div>
+                    <img src="images/neGov.svg" / alt="gov textebook">
+                    <img src="images/newHistory.svg" alt="new history textbook" />
+                </div>
+                <div>
+                    <img src="images/neGov.svg" / alt="gov textebook">
+                    <img src="images/newHistory.svg" alt="new history textbook" />
+                </div>
+            </div>
+            <div class=" roc col-md-6">
+                <h6>Find your favorite books <span>here</span></h6>
+                <p>Bookly regularly updates its library with themost interesting and fascinating books for kids
+                    and adults alike.</p>
+                <div>
+
+                    <div>
+                        <h4>80+</h4>
+                        <p>Book <br>
+                            Bestsellers</p>
+                    </div>
+
+                    <div>
+                        <h4>60+</h4>
+                        <p>Book <br>
+                            Bestsellers</p>
+                    </div>
+
+                    <div>
+                        <h4>75+</h4>
+                        <p>Book <br>
+                            Bestsellers</p>
+                    </div>
+
+                </div>
+                <a href="#"><span>Learn more <img src="images/Arrow 4 (1).png" alt="arrow"></span></a>
+            </div>
+        </div>
+
+    </section>
+    <articule class="section3shop">
+        <div class=" rok ">
+
+            <div class="list">
+                <li>Fairytale</li>
+                <li> Biography</li>
+                <li>Picture books</li>
+                <li> Geography</li>
+                <li> Historical fiction</li>
+                <li> Fantasy fiction</li>
+                <li> Adventure</li>
+                <li> Comics </li>
+                <li>Literature</li>
+                <li>Religion</li>
+                <li> Classics</li>
+                <li> Health</li>
+            </div>
+            <div>
+                <h3>Other books</h3>
+                <div class="books">
+                    <div><img src="images/sam (1).svg" Class="img-fluid " alt="samBook" /></div>
+                    <div class="none nm"><img src="images/breadbook.svg" Class="img-fluid " alt="breadingbook" /></div>
+                    <div class="none nt"><img src="images/GodBook.svg" Class="img-fluid " alt="knowingGod" /></div>
+                    <div class="none nd"> <img src="images/GodBook.svg" Class="img-fluid " alt="knowingGod" /></div>
+
+                </div>
+                <div class="book2">
+                    <div class="none nm"> <img src="images/memory.svg" Class="img-fluid " alt="knowingGod" /></div>
+                    <div class="none nm"> <img src="images/breadbook.svg" Class="img-fluid " alt="knowingGod"
+                            alt="breadingbook" /></div>
+                    <div class="none nt"><img src="images/sam (1).svg" Class="img-fluid " alt="knowingGod"
+                            alt="samBook" /></div>
+                    <div class="none nd"><img src="images/healthBook.svg" Class="img-fluid " alt="knowingGod"
+                            alt="samBook" /></div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </articule>
+    <article class="articule2">
+        <h4>Follow <span>Us</span> On</h4>
+        <div>
+            <span><img src="images/twitter (1) 1.svg" Class="img-fluid " alt="twitter" /></span>
+            <span><img src="images/facebook.svg" Class="img-fluid " alt="facebook" /></span>
+            <span><img src="images/linkden.svg" Class="img-fluid " alt="linked" /></span>
+            <span><img src="images/mikden.svg" Class="img-fluid " alt="mikden" /><span>
+
+        </div>
+    </article>
+       <article class="articule3">
+        <div class="subArticule">
+            <div class="col-md-6 boy">
+                <img src="images/childBook.svg" Class="img-fluid" alt="book" />
+            </div>
+               <div class="col-md-6 text"> 
+                <h1>We provide you the<br>
+                    Experience</h1>
+                <hr>
+                <p>
+                    Browse the collection of our best-selling<br>
+                    and top interesting products
+                </p>
+                <a href="#"><span>Search products <img src="images/Arrow 4 (1).png" alt="arrow"></span></a>
+            </div>
+
+        </div>
+    </article> 
+    <footer>
+        <a href="#">
+            <i class="fa-solid fa-angles-up"></i>
+            <p>BACK TO TOP</p>
+        </a>
+
+        <div class=" foot">
+
+            <div class=" divD ">
+                <div>
+
+                    <span><img src="images/logoM.svg" alt="logo" class="img-fluid" />BOOKLY</span>
+                    <p>Lorem ipsum dolor sit
+                        consectetur adipiscing
+                        sed do eiusmod tempor
+                        incididunt ut labore et
+                        magna aliqua. Ut enim minim veniam.</p>
+                </div>
+                <div>
+                    <h5>Catatogues</h5>
+                    <p>Senior School 1 </p>
+                    <p>Senior School 2 </p>
+                    <p>Senior School 3 </p>
+                    <p>Senior School 1 </p>
+                    <p>Senior School 2</p>
+                    <p>Senior School 3</p>
+                    <p>Senior School 1 </p>
+                    <p>Senior School 2</p>
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class=" div2">
+                <div>
+                    <h5>Contact Us</h5>
+                    <p>543, Duke Avenue,<br>
+                        Chicago, USA.
+                    <p>
+
+                    <p> +919 406 1234<br>
+                        dallaspizzaz@gmail.com</p>
+                </div>
+                <div>
+                    <h5>Subscribe Us</h5>
+                    <span>
+                        <input type="email" placeholder="Enter your email" class="email">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <h6>&copy;Copyright 2022. All rights reserved. </h6>
+            <h6>Made from all the goodness in the dough.</h6>
+        </div>
+    </footer>
+    <script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="/script/main.js"></script>
+</body>
+
+</html>

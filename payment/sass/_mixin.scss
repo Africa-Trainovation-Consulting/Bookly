@@ -1,0 +1,13 @@
+@mixin  font {
+    font: {
+        family: $family;
+        size: $small;
+        weight:$weight1;
+    }
+    
+}
+@mixin flex ( $display:flex,$justify:center) {
+   display: $display;
+    justify-content: $justify;
+
+}
