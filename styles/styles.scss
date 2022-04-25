@@ -1,0 +1,347 @@
+@import "./modules/varibles";
+@import "./modules/reset";
+@import "./modules/classes";
+.lid {
+    border-bottom: 3px solid $border;
+    box-shadow: $shadow;
+    background-color: $hover;
+    .ul {
+        padding-right: 3vw;
+        width: 86%;
+        .nav-item {
+            padding-left: 20px;
+            .nav-link {
+                color: $color;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: $firstfamily;
+                &:hover {
+                    color: $btncolor;
+                }
+            }
+            &:last-child {
+                .nav-link {
+                    background-color: $btncolor;
+                    width: 170%;
+                    border-radius: 12px;
+                    &:hover {
+                        background-color: $hover;
+                        border: 1px solid $btncolor;
+                        color: $color !important;
+                    }
+
+                    @media screen and (max-width: 990px) {
+                        width: 127px;
+                        margin-top: 2vh;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 990px) {
+            margin-left: 0 !important;
+        }
+    }
+}
+.sec1 {
+    .first-text {
+        .online {
+            color: $btncolor;
+            @media screen and (max-width: 340px) {
+                font-size: 18px;
+            }
+        }
+        .wel {
+            color: $color;
+        }
+        .btn {
+            @media screen and (max-width: 990px) {
+                display: none;
+            }
+        }
+    }
+    .bg {
+        background-color: $bookbg;
+        border-radius: 13px;
+        .search {
+            padding-left: 2vw !important;
+            .book {
+                font-weight: 400 !important;
+                font-family: $font2;
+            }
+        }
+        .sec {
+            @media screen and (max-width: 990px) {
+                margin-bottom: 0 !important;
+            }
+        }
+        .last {
+            position: relative;
+            .btn {
+                color: $hover;
+                position: absolute;
+                right: -66%;
+                top: 0;
+                height: 8vh;
+                width: 67%;
+                font-size: 20px;
+                border: 2px solid $btncolor;
+                background-color: $btncolor;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 575px) {
+                    margin-right: 2vw;
+                }
+                &:hover {
+                    background-color: $hover;
+                    color: $color;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 589px) {
+        padding-left: 2% !important;
+        padding-top: 2% !important;
+    }
+}
+.sec2 {
+    min-height: 100vh;
+    .slidess {
+        gap: 5vw;
+        @media screen and (max-width: 990px) {
+            gap: 11vw;
+        }
+    }
+    .bookk {
+        font-size: 16px;
+        font-family: $font2;
+        font-weight: 700;
+    }
+    .side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .bun {
+            width: 47%;
+        }
+    }
+    .mygov {
+        min-width: fit-content;
+        @media screen and (max-width: 1000px) {
+            justify-content: left !important;
+        }
+    }
+}
+.texting {
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 2% !important;
+    }
+}
+.sec3 {
+    position: relative;
+    .side-circle {
+        position: absolute;
+        top: -69%;
+        width: 9%;
+        @media screen and (max-width: 279px) {
+            display: none !important;
+        }
+        @media screen and (min-width: 280px) {
+            top: -30%;
+            left: 0;
+        }
+        @media screen and (min-width: 400px) {
+            top: -42%;
+            z-index: 1;
+            width: 8%;
+        }
+        @media screen and (min-width: 992px) {
+           left: -27px;
+        }
+        @media screen and (min-width: 1100px) {
+            width: 72px;
+            top: -34%;
+            left: 0;
+        }
+        @media screen and (min-width: 1500px) {
+            top: -34%;
+        }
+    }
+    h3 {
+        font: {
+            size: 24.7px;
+            weight: 400;
+        }
+        @media screen and(min-width:375px) {
+            font-size: 29.6px;
+        }
+        @media screen and(min-width:449px) {
+            font-size: 36.5px;
+        }
+        @media screen and(min-width:537px) {
+            font-size: 40px;
+        }
+        @media screen and(min-width:768px) {
+            font-size: 52px;
+        }
+        @media screen and(min-width:991px) {
+            width: 66%;
+        }
+        @media screen and(min-width:1210px) {
+            width: 55%;
+        }
+        .trust {
+            color: $btncolor;
+        }
+    }
+    .card {
+        padding: 7px;
+        box-shadow: $shadow;
+        &:nth-child(1) {
+            margin-bottom: 5vh;
+        }
+        .card-body {
+            min-height: 48%;
+            .card-text {
+                text-align: left;
+                font-size: 18.7px;
+                line-height: 1.6;
+                font-weight: 400;
+                @media screen and (min-width: 768px) {
+                    font-size: 16px;
+                }
+                @media screen and (min-width: 1200px) {
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+.sec4 {
+    background-color: $btncolor;
+    color: $hover;
+
+    .Sponsors-logo {
+        background-color: $hover;
+        border-radius: 13px;
+        padding: 1em;
+        @media screen and (max-width: 787px) {
+            padding: 3px;
+            margin-top: 5px !important;
+        }
+    }
+    .row {
+        padding: 1em;
+        @media screen and (max-width: 787px) {
+            padding-top: 3px !important;
+        }
+    }
+}
+.footer {
+    min-height: 100vh;
+    color: $hover;
+
+    .first-p {
+        @media screen and (min-width: 1000px) {
+            margin-top: 4vh !important;
+        }
+    }
+
+    .gru2 {
+        @media screen and (min-width: 767px) {
+            margin-top: 1.5vh;
+        }
+    }
+    .row {
+        padding: 15px;
+    }
+    .two {
+        margin-top: 1vh;
+        .light {
+            align-items: center;
+            @media screen and (min-width: 470px) {
+                margin-top: 2vh;
+            }
+            @media screen and (min-width: 700px) {
+                margin-top: 0;
+            }
+            h5 {
+                @media screen and (min-width: 470px) {
+                    font-size: 25px;
+                }
+            }
+            p {
+                font-size: 14px;
+                @media screen and (min-width: 700px) {
+                    font-size: 16px;
+                    margin-top: 1.5vh;
+                }
+                @media screen and (min-width: 1000px) {
+                    font-size: 16px;
+                    margin-top: 0;
+                }
+            }
+            .first-p {
+                @media screen and (min-width: 1000px) {
+                    margin-top: 3.5vh;
+                }
+            }
+        }
+    }
+    .booklygup {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 13px;
+            display: flex;
+            margin: 0 0 2vh 0;
+        }
+    }
+    .paper {
+        font-size: 12px;
+        margin-top: 2vh;
+        @media screen and (min-width: 440px) {
+            font-size: 14px;
+        }
+        @media screen and (min-width: 1000px) {
+            font-size: 17px;
+        }
+    }
+    .contact {
+        font-size: 12.9px;
+        h5 {
+            @media screen and (min-width: 470px) {
+                font-size: 25px;
+            }
+        }
+    }
+    .subscribe {
+        position: relative;
+        h5 {
+            font-size: 18.2px;
+            @media screen and (min-width: 470px) {
+                font-size: 22.5px;
+            }
+        }
+        .inn {
+            background-color: $btncolor !important;
+            color: $hover !important;
+            border: none !important;
+            border-radius: 15px;
+            &::placeholder {
+                color: $hover !important;
+            }
+        }
+        .bt {
+            background-color: $hover;
+            height: 6vh;
+            border: 1px solid $hover;
+            border-radius: 13px 13px 12px 12px;
+            width: 162%;
+            transform: translateX(-13px);
+        }
+    }
+}

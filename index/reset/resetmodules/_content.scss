@@ -1,0 +1,48 @@
+.bar {
+    font-size: 30px;
+}
+.inpot {
+    position: relative;
+    span {
+        position: absolute;
+        top: 0;
+        right: 22%;
+        transform: translateY(12px);
+        @media screen and (max-width: 787px) {
+            position: absolute;
+            top: 0;
+            right: 11%;
+            transform: translateY(11px);
+        }
+    }
+}
+.eyes {
+    color: #0000005e;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.modaal-body{
+    width: 70%;
+    min-height: 50vh;
+}
+.modal-header{
+    border-bottom: none!important;
+    button{
+        border: 3px solid $color;
+        border-radius: 50%;
+    }
+}
+.back{
+    color: $color!important;
+}
+.an{
+    font-size: 15px;
+    font-weight: 600;
+}
+.pass{
+    font-size: 30px;
+    @media screen and (max-width:500px) {
+        font-size: 1rem;
+    }
+}
